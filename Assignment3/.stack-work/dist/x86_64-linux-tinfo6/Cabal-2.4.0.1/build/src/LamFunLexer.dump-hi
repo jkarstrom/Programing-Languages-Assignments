@@ -1,0 +1,3308 @@
+
+==================== FINAL INTERFACE ====================
+2021-11-30 04:27:43.48734 UTC
+
+interface LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:LamFunLexer [family instance module] 8064
+  interface hash: 24bf55ed27094a025b720337ce8de0e6
+  ABI hash: aef324134c72f104e6e093b16410e33a
+  export-list hash: 66ef85b527c2058c29b2474ed8115269
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 72661de92898e2e3cd5f8955c3be6056
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  LamFunLexer.defaultPosition
+  LamFunLexer.reservedKeywords
+  LamFunLexer.tokenize
+  LamFunLexer.Col{LamFunLexer.Col}
+  LamFunLexer.Row{LamFunLexer.Row}
+  LamFunLexer.Token{LamFunLexer.Token colEnd colStart rowEnd rowStart unTok}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 containers-0.6.0.1 deepseq-1.4.4.0
+                      ghc-prim-0.5.3 hashable-1.2.7.0 integer-gmp-1.0.2.0 mtl-2.2.2
+                      string-conv-0.1.2 text-1.2.3.1 transformers-0.5.6.2
+orphans: transformers-0.5.6.2:Control.Monad.Trans.Error
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+import  -/  base-4.12.0.0:Control.Arrow bc9b9c14dcc5597482f9c1aba8cf35fb
+import  -/  base-4.12.0.0:Data.Bifunctor ca2891bec6c5fc7b7ce74abfca639766
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:Data.String 9e4b952a8ebb3285265ccf94f5cf1865
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Generics 4de68d952daf417059d0523dece232ea
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  hashable-1.2.7.0:Data.Hashable fef6fd6d72163c0bc7f37a55cb5ebfed
+import  -/  hashable-1.2.7.0:Data.Hashable.Class d0e28885b83113e42bb91de5f00a776c
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6d87087aea24143d2650f78480d954a3
+import  -/  mtl-2.2.2:Control.Monad.State 753def63fe8e937dc636f11e5230745a
+import  -/  mtl-2.2.2:Control.Monad.State.Class 94cc1438f3f9a3259fb0a2c56d3d0303
+import  -/  string-conv-0.1.2:Data.String.Conv 0dc21ffe2e83297005859948da8debac
+import  -/  text-1.2.3.1:Data.Text 1e51a010d8f8a6fa41d8ea82d69faf13
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+import  -/  transformers-0.5.6.2:Control.Monad.Trans.State.Lazy ff6ca0dfc09530bd7be56f884563f2c0
+cc3f52ab7608b9b6147560023efc4884
+  $fEqCol :: GHC.Classes.Eq LamFunLexer.Col
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.Col
+                  GHC.Classes.eqInt
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0])
+                   ->_R Sym (LamFunLexer.N:Col[0])
+                   ->_R <GHC.Types.Bool>_R)
+                  GHC.Classes.neInt
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0])
+                   ->_R Sym (LamFunLexer.N:Col[0])
+                   ->_R <GHC.Types.Bool>_R) -}
+607b6556e147f57820f82a52dbb16ae4
+  $fEqDropOrKeepLabel :: GHC.Classes.Eq LamFunLexer.DropOrKeepLabel
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.DropOrKeepLabel
+                  LamFunLexer.$fEqDropOrKeepLabel_$c==
+                  LamFunLexer.$fEqDropOrKeepLabel_$c/= -}
+607b6556e147f57820f82a52dbb16ae4
+  $fEqDropOrKeepLabel_$c/= ::
+    LamFunLexer.DropOrKeepLabel
+    -> LamFunLexer.DropOrKeepLabel -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x1 :: LamFunLexer.DropOrKeepLabel)
+                   (y :: LamFunLexer.DropOrKeepLabel) ->
+                 case x1 of wild {
+                   LamFunLexer.Drop
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True LamFunLexer.Drop -> GHC.Types.False }
+                   LamFunLexer.Keep
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True LamFunLexer.Keep -> GHC.Types.False }
+                   LamFunLexer.New
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        LamFunLexer.New -> GHC.Types.False } }) -}
+607b6556e147f57820f82a52dbb16ae4
+  $fEqDropOrKeepLabel_$c== ::
+    LamFunLexer.DropOrKeepLabel
+    -> LamFunLexer.DropOrKeepLabel -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: LamFunLexer.DropOrKeepLabel)
+                   (ds1 :: LamFunLexer.DropOrKeepLabel) ->
+                 case ds of wild {
+                   LamFunLexer.Drop
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False LamFunLexer.Drop -> GHC.Types.True }
+                   LamFunLexer.Keep
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False LamFunLexer.Keep -> GHC.Types.True }
+                   LamFunLexer.New
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LamFunLexer.New -> GHC.Types.True } }) -}
+6d02d0a948492440633d98f77b404e7d
+  $fEqRow :: GHC.Classes.Eq LamFunLexer.Row
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.Row
+                  GHC.Classes.eqInt
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0])
+                   ->_R Sym (LamFunLexer.N:Row[0])
+                   ->_R <GHC.Types.Bool>_R)
+                  GHC.Classes.neInt
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0])
+                   ->_R Sym (LamFunLexer.N:Row[0])
+                   ->_R <GHC.Types.Bool>_R) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fEqToken ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (LamFunLexer.Token a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Classes.Eq a).
+                  @ (LamFunLexer.Token a)
+                  (LamFunLexer.$fEqToken_$c== @ a v)
+                  (LamFunLexer.$fEqToken_$c/= @ a v) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fEqToken_$c/= ::
+    GHC.Classes.Eq a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*U(1*U,A,A,A,A)><L,1*U(1*U,A,A,A,A)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x1 :: LamFunLexer.Token a)
+                   (y :: LamFunLexer.Token a) ->
+                 case GHC.Classes.==
+                        @ a
+                        $dEq
+                        (case x1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                        (case y of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                         ds }) of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fEqToken_$c== ::
+    GHC.Classes.Eq a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*U(1*U,A,A,A,A)><L,1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (t1 :: LamFunLexer.Token a)
+                   (t2 :: LamFunLexer.Token a) ->
+                 GHC.Classes.==
+                   @ a
+                   $dEq
+                   (case t1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                   (case t2 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                    ds })) -}
+c1ec94d2bd554d862f71531cc2544422
+  $fFunctorDropOrKeep :: GHC.Base.Functor LamFunLexer.DropOrKeep
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.DropOrKeep
+                  LamFunLexer.$fFunctorDropOrKeep_$cfmap
+                  LamFunLexer.$fFunctorDropOrKeep_$c<$ -}
+c1ec94d2bd554d862f71531cc2544422
+  $fFunctorDropOrKeep_$c<$ ::
+    a -> LamFunLexer.DropOrKeep b -> LamFunLexer.DropOrKeep a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(U,A)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (z :: a) (ds :: LamFunLexer.DropOrKeep b) ->
+                 case ds of wild { LamFunLexer.DropOrKeep a1 a2 ->
+                 LamFunLexer.DropOrKeep @ a a1 z }) -}
+c1ec94d2bd554d862f71531cc2544422
+  $fFunctorDropOrKeep_$cfmap ::
+    (a -> b) -> LamFunLexer.DropOrKeep a -> LamFunLexer.DropOrKeep b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> b) (ds :: LamFunLexer.DropOrKeep a) ->
+                 case ds of wild { LamFunLexer.DropOrKeep a1 a2 ->
+                 LamFunLexer.DropOrKeep @ b a1 (f a2) }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fGenericToken :: GHC.Generics.Generic (LamFunLexer.Token a)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (LamFunLexer.Token a)
+                  (LamFunLexer.$fGenericToken1 @ a)
+                    `cast`
+                  (forall (x1 :: <*>_N).
+                   <LamFunLexer.Token a>_R
+                   ->_R (Sym (GHC.Generics.N:M1[0]
+                                  <*>_N
+                                  <GHC.Generics.D>_P
+                                  <'GHC.Generics.MetaData
+                                     "Token"
+                                     "LamFunLexer"
+                                     "LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"
+                                     'GHC.Types.False>_P
+                                  <GHC.Generics.M1
+                                     GHC.Generics.C
+                                     ('GHC.Generics.MetaCons
+                                        "Token" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                     ((GHC.Generics.M1
+                                         GHC.Generics.S
+                                         ('GHC.Generics.MetaSel
+                                            ('GHC.Maybe.Just "unTok")
+                                            'GHC.Generics.NoSourceUnpackedness
+                                            'GHC.Generics.NoSourceStrictness
+                                            'GHC.Generics.DecidedLazy)
+                                         (GHC.Generics.K1 GHC.Generics.R a)
+                                       GHC.Generics.:*: GHC.Generics.M1
+                                                          GHC.Generics.S
+                                                          ('GHC.Generics.MetaSel
+                                                             ('GHC.Maybe.Just "rowStart")
+                                                             'GHC.Generics.NoSourceUnpackedness
+                                                             'GHC.Generics.NoSourceStrictness
+                                                             'GHC.Generics.DecidedLazy)
+                                                          (GHC.Generics.K1
+                                                             GHC.Generics.R LamFunLexer.Row))
+                                      GHC.Generics.:*: (GHC.Generics.M1
+                                                          GHC.Generics.S
+                                                          ('GHC.Generics.MetaSel
+                                                             ('GHC.Maybe.Just "rowEnd")
+                                                             'GHC.Generics.NoSourceUnpackedness
+                                                             'GHC.Generics.NoSourceStrictness
+                                                             'GHC.Generics.DecidedLazy)
+                                                          (GHC.Generics.K1
+                                                             GHC.Generics.R LamFunLexer.Row)
+                                                        GHC.Generics.:*: (GHC.Generics.M1
+                                                                            GHC.Generics.S
+                                                                            ('GHC.Generics.MetaSel
+                                                                               ('GHC.Maybe.Just
+                                                                                  "colStart")
+                                                                               'GHC.Generics.NoSourceUnpackedness
+                                                                               'GHC.Generics.NoSourceStrictness
+                                                                               'GHC.Generics.DecidedLazy)
+                                                                            (GHC.Generics.K1
+                                                                               GHC.Generics.R
+                                                                               LamFunLexer.Col)
+                                                                          GHC.Generics.:*: GHC.Generics.M1
+                                                                                             GHC.Generics.S
+                                                                                             ('GHC.Generics.MetaSel
+                                                                                                ('GHC.Maybe.Just
+                                                                                                   "colEnd")
+                                                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                                                'GHC.Generics.NoSourceStrictness
+                                                                                                'GHC.Generics.DecidedLazy)
+                                                                                             (GHC.Generics.K1
+                                                                                                GHC.Generics.R
+                                                                                                LamFunLexer.Col))))>_R) ; Sub (Sym (LamFunLexer.Rep_Token[0]
+                                                                                                                                        <a>_N))) <x1>_N)
+                  (LamFunLexer.$fGenericToken_$cto @ a) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fGenericToken1 ::
+    LamFunLexer.Token a
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Token" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         ((GHC.Generics.M1
+             GHC.Generics.S
+             ('GHC.Generics.MetaSel
+                ('GHC.Maybe.Just "unTok")
+                'GHC.Generics.NoSourceUnpackedness
+                'GHC.Generics.NoSourceStrictness
+                'GHC.Generics.DecidedLazy)
+             (GHC.Generics.K1 GHC.Generics.R a)
+           GHC.Generics.:*: GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Maybe.Just "rowStart")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Row))
+          GHC.Generics.:*: (GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Maybe.Just "rowEnd")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Row)
+                            GHC.Generics.:*: (GHC.Generics.M1
+                                                GHC.Generics.S
+                                                ('GHC.Generics.MetaSel
+                                                   ('GHC.Maybe.Just "colStart")
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy)
+                                                (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Col)
+                                              GHC.Generics.:*: GHC.Generics.M1
+                                                                 GHC.Generics.S
+                                                                 ('GHC.Generics.MetaSel
+                                                                    ('GHC.Maybe.Just "colEnd")
+                                                                    'GHC.Generics.NoSourceUnpackedness
+                                                                    'GHC.Generics.NoSourceStrictness
+                                                                    'GHC.Generics.DecidedLazy)
+                                                                 (GHC.Generics.K1
+                                                                    GHC.Generics.R
+                                                                    LamFunLexer.Col))))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ x1 (x2 :: LamFunLexer.Token a) ->
+                 case x2 of wild { LamFunLexer.Token g1 g2 g3 g4 g5 ->
+                 (GHC.Generics.:*:
+                    @ *
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Maybe.Just "unTok")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R a)
+                       GHC.Generics.:*: GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Maybe.Just "rowStart")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Row))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Maybe.Just "rowEnd")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Row)
+                       GHC.Generics.:*: (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              ('GHC.Maybe.Just "colStart")
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Col)
+                                         GHC.Generics.:*: GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Maybe.Just "colEnd")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R LamFunLexer.Col)))
+                    @ x1
+                    (GHC.Generics.:*:
+                       @ *
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Maybe.Just "unTok")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R a))
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Maybe.Just "rowStart")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Row))
+                       @ x1
+                       g1
+                         `cast`
+                       (Sym (GHC.Generics.N:K1[0]
+                                 <*>_N <GHC.Generics.R>_P <a>_R <x1>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                                                   <*>_N
+                                                                                   <GHC.Generics.S>_P
+                                                                                   <'GHC.Generics.MetaSel
+                                                                                      ('GHC.Maybe.Just
+                                                                                         "unTok")
+                                                                                      'GHC.Generics.NoSourceUnpackedness
+                                                                                      'GHC.Generics.NoSourceStrictness
+                                                                                      'GHC.Generics.DecidedLazy>_P
+                                                                                   <GHC.Generics.K1
+                                                                                      GHC.Generics.R
+                                                                                      a>_R) <x1>_N)
+                       g2
+                         `cast`
+                       (Sym (GHC.Generics.N:K1[0]
+                                 <*>_N
+                                 <GHC.Generics.R>_P
+                                 <LamFunLexer.Row>_R
+                                 <x1>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                    <*>_N
+                                                    <GHC.Generics.S>_P
+                                                    <'GHC.Generics.MetaSel
+                                                       ('GHC.Maybe.Just "rowStart")
+                                                       'GHC.Generics.NoSourceUnpackedness
+                                                       'GHC.Generics.NoSourceStrictness
+                                                       'GHC.Generics.DecidedLazy>_P
+                                                    <GHC.Generics.K1
+                                                       GHC.Generics.R LamFunLexer.Row>_R) <x1>_N))
+                    (GHC.Generics.:*:
+                       @ *
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Maybe.Just "rowEnd")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Row))
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Maybe.Just "colStart")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Col)
+                          GHC.Generics.:*: GHC.Generics.M1
+                                             GHC.Generics.S
+                                             ('GHC.Generics.MetaSel
+                                                ('GHC.Maybe.Just "colEnd")
+                                                'GHC.Generics.NoSourceUnpackedness
+                                                'GHC.Generics.NoSourceStrictness
+                                                'GHC.Generics.DecidedLazy)
+                                             (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Col))
+                       @ x1
+                       g3
+                         `cast`
+                       (Sym (GHC.Generics.N:K1[0]
+                                 <*>_N
+                                 <GHC.Generics.R>_P
+                                 <LamFunLexer.Row>_R
+                                 <x1>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                    <*>_N
+                                                    <GHC.Generics.S>_P
+                                                    <'GHC.Generics.MetaSel
+                                                       ('GHC.Maybe.Just "rowEnd")
+                                                       'GHC.Generics.NoSourceUnpackedness
+                                                       'GHC.Generics.NoSourceStrictness
+                                                       'GHC.Generics.DecidedLazy>_P
+                                                    <GHC.Generics.K1
+                                                       GHC.Generics.R LamFunLexer.Row>_R) <x1>_N)
+                       (GHC.Generics.:*:
+                          @ *
+                          @ (GHC.Generics.M1
+                               GHC.Generics.S
+                               ('GHC.Generics.MetaSel
+                                  ('GHC.Maybe.Just "colStart")
+                                  'GHC.Generics.NoSourceUnpackedness
+                                  'GHC.Generics.NoSourceStrictness
+                                  'GHC.Generics.DecidedLazy)
+                               (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Col))
+                          @ (GHC.Generics.M1
+                               GHC.Generics.S
+                               ('GHC.Generics.MetaSel
+                                  ('GHC.Maybe.Just "colEnd")
+                                  'GHC.Generics.NoSourceUnpackedness
+                                  'GHC.Generics.NoSourceStrictness
+                                  'GHC.Generics.DecidedLazy)
+                               (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Col))
+                          @ x1
+                          g4
+                            `cast`
+                          (Sym (GHC.Generics.N:K1[0]
+                                    <*>_N
+                                    <GHC.Generics.R>_P
+                                    <LamFunLexer.Col>_R
+                                    <x1>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                       <*>_N
+                                                       <GHC.Generics.S>_P
+                                                       <'GHC.Generics.MetaSel
+                                                          ('GHC.Maybe.Just "colStart")
+                                                          'GHC.Generics.NoSourceUnpackedness
+                                                          'GHC.Generics.NoSourceStrictness
+                                                          'GHC.Generics.DecidedLazy>_P
+                                                       <GHC.Generics.K1
+                                                          GHC.Generics.R LamFunLexer.Col>_R) <x1>_N)
+                          g5
+                            `cast`
+                          (Sym (GHC.Generics.N:K1[0]
+                                    <*>_N
+                                    <GHC.Generics.R>_P
+                                    <LamFunLexer.Col>_R
+                                    <x1>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                       <*>_N
+                                                       <GHC.Generics.S>_P
+                                                       <'GHC.Generics.MetaSel
+                                                          ('GHC.Maybe.Just "colEnd")
+                                                          'GHC.Generics.NoSourceUnpackedness
+                                                          'GHC.Generics.NoSourceStrictness
+                                                          'GHC.Generics.DecidedLazy>_P
+                                                       <GHC.Generics.K1
+                                                          GHC.Generics.R
+                                                          LamFunLexer.Col>_R) <x1>_N))))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <*>_N
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "Token" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <(GHC.Generics.M1
+                               GHC.Generics.S
+                               ('GHC.Generics.MetaSel
+                                  ('GHC.Maybe.Just "unTok")
+                                  'GHC.Generics.NoSourceUnpackedness
+                                  'GHC.Generics.NoSourceStrictness
+                                  'GHC.Generics.DecidedLazy)
+                               (GHC.Generics.K1 GHC.Generics.R a)
+                             GHC.Generics.:*: GHC.Generics.M1
+                                                GHC.Generics.S
+                                                ('GHC.Generics.MetaSel
+                                                   ('GHC.Maybe.Just "rowStart")
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy)
+                                                (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Row))
+                            GHC.Generics.:*: (GHC.Generics.M1
+                                                GHC.Generics.S
+                                                ('GHC.Generics.MetaSel
+                                                   ('GHC.Maybe.Just "rowEnd")
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy)
+                                                (GHC.Generics.K1 GHC.Generics.R LamFunLexer.Row)
+                                              GHC.Generics.:*: (GHC.Generics.M1
+                                                                  GHC.Generics.S
+                                                                  ('GHC.Generics.MetaSel
+                                                                     ('GHC.Maybe.Just "colStart")
+                                                                     'GHC.Generics.NoSourceUnpackedness
+                                                                     'GHC.Generics.NoSourceStrictness
+                                                                     'GHC.Generics.DecidedLazy)
+                                                                  (GHC.Generics.K1
+                                                                     GHC.Generics.R LamFunLexer.Col)
+                                                                GHC.Generics.:*: GHC.Generics.M1
+                                                                                   GHC.Generics.S
+                                                                                   ('GHC.Generics.MetaSel
+                                                                                      ('GHC.Maybe.Just
+                                                                                         "colEnd")
+                                                                                      'GHC.Generics.NoSourceUnpackedness
+                                                                                      'GHC.Generics.NoSourceStrictness
+                                                                                      'GHC.Generics.DecidedLazy)
+                                                                                   (GHC.Generics.K1
+                                                                                      GHC.Generics.R
+                                                                                      LamFunLexer.Col)))>_R) <x1>_N) }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fGenericToken_$cto ::
+    GHC.Generics.Rep (LamFunLexer.Token a) x -> LamFunLexer.Token a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(LS)),1*U(1*U(U,U),1*U(U,1*U(U,U)))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ x1 (ds :: GHC.Generics.Rep (LamFunLexer.Token a) x1) ->
+                 case ds
+                        `cast`
+                      ((Sub (LamFunLexer.Rep_Token[0] <a>_N) ; (GHC.Generics.N:M1[0]
+                                                                    <*>_N
+                                                                    <GHC.Generics.D>_P
+                                                                    <'GHC.Generics.MetaData
+                                                                       "Token"
+                                                                       "LamFunLexer"
+                                                                       "LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"
+                                                                       'GHC.Types.False>_P
+                                                                    <GHC.Generics.M1
+                                                                       GHC.Generics.C
+                                                                       ('GHC.Generics.MetaCons
+                                                                          "Token"
+                                                                          'GHC.Generics.PrefixI
+                                                                          'GHC.Types.True)
+                                                                       ((GHC.Generics.M1
+                                                                           GHC.Generics.S
+                                                                           ('GHC.Generics.MetaSel
+                                                                              ('GHC.Maybe.Just
+                                                                                 "unTok")
+                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                              'GHC.Generics.NoSourceStrictness
+                                                                              'GHC.Generics.DecidedLazy)
+                                                                           (GHC.Generics.K1
+                                                                              GHC.Generics.R a)
+                                                                         GHC.Generics.:*: GHC.Generics.M1
+                                                                                            GHC.Generics.S
+                                                                                            ('GHC.Generics.MetaSel
+                                                                                               ('GHC.Maybe.Just
+                                                                                                  "rowStart")
+                                                                                               'GHC.Generics.NoSourceUnpackedness
+                                                                                               'GHC.Generics.NoSourceStrictness
+                                                                                               'GHC.Generics.DecidedLazy)
+                                                                                            (GHC.Generics.K1
+                                                                                               GHC.Generics.R
+                                                                                               LamFunLexer.Row))
+                                                                        GHC.Generics.:*: (GHC.Generics.M1
+                                                                                            GHC.Generics.S
+                                                                                            ('GHC.Generics.MetaSel
+                                                                                               ('GHC.Maybe.Just
+                                                                                                  "rowEnd")
+                                                                                               'GHC.Generics.NoSourceUnpackedness
+                                                                                               'GHC.Generics.NoSourceStrictness
+                                                                                               'GHC.Generics.DecidedLazy)
+                                                                                            (GHC.Generics.K1
+                                                                                               GHC.Generics.R
+                                                                                               LamFunLexer.Row)
+                                                                                          GHC.Generics.:*: (GHC.Generics.M1
+                                                                                                              GHC.Generics.S
+                                                                                                              ('GHC.Generics.MetaSel
+                                                                                                                 ('GHC.Maybe.Just
+                                                                                                                    "colStart")
+                                                                                                                 'GHC.Generics.NoSourceUnpackedness
+                                                                                                                 'GHC.Generics.NoSourceStrictness
+                                                                                                                 'GHC.Generics.DecidedLazy)
+                                                                                                              (GHC.Generics.K1
+                                                                                                                 GHC.Generics.R
+                                                                                                                 LamFunLexer.Col)
+                                                                                                            GHC.Generics.:*: GHC.Generics.M1
+                                                                                                                               GHC.Generics.S
+                                                                                                                               ('GHC.Generics.MetaSel
+                                                                                                                                  ('GHC.Maybe.Just
+                                                                                                                                     "colEnd")
+                                                                                                                                  'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                  'GHC.Generics.NoSourceStrictness
+                                                                                                                                  'GHC.Generics.DecidedLazy)
+                                                                                                                               (GHC.Generics.K1
+                                                                                                                                  GHC.Generics.R
+                                                                                                                                  LamFunLexer.Col))))>_R ; GHC.Generics.N:M1[0]
+                                                                                                                                                               <*>_N
+                                                                                                                                                               <GHC.Generics.C>_P
+                                                                                                                                                               <'GHC.Generics.MetaCons
+                                                                                                                                                                  "Token"
+                                                                                                                                                                  'GHC.Generics.PrefixI
+                                                                                                                                                                  'GHC.Types.True>_P
+                                                                                                                                                               <(GHC.Generics.M1
+                                                                                                                                                                   GHC.Generics.S
+                                                                                                                                                                   ('GHC.Generics.MetaSel
+                                                                                                                                                                      ('GHC.Maybe.Just
+                                                                                                                                                                         "unTok")
+                                                                                                                                                                      'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                      'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                      'GHC.Generics.DecidedLazy)
+                                                                                                                                                                   (GHC.Generics.K1
+                                                                                                                                                                      GHC.Generics.R
+                                                                                                                                                                      a)
+                                                                                                                                                                 GHC.Generics.:*: GHC.Generics.M1
+                                                                                                                                                                                    GHC.Generics.S
+                                                                                                                                                                                    ('GHC.Generics.MetaSel
+                                                                                                                                                                                       ('GHC.Maybe.Just
+                                                                                                                                                                                          "rowStart")
+                                                                                                                                                                                       'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                                       'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                                       'GHC.Generics.DecidedLazy)
+                                                                                                                                                                                    (GHC.Generics.K1
+                                                                                                                                                                                       GHC.Generics.R
+                                                                                                                                                                                       LamFunLexer.Row))
+                                                                                                                                                                GHC.Generics.:*: (GHC.Generics.M1
+                                                                                                                                                                                    GHC.Generics.S
+                                                                                                                                                                                    ('GHC.Generics.MetaSel
+                                                                                                                                                                                       ('GHC.Maybe.Just
+                                                                                                                                                                                          "rowEnd")
+                                                                                                                                                                                       'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                                       'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                                       'GHC.Generics.DecidedLazy)
+                                                                                                                                                                                    (GHC.Generics.K1
+                                                                                                                                                                                       GHC.Generics.R
+                                                                                                                                                                                       LamFunLexer.Row)
+                                                                                                                                                                                  GHC.Generics.:*: (GHC.Generics.M1
+                                                                                                                                                                                                      GHC.Generics.S
+                                                                                                                                                                                                      ('GHC.Generics.MetaSel
+                                                                                                                                                                                                         ('GHC.Maybe.Just
+                                                                                                                                                                                                            "colStart")
+                                                                                                                                                                                                         'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                                                         'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                                                         'GHC.Generics.DecidedLazy)
+                                                                                                                                                                                                      (GHC.Generics.K1
+                                                                                                                                                                                                         GHC.Generics.R
+                                                                                                                                                                                                         LamFunLexer.Col)
+                                                                                                                                                                                                    GHC.Generics.:*: GHC.Generics.M1
+                                                                                                                                                                                                                       GHC.Generics.S
+                                                                                                                                                                                                                       ('GHC.Generics.MetaSel
+                                                                                                                                                                                                                          ('GHC.Maybe.Just
+                                                                                                                                                                                                                             "colEnd")
+                                                                                                                                                                                                                          'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                                                                          'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                                                                          'GHC.Generics.DecidedLazy)
+                                                                                                                                                                                                                       (GHC.Generics.K1
+                                                                                                                                                                                                                          GHC.Generics.R
+                                                                                                                                                                                                                          LamFunLexer.Col)))>_R)) <x1>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 case ds1 of wild1 { GHC.Generics.:*: ds3 ds4 ->
+                 case ds2 of wild2 { GHC.Generics.:*: ds5 ds6 ->
+                 case ds6 of wild3 { GHC.Generics.:*: ds7 ds8 ->
+                 LamFunLexer.Token
+                   @ a
+                   ds3
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           ('GHC.Maybe.Just "unTok")
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1 GHC.Generics.R a>_R <x1>_N ; GHC.Generics.N:K1[0]
+                                                                          <*>_N
+                                                                          <GHC.Generics.R>_P
+                                                                          <a>_R
+                                                                          <x1>_P)
+                   ds4
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           ('GHC.Maybe.Just "rowStart")
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1
+                           GHC.Generics.R LamFunLexer.Row>_R <x1>_N ; GHC.Generics.N:K1[0]
+                                                                          <*>_N
+                                                                          <GHC.Generics.R>_P
+                                                                          <LamFunLexer.Row>_R
+                                                                          <x1>_P)
+                   ds5
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           ('GHC.Maybe.Just "rowEnd")
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1
+                           GHC.Generics.R LamFunLexer.Row>_R <x1>_N ; GHC.Generics.N:K1[0]
+                                                                          <*>_N
+                                                                          <GHC.Generics.R>_P
+                                                                          <LamFunLexer.Row>_R
+                                                                          <x1>_P)
+                   ds7
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           ('GHC.Maybe.Just "colStart")
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1
+                           GHC.Generics.R LamFunLexer.Col>_R <x1>_N ; GHC.Generics.N:K1[0]
+                                                                          <*>_N
+                                                                          <GHC.Generics.R>_P
+                                                                          <LamFunLexer.Col>_R
+                                                                          <x1>_P)
+                   ds8
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           ('GHC.Maybe.Just "colEnd")
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1
+                           GHC.Generics.R LamFunLexer.Col>_R <x1>_N ; GHC.Generics.N:K1[0]
+                                                                          <*>_N
+                                                                          <GHC.Generics.R>_P
+                                                                          <LamFunLexer.Col>_R
+                                                                          <x1>_P) } } } }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fHashableCol :: Data.Hashable.Class.Hashable LamFunLexer.Col
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.Col
+                  Data.Hashable.Class.$fHashableInt_$chashWithSalt
+                    `cast`
+                  (<GHC.Types.Int>_R
+                   ->_R Sym (LamFunLexer.N:Col[0])
+                   ->_R <GHC.Types.Int>_R)
+                  (GHC.Base.id @ GHC.Types.Int)
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0]) ->_R <GHC.Types.Int>_R) -}
+6d02d0a948492440633d98f77b404e7d
+  $fHashableRow :: Data.Hashable.Class.Hashable LamFunLexer.Row
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.Row
+                  Data.Hashable.Class.$fHashableInt_$chashWithSalt
+                    `cast`
+                  (<GHC.Types.Int>_R
+                   ->_R Sym (LamFunLexer.N:Row[0])
+                   ->_R <GHC.Types.Int>_R)
+                  (GHC.Base.id @ GHC.Types.Int)
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0]) ->_R <GHC.Types.Int>_R) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fHashableToken ::
+    Data.Hashable.Class.Hashable a =>
+    Data.Hashable.Class.Hashable (LamFunLexer.Token a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U(U))),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: Data.Hashable.Class.Hashable a).
+                  @ (LamFunLexer.Token a)
+                  (LamFunLexer.$fHashableToken_$chashWithSalt @ a v)
+                  (LamFunLexer.$fHashableToken_$chash @ a v) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fHashableToken_$chash ::
+    Data.Hashable.Class.Hashable a =>
+    LamFunLexer.Token a -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(C(C(S(S)))L),1*U(1*C1(C1(U(U))),A)><S(LS(S)S(S)S(S)S(S)),1*U(U,1*U(U),1*U(U),1*U(U),1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dHashable :: Data.Hashable.Class.Hashable a) ->
+                 LamFunLexer.$fHashableToken_$chashWithSalt
+                   @ a
+                   $dHashable
+                   Data.Hashable.Class.defaultSalt) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fHashableToken_$chashWithSalt ::
+    Data.Hashable.Class.Hashable a =>
+    GHC.Types.Int -> LamFunLexer.Token a -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S(S)))L),1*U(1*C1(C1(U(U))),A)><L,U><S(LS(S)S(S)S(S)S(S)),1*U(U,1*U(U),1*U(U),1*U(U),1*U(U))>m,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: Data.Hashable.Class.Hashable a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: LamFunLexer.Token a) ->
+                 case w of ww { Data.Hashable.Class.C:Hashable ww1 ww2 ->
+                 case w2 of ww3 { LamFunLexer.Token ww4 ww5 ww6 ww7 ww8 ->
+                 case ww5
+                        `cast`
+                      (LamFunLexer.N:Row[0]) of ww9 { GHC.Types.I# ww10 ->
+                 case ww6
+                        `cast`
+                      (LamFunLexer.N:Row[0]) of ww11 { GHC.Types.I# ww12 ->
+                 case ww7
+                        `cast`
+                      (LamFunLexer.N:Col[0]) of ww13 { GHC.Types.I# ww14 ->
+                 case ww8
+                        `cast`
+                      (LamFunLexer.N:Col[0]) of ww15 { GHC.Types.I# ww16 ->
+                 case ww1 w1 ww4 of wild { GHC.Types.I# x1 ->
+                 GHC.Types.I#
+                   (GHC.Prim.xorI#
+                      (GHC.Prim.*#
+                         (GHC.Prim.xorI#
+                            (GHC.Prim.*#
+                               (GHC.Prim.xorI#
+                                  (GHC.Prim.*#
+                                     (GHC.Prim.xorI# (GHC.Prim.*# x1 16777619#) ww10)
+                                     16777619#)
+                                  ww12)
+                               16777619#)
+                            ww14)
+                         16777619#)
+                      ww16) } } } } } } }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fIsStringToken ::
+    Data.String.IsString a =>
+    Data.String.IsString (LamFunLexer.Token a)
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><L,U>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                LamFunLexer.$fIsStringToken_$cfromString
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.String.IsString a>_R
+                 ->_R Sym (Data.String.N:IsString[0]) <LamFunLexer.Token a>_N) -}
+a216f4a06eb99b045db06b8d405ca4c0
+  $fIsStringToken1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fIsStringToken_$cfromString ::
+    Data.String.IsString a => GHC.Base.String -> LamFunLexer.Token a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><L,U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dIsString :: Data.String.IsString a)
+                   (s :: GHC.Base.String) ->
+                 LamFunLexer.Token
+                   @ a
+                   ($dIsString `cast` (Data.String.N:IsString[0] <a>_N) s)
+                   LamFunLexer.$fIsStringToken1 `cast` (Sym (LamFunLexer.N:Row[0]))
+                   LamFunLexer.$fIsStringToken1 `cast` (Sym (LamFunLexer.N:Row[0]))
+                   LamFunLexer.$fIsStringToken1 `cast` (Sym (LamFunLexer.N:Col[0]))
+                   LamFunLexer.$fIsStringToken1
+                     `cast`
+                   (Sym (LamFunLexer.N:Col[0]))) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fNumCol :: GHC.Num.Num LamFunLexer.Col
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.Col
+                  GHC.Num.$fNumInt_$c+
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0])
+                   ->_R Sym (LamFunLexer.N:Col[0])
+                   ->_R Sym (LamFunLexer.N:Col[0]))
+                  GHC.Num.$fNumInt_$c-
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0])
+                   ->_R Sym (LamFunLexer.N:Col[0])
+                   ->_R Sym (LamFunLexer.N:Col[0]))
+                  GHC.Num.$fNumInt_$c*
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0])
+                   ->_R Sym (LamFunLexer.N:Col[0])
+                   ->_R Sym (LamFunLexer.N:Col[0]))
+                  GHC.Num.$fNumInt_$cnegate
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0]) ->_R Sym (LamFunLexer.N:Col[0]))
+                  GHC.Num.$fNumInt_$cabs
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0]) ->_R Sym (LamFunLexer.N:Col[0]))
+                  GHC.Num.$fNumInt_$csignum
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0]) ->_R Sym (LamFunLexer.N:Col[0]))
+                  GHC.Num.$fNumInt_$cfromInteger
+                    `cast`
+                  (<GHC.Integer.Type.Integer>_R ->_R Sym (LamFunLexer.N:Col[0])) -}
+6d02d0a948492440633d98f77b404e7d
+  $fNumRow :: GHC.Num.Num LamFunLexer.Row
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.Row
+                  GHC.Num.$fNumInt_$c+
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0])
+                   ->_R Sym (LamFunLexer.N:Row[0])
+                   ->_R Sym (LamFunLexer.N:Row[0]))
+                  GHC.Num.$fNumInt_$c-
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0])
+                   ->_R Sym (LamFunLexer.N:Row[0])
+                   ->_R Sym (LamFunLexer.N:Row[0]))
+                  GHC.Num.$fNumInt_$c*
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0])
+                   ->_R Sym (LamFunLexer.N:Row[0])
+                   ->_R Sym (LamFunLexer.N:Row[0]))
+                  GHC.Num.$fNumInt_$cnegate
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0]) ->_R Sym (LamFunLexer.N:Row[0]))
+                  GHC.Num.$fNumInt_$cabs
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0]) ->_R Sym (LamFunLexer.N:Row[0]))
+                  GHC.Num.$fNumInt_$csignum
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0]) ->_R Sym (LamFunLexer.N:Row[0]))
+                  GHC.Num.$fNumInt_$cfromInteger
+                    `cast`
+                  (<GHC.Integer.Type.Integer>_R ->_R Sym (LamFunLexer.N:Row[0])) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken ::
+    GHC.Classes.Ord a => GHC.Classes.Ord (LamFunLexer.Token a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(1*U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Classes.Ord a).
+                  @ (LamFunLexer.Token a)
+                  (LamFunLexer.$fOrdToken_$cp1Ord @ a v)
+                  (LamFunLexer.$fOrdToken_$ccompare @ a v)
+                  (LamFunLexer.$fOrdToken_$c< @ a v)
+                  (LamFunLexer.$fOrdToken_$c<= @ a v)
+                  (LamFunLexer.$fOrdToken_$c> @ a v)
+                  (LamFunLexer.$fOrdToken_$c>= @ a v)
+                  (LamFunLexer.$fOrdToken_$cmax @ a v)
+                  (LamFunLexer.$fOrdToken_$cmin @ a v) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken_$c< ::
+    GHC.Classes.Ord a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLLLLL),1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><L,1*U(1*U,A,A,A,A)><L,1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x1 :: LamFunLexer.Token a)
+                   (y :: LamFunLexer.Token a) ->
+                 case GHC.Classes.compare
+                        @ a
+                        $dOrd
+                        (case x1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                        (case y of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                         ds }) of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken_$c<= ::
+    GHC.Classes.Ord a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLLLLL),1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><L,1*U(1*U,A,A,A,A)><L,1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x1 :: LamFunLexer.Token a)
+                   (y :: LamFunLexer.Token a) ->
+                 case GHC.Classes.compare
+                        @ a
+                        $dOrd
+                        (case x1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                        (case y of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                         ds }) of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken_$c> ::
+    GHC.Classes.Ord a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLLLLL),1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><L,1*U(1*U,A,A,A,A)><L,1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x1 :: LamFunLexer.Token a)
+                   (y :: LamFunLexer.Token a) ->
+                 case GHC.Classes.compare
+                        @ a
+                        $dOrd
+                        (case x1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                        (case y of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                         ds }) of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken_$c>= ::
+    GHC.Classes.Ord a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLLLLL),1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><L,1*U(1*U,A,A,A,A)><L,1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x1 :: LamFunLexer.Token a)
+                   (y :: LamFunLexer.Token a) ->
+                 case GHC.Classes.compare
+                        @ a
+                        $dOrd
+                        (case x1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                        (case y of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                         ds }) of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken_$ccompare ::
+    GHC.Classes.Ord a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> GHC.Types.Ordering
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLLLLL),1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><L,1*U(1*U,A,A,A,A)><L,1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (t1 :: LamFunLexer.Token a)
+                   (t2 :: LamFunLexer.Token a) ->
+                 GHC.Classes.compare
+                   @ a
+                   $dOrd
+                   (case t1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                   (case t2 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                    ds })) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken_$cmax ::
+    GHC.Classes.Ord a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> LamFunLexer.Token a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLLLLL),1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><L,U(U,U,U,U,U)><L,U(U,U,U,U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x1 :: LamFunLexer.Token a)
+                   (y :: LamFunLexer.Token a) ->
+                 case GHC.Classes.compare
+                        @ a
+                        $dOrd
+                        (case x1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                        (case y of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                         ds }) of wild {
+                   DEFAULT -> y GHC.Types.GT -> x1 }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken_$cmin ::
+    GHC.Classes.Ord a =>
+    LamFunLexer.Token a -> LamFunLexer.Token a -> LamFunLexer.Token a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLLLLL),1*U(A,1*C1(C1(U)),A,A,A,A,A,A)><L,U(U,U,U,U,U)><L,U(U,U,U,U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x1 :: LamFunLexer.Token a)
+                   (y :: LamFunLexer.Token a) ->
+                 case GHC.Classes.compare
+                        @ a
+                        $dOrd
+                        (case x1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 -> ds })
+                        (case y of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                         ds }) of wild {
+                   DEFAULT -> x1 GHC.Types.GT -> y }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fOrdToken_$cp1Ord ::
+    GHC.Classes.Ord a => GHC.Classes.Eq (LamFunLexer.Token a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(C(C1(U)),A),A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dOrd :: GHC.Classes.Ord a) ->
+                 LamFunLexer.$fEqToken @ a (GHC.Classes.$p1Ord @ a $dOrd)) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fShowCol :: GHC.Show.Show LamFunLexer.Col
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.Col
+                  GHC.Show.showSignedInt
+                    `cast`
+                  (<GHC.Types.Int>_R
+                   ->_R Sym (LamFunLexer.N:Col[0])
+                   ->_R <[GHC.Types.Char] -> [GHC.Types.Char]>_R)
+                  GHC.Show.$fShowInt_$cshow
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0]) ->_R <[GHC.Types.Char]>_R)
+                  GHC.Show.$fShowInt_$cshowList
+                    `cast`
+                  (([Sym (LamFunLexer.N:Col[0])])_R
+                   ->_R <[GHC.Types.Char] -> [GHC.Types.Char]>_R) -}
+c1ec94d2bd554d862f71531cc2544422
+  $fShowDropOrKeep ::
+    GHC.Show.Show a => GHC.Show.Show (LamFunLexer.DropOrKeep a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (LamFunLexer.DropOrKeep a)
+                  (LamFunLexer.$fShowDropOrKeep_$cshowsPrec @ a v)
+                  (LamFunLexer.$fShowDropOrKeep_$cshow @ a v)
+                  (LamFunLexer.$fShowDropOrKeep_$cshowList @ a v) -}
+50c6c7ce349d0af2d3c4529a4366b0fe
+  $fShowDropOrKeep1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+2865545356a3ed29d07bbb40af43284f
+  $fShowDropOrKeep10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Drop"#) -}
+0de397786e37c355ea265e5987624e5f
+  $fShowDropOrKeep2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("content = "#) -}
+67879e13d0500970f4456a94cccd7015
+  $fShowDropOrKeep3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("label = "#) -}
+02f63f467ce8466ce2c60176b3ac6678
+  $fShowDropOrKeep4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DropOrKeep {"#) -}
+50566fd6bc1d8bab742e88a0cd751359
+  $fShowDropOrKeep5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunLexer.$fShowDropOrKeep6) -}
+408d31c2d647f3f5a6b78a827c254bab
+  $fShowDropOrKeep6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("New"#) -}
+cc875497ea9c4119077f4ee37d01fc80
+  $fShowDropOrKeep7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunLexer.$fShowDropOrKeep8) -}
+2bafdc8470969f0c1592084555262fdc
+  $fShowDropOrKeep8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Keep"#) -}
+294dcbc7ef951dbaf9d86d8c72564fe1
+  $fShowDropOrKeep9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunLexer.$fShowDropOrKeep10) -}
+607b6556e147f57820f82a52dbb16ae4
+  $fShowDropOrKeepLabel :: GHC.Show.Show LamFunLexer.DropOrKeepLabel
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.DropOrKeepLabel
+                  LamFunLexer.$fShowDropOrKeepLabel_$cshowsPrec
+                  LamFunLexer.$fShowDropOrKeepLabel_$cshow
+                  LamFunLexer.$fShowDropOrKeepLabel_$cshowList -}
+607b6556e147f57820f82a52dbb16ae4
+  $fShowDropOrKeepLabel_$cshow ::
+    LamFunLexer.DropOrKeepLabel -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x1 :: LamFunLexer.DropOrKeepLabel) ->
+                 case x1 of wild {
+                   LamFunLexer.Drop -> LamFunLexer.$fShowDropOrKeep9
+                   LamFunLexer.Keep -> LamFunLexer.$fShowDropOrKeep7
+                   LamFunLexer.New -> LamFunLexer.$fShowDropOrKeep5 }) -}
+607b6556e147f57820f82a52dbb16ae4
+  $fShowDropOrKeepLabel_$cshowList ::
+    [LamFunLexer.DropOrKeepLabel] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [LamFunLexer.DropOrKeepLabel]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ LamFunLexer.DropOrKeepLabel
+                   LamFunLexer.$w$cshowsPrec1
+                   ls
+                   s) -}
+607b6556e147f57820f82a52dbb16ae4
+  $fShowDropOrKeepLabel_$cshowsPrec ::
+    GHC.Types.Int -> LamFunLexer.DropOrKeepLabel -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: LamFunLexer.DropOrKeepLabel)
+                   (w2 :: GHC.Base.String) ->
+                 LamFunLexer.$w$cshowsPrec1 w1 w2) -}
+c1ec94d2bd554d862f71531cc2544422
+  $fShowDropOrKeep_$cshow ::
+    GHC.Show.Show a => LamFunLexer.DropOrKeep a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(1*C1(C1(C(U))),A,A)><S,1*U(U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x1 :: LamFunLexer.DropOrKeep a) ->
+                 LamFunLexer.$fShowDropOrKeep_$cshowsPrec
+                   @ a
+                   $dShow
+                   LamFunLexer.$fIsStringToken1
+                   x1
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c1ec94d2bd554d862f71531cc2544422
+  $fShowDropOrKeep_$cshowList ::
+    GHC.Show.Show a => [LamFunLexer.DropOrKeep a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [LamFunLexer.DropOrKeep a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (LamFunLexer.DropOrKeep a)
+                   (LamFunLexer.$fShowDropOrKeep_$cshowsPrec
+                      @ a
+                      $dShow
+                      LamFunLexer.$fIsStringToken1)
+                   ls
+                   s) -}
+c1ec94d2bd554d862f71531cc2544422
+  $fShowDropOrKeep_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> LamFunLexer.DropOrKeep a -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C(U))),A,A)><S(S),1*U(U)><S,1*U(U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: LamFunLexer.DropOrKeep a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { LamFunLexer.DropOrKeep ww3 ww4 ->
+                 LamFunLexer.$w$cshowsPrec @ a w ww1 ww3 ww4 } }) -}
+6d02d0a948492440633d98f77b404e7d
+  $fShowRow :: GHC.Show.Show LamFunLexer.Row
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunLexer.Row
+                  GHC.Show.showSignedInt
+                    `cast`
+                  (<GHC.Types.Int>_R
+                   ->_R Sym (LamFunLexer.N:Row[0])
+                   ->_R <[GHC.Types.Char] -> [GHC.Types.Char]>_R)
+                  GHC.Show.$fShowInt_$cshow
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0]) ->_R <[GHC.Types.Char]>_R)
+                  GHC.Show.$fShowInt_$cshowList
+                    `cast`
+                  (([Sym (LamFunLexer.N:Row[0])])_R
+                   ->_R <[GHC.Types.Char] -> [GHC.Types.Char]>_R) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fShowToken ::
+    GHC.Show.Show a => GHC.Show.Show (LamFunLexer.Token a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(A,C(U),A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (LamFunLexer.Token a)
+                  (LamFunLexer.$fShowToken_$cshowsPrec @ a v)
+                  (LamFunLexer.$fShowToken_$cshow @ a v)
+                  (LamFunLexer.$fShowToken_$cshowList @ a v) -}
+9433d7bb60eb4729516c5295ae5591b7
+  $fShowToken1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunLexer.$fShowToken2) -}
+62e37e5fc6ca60c0d8081dfd5ace681f
+  $fShowToken2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (")"#) -}
+677d2ac7e3d35f7e3321bd18766ef94b
+  $fShowToken3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("), Col ("#) -}
+3cecdf52eccf76ce9038b3e293212d75
+  $fShowToken4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (":"#) -}
+5c035442fb474cc0a2705546c39f61c4
+  $fShowToken5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" : Row ("#) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fShowToken_$cshow ::
+    GHC.Show.Show a => LamFunLexer.Token a -> GHC.Base.String
+  {- Arity: 2,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><S(LS(S)LLL),1*U(U,1*U(1*U),1*U(1*U),1*U(1*U),1*U(1*U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Show.Show a) (w1 :: LamFunLexer.Token a) ->
+                 case w of ww { GHC.Show.C:Show ww1 ww2 ww3 ->
+                 case w1 of ww4 { LamFunLexer.Token ww5 ww6 ww7 ww8 ww9 ->
+                 case ww6
+                        `cast`
+                      (LamFunLexer.N:Row[0]) of ww10 { GHC.Types.I# ww11 ->
+                 LamFunLexer.$w$cshow @ a ww2 ww5 ww11 ww7 ww8 ww9 } } }) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fShowToken_$cshowList ::
+    GHC.Show.Show a => [LamFunLexer.Token a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(A,C(U),A)><S,1*U><L,U>,
+     Unfolding: (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [LamFunLexer.Token a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (LamFunLexer.Token a)
+                   (\ (x1 :: LamFunLexer.Token a) (s1 :: GHC.Base.String)[OneShot] ->
+                    case $dShow of ww { GHC.Show.C:Show ww1 ww2 ww3 ->
+                    case x1 of ww4 { LamFunLexer.Token ww5 ww6 ww7 ww8 ww9 ->
+                    case ww6
+                           `cast`
+                         (LamFunLexer.N:Row[0]) of ww10 { GHC.Types.I# ww11 ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (LamFunLexer.$w$cshow @ a ww2 ww5 ww11 ww7 ww8 ww9)
+                      s1 } } })
+                   ls
+                   s) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fShowToken_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> LamFunLexer.Token a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,A><S(LS(S)LLL),1*U(U,1*U(1*U),1*U(1*U),1*U(1*U),1*U(1*U))><L,1*U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ds :: GHC.Types.Int)
+                   (x1 :: LamFunLexer.Token a)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (LamFunLexer.$fShowToken_$cshow @ a $dShow x1))
+                   s) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fStringConvTokenb ::
+    Data.String.Conv.StringConv a b =>
+    Data.String.Conv.StringConv (LamFunLexer.Token a) b
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(C(U))><L,U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                LamFunLexer.$fStringConvTokenb_$cstrConv
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Data.String.Conv.StringConv a b>_R
+                 ->_R Sym (Data.String.Conv.N:StringConv[0]
+                               <LamFunLexer.Token a>_N <b>_N)) -}
+cc3f52ab7608b9b6147560023efc4884
+  $fStringConvTokenb_$cstrConv ::
+    Data.String.Conv.StringConv a b =>
+    Data.String.Conv.Leniency -> LamFunLexer.Token a -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(C(U))><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   ($dStringConv :: Data.String.Conv.StringConv a b)
+                   (l :: Data.String.Conv.Leniency) ->
+                 let {
+                   f :: a -> b
+                   = $dStringConv
+                       `cast`
+                     (Data.String.Conv.N:StringConv[0] <a>_N <b>_N)
+                       l
+                 } in
+                 \ (x1 :: LamFunLexer.Token a) ->
+                 f (case x1 of wild { LamFunLexer.Token ds ds1 ds2 ds3 ds4 ->
+                    ds })) -}
+47026c6e8f08316465c2adce3773a144
+  $tc'Col :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2925429656589626772##
+                   317325056548560546##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tc'Col2
+                   0#
+                   LamFunLexer.$tc'Col1) -}
+57bd11be979cd9ce81c3d7ccde651909
+  $tc'Col1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a58cef242170762e41c29a9348cf56b8
+  $tc'Col2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tc'Col3) -}
+5ef992766c00f9a24ac202075387b415
+  $tc'Col3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Col"#) -}
+4c693d01b90974bc59b797280f3d63c2
+  $tc'Drop :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15805165790473877982##
+                   12314564408037723141##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tc'Drop2
+                   0#
+                   LamFunLexer.$tc'Drop1) -}
+3ecd5ba6a6ac4186fdd2b113a0be086c
+  $tc'Drop1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+43f5723d53771ee5d39416c9755da2e1
+  $tc'Drop2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tc'Drop3) -}
+c1d37976c0c828050b394af210a8d5dc
+  $tc'Drop3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Drop"#) -}
+c959fcc19ada8df3b56208ee3dc4c734
+  $tc'DropOrKeep :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   442993878202372208##
+                   8853816934809067909##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tc'DropOrKeep2
+                   1#
+                   LamFunLexer.$tc'DropOrKeep1) -}
+8362c56b3417d8b9721af613cfc2d472
+  $tc'DropOrKeep1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9f4a804d3c8be3cf1173e4b45a3b544f
+  $tc'DropOrKeep2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tc'DropOrKeep3) -}
+d3519b56d1a66c013c5632bc38c7bb1e
+  $tc'DropOrKeep3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'DropOrKeep"#) -}
+f992858b8644336c77e569b06e9da204
+  $tc'Keep :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8228571110570252498##
+                   8150859480967822497##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tc'Keep1
+                   0#
+                   LamFunLexer.$tc'Drop1) -}
+464ddac9208a9fa14efbe34defb98f0c
+  $tc'Keep1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tc'Keep2) -}
+6434da017e00bd871e8114a4de5f9767
+  $tc'Keep2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Keep"#) -}
+b9bec360194f4b1c5b5420779936646e
+  $tc'New :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1004540064835542954##
+                   16231552015856792046##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tc'New1
+                   0#
+                   LamFunLexer.$tc'Drop1) -}
+227b783ab5c5d6cc1e94098ed43461e1
+  $tc'New1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tc'New2) -}
+40c8b3999cb83aec9181bdaae3a81374
+  $tc'New2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'New"#) -}
+1d27c2891b167c373c7b35ea118b2616
+  $tc'Row :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2361780152254464325##
+                   4416054294303308902##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tc'Row2
+                   0#
+                   LamFunLexer.$tc'Row1) -}
+b3ff4fcf2f24babf02fa6d76da4670db
+  $tc'Row1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6513a99e315d8b6f15278160705aea0f
+  $tc'Row2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tc'Row3) -}
+454597d4cfdbc602650a0398d459efdd
+  $tc'Row3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Row"#) -}
+52d7e42968c1e7d99f95efb5ca9a7275
+  $tc'Token :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3003484202673062899##
+                   15554363979604374909##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tc'Token2
+                   1#
+                   LamFunLexer.$tc'Token1) -}
+ee2b4d95160260c8202a693076162da5
+  $tc'Token1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+cd771ccda2ea1f8504c3e009141b313a
+  $tc'Token2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tc'Token3) -}
+6b9973d6c212ea653a2e00f9566b7cc4
+  $tc'Token3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Token"#) -}
+0bdd775b0270f4777067561971cce6a0
+  $tcCol :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8093807241359214178##
+                   13628890981711317700##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tcCol1
+                   0#
+                   GHC.Types.krep$*) -}
+91ed23c8a67d06c97febe7052a38dbf1
+  $tcCol1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tcCol2) -}
+553e89484e5d89ea32d882f7157f472b
+  $tcCol2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Col"#) -}
+52df8a1fb6b4f89d99f0904c20d7c6f9
+  $tcDropOrKeep :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18278440470207325097##
+                   3007473579606568198##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tcDropOrKeep1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+7e7ef411f1de0769a404f4186ef25b60
+  $tcDropOrKeep1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tcDropOrKeep2) -}
+ae205aaeeed914a6071d62c12e094100
+  $tcDropOrKeep2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DropOrKeep"#) -}
+8bf97c3eefc821cf4c6347027db95859
+  $tcDropOrKeepLabel :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1478783023484991353##
+                   5280672707509132188##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tcDropOrKeepLabel1
+                   0#
+                   GHC.Types.krep$*) -}
+c9c84285313b387035c9124c6e4484b2
+  $tcDropOrKeepLabel1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tcDropOrKeepLabel2) -}
+420d1d3532466a3ce7fc4e3b29aed273
+  $tcDropOrKeepLabel2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DropOrKeepLabel"#) -}
+be179f47bcaf391e23fa669f050f35de
+  $tcRow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18380174520206228988##
+                   11904812864638832273##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tcRow1
+                   0#
+                   GHC.Types.krep$*) -}
+4b58a524f854463d3fc4cd7f7e0c7e33
+  $tcRow1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tcRow2) -}
+0f65c96ffafe8042324c6f0b8195bde5
+  $tcRow2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Row"#) -}
+3bae8b8aa8538f4f3f8d3b44b5e6b201
+  $tcToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16196776085741913389##
+                   16378760162867256824##
+                   LamFunLexer.$trModule
+                   LamFunLexer.$tcToken1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+e3038b83ecf09f27f8376d4520b3e801
+  $tcToken1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$tcToken2) -}
+32f2a88c21913a10255859acdf0c4f3d
+  $tcToken2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Token"#) -}
+6626a2edfc568eb1d8cb659b717259e3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LamFunLexer.$trModule3
+                   LamFunLexer.$trModule1) -}
+56773cd5c2715a68f08bc45e9b2db60e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$trModule2) -}
+a926768305707f69eec25eec542b9cf3
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamFunLexer"#) -}
+4da04c2e924085b9af0f6f00a20f6774
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunLexer.$trModule4) -}
+9c9ab4b8956f189ca6973307c5631e0e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"#) -}
+cc3f52ab7608b9b6147560023efc4884
+  $w$cshow ::
+    (a -> GHC.Base.String)
+    -> a
+    -> GHC.Prim.Int#
+    -> LamFunLexer.Row
+    -> LamFunLexer.Col
+    -> LamFunLexer.Col
+    -> GHC.Base.String
+  {- Arity: 6,
+     Strictness: <C(S),1*C1(U)><L,U><S,1*U><L,1*U(1*U)><L,1*U(1*U)><L,1*U(1*U)>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   (ww :: a -> GHC.Base.String)
+                   (ww1 :: a)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: LamFunLexer.Row)
+                   (ww4 :: LamFunLexer.Col)
+                   (ww5 :: LamFunLexer.Col) ->
+                 case ww2 of wild {
+                   DEFAULT
+                   -> case ww3
+                             `cast`
+                           (LamFunLexer.N:Row[0]) of wild1 { GHC.Types.I# x1 ->
+                      case x1 of wild2 {
+                        DEFAULT
+                        -> case ww4
+                                  `cast`
+                                (LamFunLexer.N:Col[0]) of wild3 { GHC.Types.I# x2 ->
+                           case x2 of wild4 {
+                             DEFAULT
+                             -> case ww5
+                                       `cast`
+                                     (LamFunLexer.N:Col[0]) of wild5 { GHC.Types.I# x3 ->
+                                case x3 of wild6 {
+                                  DEFAULT
+                                  -> GHC.Base.++
+                                       @ GHC.Types.Char
+                                       (ww ww1)
+                                       (GHC.CString.unpackAppendCString#
+                                          LamFunLexer.$fShowToken5
+                                          (case GHC.Show.$wshowSignedInt
+                                                  0#
+                                                  wild
+                                                  (GHC.Types.[]
+                                                     @ GHC.Types.Char) of ww6 { (#,#) ww7 ww8 ->
+                                           GHC.Base.++_$s++
+                                             @ GHC.Types.Char
+                                             (GHC.CString.unpackAppendCString#
+                                                LamFunLexer.$fShowToken4
+                                                (case GHC.Show.$wshowSignedInt
+                                                        0#
+                                                        wild2
+                                                        (GHC.Types.[]
+                                                           @ GHC.Types.Char) of ww9 { (#,#) ww10 ww11 ->
+                                                 GHC.Base.++_$s++
+                                                   @ GHC.Types.Char
+                                                   (GHC.CString.unpackAppendCString#
+                                                      LamFunLexer.$fShowToken3
+                                                      (case GHC.Show.$wshowSignedInt
+                                                              0#
+                                                              wild4
+                                                              (GHC.Types.[]
+                                                                 @ GHC.Types.Char) of ww12 { (#,#) ww13 ww14 ->
+                                                       GHC.Base.++_$s++
+                                                         @ GHC.Types.Char
+                                                         (GHC.CString.unpackAppendCString#
+                                                            LamFunLexer.$fShowToken4
+                                                            (case GHC.Show.$wshowSignedInt
+                                                                    0#
+                                                                    wild6
+                                                                    (GHC.Types.[]
+                                                                       @ GHC.Types.Char) of ww15 { (#,#) ww16 ww17 ->
+                                                             GHC.Base.++_$s++
+                                                               @ GHC.Types.Char
+                                                               LamFunLexer.$fShowToken1
+                                                               ww16
+                                                               ww17 }))
+                                                         ww13
+                                                         ww14 }))
+                                                   ww10
+                                                   ww11 }))
+                                             ww7
+                                             ww8 }))
+                                  -1# -> ww ww1 } }
+                             -1# -> ww ww1 } }
+                        -1# -> ww ww1 } }
+                   -1# -> ww ww1 }) -}
+927047d3a83b40815a2dfe65719e8cf9
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int# -> LamFunLexer.DropOrKeepLabel -> a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(C(U))),A,A)><S,U><L,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: LamFunLexer.DropOrKeepLabel)
+                   (ww2 :: a) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (eta :: GHC.Base.String) ->
+                     case ww1 of wild {
+                       LamFunLexer.Drop
+                       -> GHC.Base.++ @ GHC.Types.Char LamFunLexer.$fShowDropOrKeep9 eta
+                       LamFunLexer.Keep
+                       -> GHC.Base.++ @ GHC.Types.Char LamFunLexer.$fShowDropOrKeep7 eta
+                       LamFunLexer.New
+                       -> GHC.Base.++ @ GHC.Types.Char LamFunLexer.$fShowDropOrKeep5 eta }
+                 } in
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ a w LamFunLexer.$fIsStringToken1 ww2
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x1 :: GHC.Base.String) ->
+                      GHC.CString.unpackAppendCString#
+                        LamFunLexer.$fShowDropOrKeep4
+                        (GHC.CString.unpackAppendCString#
+                           LamFunLexer.$fShowDropOrKeep3
+                           (f (GHC.Base.++
+                                 @ GHC.Types.Char
+                                 GHC.Show.showCommaSpace1
+                                 (GHC.CString.unpackAppendCString#
+                                    LamFunLexer.$fShowDropOrKeep2
+                                    (f1
+                                       (GHC.CString.unpackAppendCString#
+                                          LamFunLexer.$fShowDropOrKeep1
+                                          x1))))))
+                   1#
+                   -> \ (x1 :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           LamFunLexer.$fShowDropOrKeep4
+                           (GHC.CString.unpackAppendCString#
+                              LamFunLexer.$fShowDropOrKeep3
+                              (f (GHC.Base.++
+                                    @ GHC.Types.Char
+                                    GHC.Show.showCommaSpace1
+                                    (GHC.CString.unpackAppendCString#
+                                       LamFunLexer.$fShowDropOrKeep2
+                                       (f1
+                                          (GHC.CString.unpackAppendCString#
+                                             LamFunLexer.$fShowDropOrKeep1
+                                             (GHC.Types.:
+                                                @ GHC.Types.Char
+                                                GHC.Show.$fShow(,)2
+                                                x1)))))))) }) -}
+607b6556e147f57820f82a52dbb16ae4
+  $w$cshowsPrec1 ::
+    LamFunLexer.DropOrKeepLabel -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: LamFunLexer.DropOrKeepLabel)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   LamFunLexer.Drop
+                   -> GHC.Base.++ @ GHC.Types.Char LamFunLexer.$fShowDropOrKeep9 w1
+                   LamFunLexer.Keep
+                   -> GHC.Base.++ @ GHC.Types.Char LamFunLexer.$fShowDropOrKeep7 w1
+                   LamFunLexer.New
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        LamFunLexer.$fShowDropOrKeep5
+                        w1 }) -}
+f6bfba8a36e451581e943b70f85d5afd
+  $w$stokenizer ::
+    LamFunLexer.TokenizerSettingsText
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> (LamFunLexer.Row, LamFunLexer.Col)
+    -> (# [LamFunLexer.DropOrKeep
+             (LamFunLexer.Token Data.Text.Internal.Text)],
+          (LamFunLexer.Row, LamFunLexer.Col) #)
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><S,U><L,U(U(U),U(U))>,
+     Inline: [2] -}
+e7373f038d53fd282048f3d238bf2e25
+  $wblockDrop ::
+    Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> (# Data.Text.Internal.Text,
+          Data.Text.Internal.Text
+          -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+              Data.Text.Internal.Text) #)
+  {- Arity: 2, Strictness: <L,U(U,U,U)><L,U(U,U,U)>, Inline: [2] -}
+934152992bf27850a478a00c02fb5ff4
+  $wf ::
+    Data.Text.Internal.Text
+    -> (# [LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <L,U(U,U,U)>, Inline: [2],
+     Unfolding: (\ (w :: Data.Text.Internal.Text) ->
+                 (# GHC.Types.:
+                      @ (LamFunLexer.DropOrKeep Data.Text.Internal.Text)
+                      (LamFunLexer.DropOrKeep
+                         @ Data.Text.Internal.Text
+                         LamFunLexer.Drop
+                         (case w of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                          let {
+                            exit :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          let {
+                            exit1 :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          let {
+                            exit2 :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          letrec {
+                            $wloop :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+                            = \ (ww :: GHC.Prim.Int#) ->
+                              case GHC.Prim.>=# ww dt2 of lwild {
+                                DEFAULT
+                                -> let {
+                                     j :: GHC.Prim.Int# = GHC.Prim.+# dt1 ww
+                                   } in
+                                   case GHC.Prim.indexWord16Array# dt j of r# { DEFAULT ->
+                                   case GHC.Prim.ltWord# r# 55296## of lwild1 {
+                                     DEFAULT
+                                     -> case GHC.Prim.gtWord# r# 56319## of lwild2 {
+                                          DEFAULT
+                                          -> case GHC.Prim.indexWord16Array#
+                                                    dt
+                                                    (GHC.Prim.+# j 1#) of r#1 { DEFAULT ->
+                                             case GHC.Prim.chr#
+                                                    (GHC.Prim.+#
+                                                       9216#
+                                                       (GHC.Prim.+#
+                                                          (GHC.Prim.uncheckedIShiftL#
+                                                             (GHC.Prim.-#
+                                                                (GHC.Prim.word2Int# r#)
+                                                                55296#)
+                                                             10#)
+                                                          (GHC.Prim.word2Int# r#1))) of wild1 {
+                                               DEFAULT -> exit ww
+                                               '\t'# -> $wloop (GHC.Prim.+# ww 2#) } }
+                                          1#
+                                          -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                               DEFAULT -> exit1 ww
+                                               '\t'# -> $wloop (GHC.Prim.+# ww 1#) } }
+                                     1#
+                                     -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                          DEFAULT -> exit2 ww
+                                          '\t'# -> $wloop (GHC.Prim.+# ww 1#) } } }
+                                1# -> wild }
+                          } in
+                          $wloop 0# }))
+                      (GHC.Types.[] @ (LamFunLexer.DropOrKeep Data.Text.Internal.Text)),
+                    case w of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                    let {
+                      exit :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    let {
+                      exit1 :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    let {
+                      exit2 :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    letrec {
+                      $wloop :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <L,U><S,U>, Inline: [2] -}
+                      = \ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                        case GHC.Prim.>=# ww1 dt2 of lwild {
+                          DEFAULT
+                          -> let {
+                               j :: GHC.Prim.Int# = GHC.Prim.+# dt1 ww
+                             } in
+                             case GHC.Prim.indexWord16Array# dt j of r# { DEFAULT ->
+                             case GHC.Prim.ltWord# r# 55296## of lwild1 {
+                               DEFAULT
+                               -> case GHC.Prim.gtWord# r# 56319## of lwild2 {
+                                    DEFAULT
+                                    -> case GHC.Prim.indexWord16Array#
+                                              dt
+                                              (GHC.Prim.+# j 1#) of r#1 { DEFAULT ->
+                                       case GHC.Prim.chr#
+                                              (GHC.Prim.+#
+                                                 9216#
+                                                 (GHC.Prim.+#
+                                                    (GHC.Prim.uncheckedIShiftL#
+                                                       (GHC.Prim.-# (GHC.Prim.word2Int# r#) 55296#)
+                                                       10#)
+                                                    (GHC.Prim.word2Int# r#1))) of wild1 {
+                                         DEFAULT -> exit ww ww1
+                                         '\t'#
+                                         -> $wloop (GHC.Prim.+# ww 2#) (GHC.Prim.+# ww1 2#) } }
+                                    1#
+                                    -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                         DEFAULT -> exit1 ww ww1
+                                         '\t'#
+                                         -> $wloop (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#) } }
+                               1#
+                               -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                    DEFAULT -> exit2 ww ww1
+                                    '\t'# -> $wloop (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#) } } }
+                          1# -> Data.Text.Internal.empty }
+                    } in
+                    $wloop 0# 0# } #)) -}
+19072bc6b4d1af33461c164a8593d7f2
+  $wf1 ::
+    Data.Text.Internal.Text
+    -> (# [LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <L,U(U,U,U)>, Inline: [2],
+     Unfolding: (\ (w :: Data.Text.Internal.Text) ->
+                 (# GHC.Types.:
+                      @ (LamFunLexer.DropOrKeep Data.Text.Internal.Text)
+                      (LamFunLexer.DropOrKeep
+                         @ Data.Text.Internal.Text
+                         LamFunLexer.Drop
+                         (case w of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                          let {
+                            exit :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          let {
+                            exit1 :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          let {
+                            exit2 :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          letrec {
+                            $wloop :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+                            = \ (ww :: GHC.Prim.Int#) ->
+                              case GHC.Prim.>=# ww dt2 of lwild {
+                                DEFAULT
+                                -> let {
+                                     j :: GHC.Prim.Int# = GHC.Prim.+# dt1 ww
+                                   } in
+                                   case GHC.Prim.indexWord16Array# dt j of r# { DEFAULT ->
+                                   case GHC.Prim.ltWord# r# 55296## of lwild1 {
+                                     DEFAULT
+                                     -> case GHC.Prim.gtWord# r# 56319## of lwild2 {
+                                          DEFAULT
+                                          -> case GHC.Prim.indexWord16Array#
+                                                    dt
+                                                    (GHC.Prim.+# j 1#) of r#1 { DEFAULT ->
+                                             case GHC.Prim.chr#
+                                                    (GHC.Prim.+#
+                                                       9216#
+                                                       (GHC.Prim.+#
+                                                          (GHC.Prim.uncheckedIShiftL#
+                                                             (GHC.Prim.-#
+                                                                (GHC.Prim.word2Int# r#)
+                                                                55296#)
+                                                             10#)
+                                                          (GHC.Prim.word2Int# r#1))) of wild1 {
+                                               DEFAULT -> exit ww
+                                               '\n'# -> $wloop (GHC.Prim.+# ww 2#) } }
+                                          1#
+                                          -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                               DEFAULT -> exit1 ww
+                                               '\n'# -> $wloop (GHC.Prim.+# ww 1#) } }
+                                     1#
+                                     -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                          DEFAULT -> exit2 ww
+                                          '\n'# -> $wloop (GHC.Prim.+# ww 1#) } } }
+                                1# -> wild }
+                          } in
+                          $wloop 0# }))
+                      (GHC.Types.[] @ (LamFunLexer.DropOrKeep Data.Text.Internal.Text)),
+                    case w of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                    let {
+                      exit :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    let {
+                      exit1 :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    let {
+                      exit2 :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    letrec {
+                      $wloop :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <L,U><S,U>, Inline: [2] -}
+                      = \ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                        case GHC.Prim.>=# ww1 dt2 of lwild {
+                          DEFAULT
+                          -> let {
+                               j :: GHC.Prim.Int# = GHC.Prim.+# dt1 ww
+                             } in
+                             case GHC.Prim.indexWord16Array# dt j of r# { DEFAULT ->
+                             case GHC.Prim.ltWord# r# 55296## of lwild1 {
+                               DEFAULT
+                               -> case GHC.Prim.gtWord# r# 56319## of lwild2 {
+                                    DEFAULT
+                                    -> case GHC.Prim.indexWord16Array#
+                                              dt
+                                              (GHC.Prim.+# j 1#) of r#1 { DEFAULT ->
+                                       case GHC.Prim.chr#
+                                              (GHC.Prim.+#
+                                                 9216#
+                                                 (GHC.Prim.+#
+                                                    (GHC.Prim.uncheckedIShiftL#
+                                                       (GHC.Prim.-# (GHC.Prim.word2Int# r#) 55296#)
+                                                       10#)
+                                                    (GHC.Prim.word2Int# r#1))) of wild1 {
+                                         DEFAULT -> exit ww ww1
+                                         '\n'#
+                                         -> $wloop (GHC.Prim.+# ww 2#) (GHC.Prim.+# ww1 2#) } }
+                                    1#
+                                    -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                         DEFAULT -> exit1 ww ww1
+                                         '\n'#
+                                         -> $wloop (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#) } }
+                               1#
+                               -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                    DEFAULT -> exit2 ww ww1
+                                    '\n'# -> $wloop (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#) } } }
+                          1# -> Data.Text.Internal.empty }
+                    } in
+                    $wloop 0# 0# } #)) -}
+7330ce11d338fe49d1b6c6530102e9fb
+  $wf2 ::
+    Data.Text.Internal.Text
+    -> (# [LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <L,U(U,U,U)>, Inline: [2],
+     Unfolding: (\ (w :: Data.Text.Internal.Text) ->
+                 (# GHC.Types.:
+                      @ (LamFunLexer.DropOrKeep Data.Text.Internal.Text)
+                      (LamFunLexer.DropOrKeep
+                         @ Data.Text.Internal.Text
+                         LamFunLexer.Drop
+                         (case w of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                          let {
+                            exit :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          let {
+                            exit1 :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          let {
+                            exit2 :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                              case ww of wild2 {
+                                DEFAULT -> Data.Text.Internal.Text dt dt1 wild2
+                                0# -> Data.Text.Internal.empty }
+                          } in
+                          letrec {
+                            $wloop :: GHC.Prim.Int# -> Data.Text.Internal.Text
+                              <join 1> {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+                            = \ (ww :: GHC.Prim.Int#) ->
+                              case GHC.Prim.>=# ww dt2 of lwild {
+                                DEFAULT
+                                -> let {
+                                     j :: GHC.Prim.Int# = GHC.Prim.+# dt1 ww
+                                   } in
+                                   case GHC.Prim.indexWord16Array# dt j of r# { DEFAULT ->
+                                   case GHC.Prim.ltWord# r# 55296## of lwild1 {
+                                     DEFAULT
+                                     -> case GHC.Prim.gtWord# r# 56319## of lwild2 {
+                                          DEFAULT
+                                          -> case GHC.Prim.indexWord16Array#
+                                                    dt
+                                                    (GHC.Prim.+# j 1#) of r#1 { DEFAULT ->
+                                             case GHC.Prim.chr#
+                                                    (GHC.Prim.+#
+                                                       9216#
+                                                       (GHC.Prim.+#
+                                                          (GHC.Prim.uncheckedIShiftL#
+                                                             (GHC.Prim.-#
+                                                                (GHC.Prim.word2Int# r#)
+                                                                55296#)
+                                                             10#)
+                                                          (GHC.Prim.word2Int# r#1))) of wild1 {
+                                               DEFAULT -> exit ww
+                                               ' '# -> $wloop (GHC.Prim.+# ww 2#) } }
+                                          1#
+                                          -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                               DEFAULT -> exit1 ww
+                                               ' '# -> $wloop (GHC.Prim.+# ww 1#) } }
+                                     1#
+                                     -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                          DEFAULT -> exit2 ww
+                                          ' '# -> $wloop (GHC.Prim.+# ww 1#) } } }
+                                1# -> wild }
+                          } in
+                          $wloop 0# }))
+                      (GHC.Types.[] @ (LamFunLexer.DropOrKeep Data.Text.Internal.Text)),
+                    case w of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                    let {
+                      exit :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    let {
+                      exit1 :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    let {
+                      exit2 :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                      = \ (ww :: GHC.Prim.Int#)[OneShot]
+                          (ww1 :: GHC.Prim.Int#)[OneShot] ->
+                        Data.Text.Internal.Text
+                          dt
+                          (GHC.Prim.+# dt1 ww)
+                          (GHC.Prim.-# dt2 ww1)
+                    } in
+                    letrec {
+                      $wloop :: GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+                        <join 2> {- Arity: 2, Strictness: <L,U><S,U>, Inline: [2] -}
+                      = \ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                        case GHC.Prim.>=# ww1 dt2 of lwild {
+                          DEFAULT
+                          -> let {
+                               j :: GHC.Prim.Int# = GHC.Prim.+# dt1 ww
+                             } in
+                             case GHC.Prim.indexWord16Array# dt j of r# { DEFAULT ->
+                             case GHC.Prim.ltWord# r# 55296## of lwild1 {
+                               DEFAULT
+                               -> case GHC.Prim.gtWord# r# 56319## of lwild2 {
+                                    DEFAULT
+                                    -> case GHC.Prim.indexWord16Array#
+                                              dt
+                                              (GHC.Prim.+# j 1#) of r#1 { DEFAULT ->
+                                       case GHC.Prim.chr#
+                                              (GHC.Prim.+#
+                                                 9216#
+                                                 (GHC.Prim.+#
+                                                    (GHC.Prim.uncheckedIShiftL#
+                                                       (GHC.Prim.-# (GHC.Prim.word2Int# r#) 55296#)
+                                                       10#)
+                                                    (GHC.Prim.word2Int# r#1))) of wild1 {
+                                         DEFAULT -> exit ww ww1
+                                         ' '# -> $wloop (GHC.Prim.+# ww 2#) (GHC.Prim.+# ww1 2#) } }
+                                    1#
+                                    -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                         DEFAULT -> exit1 ww ww1
+                                         ' '# -> $wloop (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#) } }
+                               1#
+                               -> case GHC.Prim.chr# (GHC.Prim.word2Int# r#) of wild1 {
+                                    DEFAULT -> exit2 ww ww1
+                                    ' '# -> $wloop (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#) } } }
+                          1# -> Data.Text.Internal.empty }
+                    } in
+                    $wloop 0# 0# } #)) -}
+db7fc7bf05c2f6172179d3559715d01b
+  $wquotes ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> (# [LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>, Inline: [2] -}
+bad0d8f8038e0fcb8a411b385b0b84f8
+  $wtokenize ::
+    (LamFunLexer.Row, LamFunLexer.Col)
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> [LamFunLexer.Token Data.Text.Internal.Text]
+  {- Arity: 4, Strictness: <L,U(U(U),U(U))><S,U><S,U><S,U>,
+     Inline: [2],
+     Unfolding: (\ (w :: (LamFunLexer.Row, LamFunLexer.Col))
+                   (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#) ->
+                 case LamFunLexer.$w$stokenizer
+                        LamFunLexer.tokenize1
+                        ww
+                        ww1
+                        ww2
+                        w of ww3 { (#,#) ww4 ww5 ->
+                 LamFunLexer.tokenize_go ww4 }) -}
+cc3f52ab7608b9b6147560023efc4884
+  newtype Col = Col GHC.Types.Int
+c1ec94d2bd554d862f71531cc2544422
+  data DropOrKeep a
+    = DropOrKeep {label :: LamFunLexer.DropOrKeepLabel, content :: a}
+607b6556e147f57820f82a52dbb16ae4
+  data DropOrKeepLabel = Drop | Keep | New
+cc3f52ab7608b9b6147560023efc4884
+  axiom LamFunLexer.Rep_Token::
+      GHC.Generics.Rep (LamFunLexer.Token a)
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "Token"
+               "LamFunLexer"
+               "LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"
+               'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Token" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               ((GHC.Generics.S1
+                   ('GHC.Generics.MetaSel
+                      ('GHC.Maybe.Just "unTok")
+                      'GHC.Generics.NoSourceUnpackedness
+                      'GHC.Generics.NoSourceStrictness
+                      'GHC.Generics.DecidedLazy)
+                   (GHC.Generics.Rec0 a)
+                 GHC.Generics.:*: GHC.Generics.S1
+                                    ('GHC.Generics.MetaSel
+                                       ('GHC.Maybe.Just "rowStart")
+                                       'GHC.Generics.NoSourceUnpackedness
+                                       'GHC.Generics.NoSourceStrictness
+                                       'GHC.Generics.DecidedLazy)
+                                    (GHC.Generics.Rec0 LamFunLexer.Row))
+                GHC.Generics.:*: (GHC.Generics.S1
+                                    ('GHC.Generics.MetaSel
+                                       ('GHC.Maybe.Just "rowEnd")
+                                       'GHC.Generics.NoSourceUnpackedness
+                                       'GHC.Generics.NoSourceStrictness
+                                       'GHC.Generics.DecidedLazy)
+                                    (GHC.Generics.Rec0 LamFunLexer.Row)
+                                  GHC.Generics.:*: (GHC.Generics.S1
+                                                      ('GHC.Generics.MetaSel
+                                                         ('GHC.Maybe.Just "colStart")
+                                                         'GHC.Generics.NoSourceUnpackedness
+                                                         'GHC.Generics.NoSourceStrictness
+                                                         'GHC.Generics.DecidedLazy)
+                                                      (GHC.Generics.Rec0 LamFunLexer.Col)
+                                                    GHC.Generics.:*: GHC.Generics.S1
+                                                                       ('GHC.Generics.MetaSel
+                                                                          ('GHC.Maybe.Just "colEnd")
+                                                                          'GHC.Generics.NoSourceUnpackedness
+                                                                          'GHC.Generics.NoSourceStrictness
+                                                                          'GHC.Generics.DecidedLazy)
+                                                                       (GHC.Generics.Rec0
+                                                                          LamFunLexer.Col)))))
+6d02d0a948492440633d98f77b404e7d
+  newtype Row = Row GHC.Types.Int
+cc3f52ab7608b9b6147560023efc4884
+  data Token a
+    = Token {unTok :: a,
+             rowStart :: LamFunLexer.Row,
+             rowEnd :: LamFunLexer.Row,
+             colStart :: LamFunLexer.Col,
+             colEnd :: LamFunLexer.Col}
+9a4ba2899dc90b8983c7a8d70da39961
+  type TokenizerSettingsText =
+    [(Data.Text.Internal.Text,
+      Data.Text.Internal.Text
+      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text))]
+cc3f52ab7608b9b6147560023efc4884
+  colEnd :: LamFunLexer.Token a -> LamFunLexer.Col
+  RecSel Left LamFunLexer.Token
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLS),1*U(A,A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LamFunLexer.Token a) ->
+                 case ds of wild { LamFunLexer.Token ds1 ds2 ds3 ds4 ds5 ->
+                 ds5 }) -}
+cc3f52ab7608b9b6147560023efc4884
+  colStart :: LamFunLexer.Token a -> LamFunLexer.Col
+  RecSel Left LamFunLexer.Token
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSL),1*U(A,A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LamFunLexer.Token a) ->
+                 case ds of wild { LamFunLexer.Token ds1 ds2 ds3 ds4 ds5 ->
+                 ds4 }) -}
+c1ec94d2bd554d862f71531cc2544422
+  content :: LamFunLexer.DropOrKeep a -> a
+  RecSel Left LamFunLexer.DropOrKeep
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LamFunLexer.DropOrKeep a) ->
+                 case ds of wild { LamFunLexer.DropOrKeep ds1 ds2 -> ds2 }) -}
+f3ad18cd5d75ac335b140d440e94b46b
+  defaultPosition :: (LamFunLexer.Row, LamFunLexer.Col)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((LamFunLexer.$fIsStringToken1
+                    `cast`
+                  (Sym (LamFunLexer.N:Row[0])),
+                  LamFunLexer.$fIsStringToken1
+                    `cast`
+                  (Sym (LamFunLexer.N:Col[0])))) -}
+40759d32fd23dc6bde1932aa37284a1f
+  ignoreComment ::
+    (Data.Text.Internal.Text,
+     Data.Text.Internal.Text
+     -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+         Data.Text.Internal.Text))
+  {- Unfolding: (case LamFunLexer.$wblockDrop
+                        LamFunLexer.tokenize16
+                        LamFunLexer.tokenize14 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+3467a1a381dcb735ee29e4fb88e24739
+  ignoreComment2 ::
+    (Data.Text.Internal.Text,
+     Data.Text.Internal.Text
+     -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+         Data.Text.Internal.Text))
+  {- Unfolding: (case LamFunLexer.$wblockDrop
+                        LamFunLexer.tokenize12
+                        LamFunLexer.tokenize10 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+c1ec94d2bd554d862f71531cc2544422
+  label :: LamFunLexer.DropOrKeep a -> LamFunLexer.DropOrKeepLabel
+  RecSel Left LamFunLexer.DropOrKeep
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LamFunLexer.DropOrKeep a) ->
+                 case ds of wild { LamFunLexer.DropOrKeep ds1 ds2 -> ds1 }) -}
+5d2cfe5608750802950c75a6840c1c5b
+  newline ::
+    (Data.Text.Internal.Text,
+     Data.Text.Internal.Text
+     -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+         Data.Text.Internal.Text))
+  {- Strictness: m,
+     Unfolding: ((LamFunLexer.tokenize14, LamFunLexer.tokenize_f1)) -}
+04794a4e91bf5f2afe1ecd695bef769d
+  quotes ::
+    (Data.Text.Internal.Text,
+     Data.Text.Internal.Text
+     -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+         Data.Text.Internal.Text))
+  {- Strictness: m,
+     Unfolding: ((LamFunLexer.reservedKeywords82,
+                  LamFunLexer.tokenize18)) -}
+c3fb82dc2f924016a8435a0ea399bd75
+  reservedKeywords :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords82
+                   LamFunLexer.reservedKeywords1) -}
+9583268d2c15353ae589dd1d359a80b5
+  reservedKeywords1 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords80
+                   LamFunLexer.reservedKeywords2) -}
+89626587926e9a9db2af66cb6c6c98d5
+  reservedKeywords10 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords64
+                   LamFunLexer.reservedKeywords11) -}
+e4a4d271c787f00b403a3c5e630eb26b
+  reservedKeywords11 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords62
+                   LamFunLexer.reservedKeywords12) -}
+a231dd068a704707182fc95d4c792740
+  reservedKeywords12 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords60
+                   LamFunLexer.reservedKeywords13) -}
+c19414c0814d24b611cdb9d37312b29e
+  reservedKeywords13 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords58
+                   LamFunLexer.reservedKeywords14) -}
+1c221c2cb0f623dd6d831f6e2b1efd45
+  reservedKeywords14 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords56
+                   LamFunLexer.reservedKeywords15) -}
+3c646087d1bd5619cd2a83466f86b964
+  reservedKeywords15 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords54
+                   LamFunLexer.reservedKeywords16) -}
+de53d8f3ca8d9d04577b05e3cec4d966
+  reservedKeywords16 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords53
+                   LamFunLexer.reservedKeywords17) -}
+0ec6949eb3490daff18704f3150573db
+  reservedKeywords17 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords51
+                   LamFunLexer.reservedKeywords18) -}
+aa0119ee20945376a71a4c1c3b8e35c8
+  reservedKeywords18 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords49
+                   LamFunLexer.reservedKeywords19) -}
+3dcecd3f3defdf541193d9a706a209c1
+  reservedKeywords19 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords47
+                   LamFunLexer.reservedKeywords20) -}
+59e5c494b323bfbfad3d6572ee4099dc
+  reservedKeywords2 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords79
+                   LamFunLexer.reservedKeywords3) -}
+ea803972c8ba948880e098d957a3d281
+  reservedKeywords20 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords45
+                   LamFunLexer.reservedKeywords21) -}
+e91dff358f483c227d1ae5f9f13ff28a
+  reservedKeywords21 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords43
+                   LamFunLexer.reservedKeywords22) -}
+378a78ff8e547d649bcb0bcddab541d2
+  reservedKeywords22 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords41
+                   LamFunLexer.reservedKeywords23) -}
+7c9d1c0ecce03b6772eeb44e187e18d6
+  reservedKeywords23 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords39
+                   LamFunLexer.reservedKeywords24) -}
+39c79b270e78ffac8c5ddc63efdec6ec
+  reservedKeywords24 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords37
+                   LamFunLexer.reservedKeywords25) -}
+0bfa5ddcd536a8e75b2b30ea5663474d
+  reservedKeywords25 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords35
+                   LamFunLexer.reservedKeywords26) -}
+c23b966c0106d61cc3d226363d0e5a46
+  reservedKeywords26 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords33
+                   LamFunLexer.reservedKeywords27) -}
+ccf96c91950b335c633bc9d091057165
+  reservedKeywords27 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords31
+                   LamFunLexer.reservedKeywords28) -}
+7c117d11cb1befaf57d8a08568580a31
+  reservedKeywords28 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords29
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+3c11413aaf5f0ead5af879a0b28446cd
+  reservedKeywords29 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords30) -}
+df9369cc512f65e5892ea76159d6b3e9
+  reservedKeywords3 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords77
+                   LamFunLexer.reservedKeywords4) -}
+d4c0579846f262f79205789765c7e234
+  reservedKeywords30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("!"#) -}
+e4296d95eb4449e8a1029dd74c785841
+  reservedKeywords31 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords32) -}
+da265ca1e0a16dc4155050efdb526a0c
+  reservedKeywords32 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("!="#) -}
+8aa326402903d4c5ef5543f62cdf3795
+  reservedKeywords33 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords34) -}
+7b8bfeea44588bf85d7c966c6975ae86
+  reservedKeywords34 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("=="#) -}
+3801a6e6b480c213f0ef724e90cdcaee
+  reservedKeywords35 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords36) -}
+5769fc83558ddcdc94fdd09aaff21ca6
+  reservedKeywords36 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (">="#) -}
+27561a736a0fff6780b0224c71054046
+  reservedKeywords37 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords38) -}
+f3f346dab3a2b20aaf8b129fd8e58f48
+  reservedKeywords38 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (">"#) -}
+b06e9f96c1cc72e90aa69f37f76aa7e7
+  reservedKeywords39 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords40) -}
+86f5919de8e83068fcd25a7dc92fc4e0
+  reservedKeywords4 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords75
+                   LamFunLexer.reservedKeywords5) -}
+35c4b8f40e3ffcee3b5f62118f411d28
+  reservedKeywords40 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<="#) -}
+d181f9f778cf51e2a52c2f674922aa15
+  reservedKeywords41 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords42) -}
+fb0e5509554401855c841e900e7d898e
+  reservedKeywords42 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<"#) -}
+74f76680a870745228efab48601da378
+  reservedKeywords43 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords44) -}
+17a091d86d331a0a27e0ad312e1d850a
+  reservedKeywords44 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/"#) -}
+44be5a28c2ae135430d32610494bd189
+  reservedKeywords45 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords46) -}
+a8ad7f57176019182bc100eaccfde884
+  reservedKeywords46 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("*"#) -}
+30e369ad2203730dfb3c877bccdfd470
+  reservedKeywords47 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords48) -}
+dcd75544946f38ce882adc1683533406
+  reservedKeywords48 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("-"#) -}
+d44b8ae76fac03231b2092e7673c5468
+  reservedKeywords49 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords50) -}
+ee619c6ab8fc363d59e93c40b12d70af
+  reservedKeywords5 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords73
+                   LamFunLexer.reservedKeywords6) -}
+02f2d3cdbe6a1df85235dfab2b72237f
+  reservedKeywords50 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("+"#) -}
+d86ec2a50796b4fc70998a2b06b4ed4a
+  reservedKeywords51 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords52) -}
+9040ffb2bd5a6fda9d51a544a268ffee
+  reservedKeywords52 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("&"#) -}
+fe223160318f768becb40e5ae18373df
+  reservedKeywords53 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.$fShowToken4) -}
+836ea9656f7531844879e82395375227
+  reservedKeywords54 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords55) -}
+f2f003593001161efdd4df04c4438fb7
+  reservedKeywords55 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (";"#) -}
+9e541ba78ae4aca82d632997fc4e3fc2
+  reservedKeywords56 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords57) -}
+6e8c2e08c7683de0d11165b05a0225d1
+  reservedKeywords57 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (";;"#) -}
+2e0e5c30d1acc2314c24ffd58a819eb3
+  reservedKeywords58 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords59) -}
+70270b6f9ea85374345fc6f40c69b4ad
+  reservedKeywords59 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("."#) -}
+dea29c2105df2f37178adeb04516917f
+  reservedKeywords6 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords72
+                   LamFunLexer.reservedKeywords7) -}
+32d5263c271a641e5337ac2ff8cc77fd
+  reservedKeywords60 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords61) -}
+93c61225a0dda55e6cd7243eb762a879
+  reservedKeywords61 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\"#) -}
+436620d7d8b089b9c0e997b5fc8cd360
+  reservedKeywords62 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords63) -}
+b62b298070cf2f2516b47209f84fe09e
+  reservedKeywords63 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("_"#) -}
+ea87cc3b5793f9ddc258ce6276087b09
+  reservedKeywords64 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords65) -}
+05c11333693962e1fa02a8ee90dca3a1
+  reservedKeywords65 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (":="#) -}
+7a59e804351a4d8cc6eaacad186c4980
+  reservedKeywords66 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords67) -}
+d8b93a441a5969486d99d15c673a4216
+  reservedKeywords67 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("="#) -}
+b1a4004db5340ae1f43591bdea5e898d
+  reservedKeywords68 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords69) -}
+b9a1ad2b372da7e979e053064c90b89a
+  reservedKeywords69 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (","#) -}
+a272696f0e1f4375fbcfdf4ae78055f3
+  reservedKeywords7 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords70
+                   LamFunLexer.reservedKeywords8) -}
+6fdcae6b9ab72e93be369f7ad7579b35
+  reservedKeywords70 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords71) -}
+f577cbdcddcd296473b5f8963d07cf10
+  reservedKeywords71 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("->"#) -}
+622b8cdffd09ce24a545e122228b73c7
+  reservedKeywords72 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.$fShowDropOrKeep1) -}
+8b4888045a8fd1e3093a438fb2d3634e
+  reservedKeywords73 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords74) -}
+ed4c96c617c7a74b6229c51b14f7e935
+  reservedKeywords74 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("{"#) -}
+4fb579eddde0deb45a3b0477904fd6ec
+  reservedKeywords75 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords76) -}
+a02520f2ee1b0ad8ee363f242218dcb0
+  reservedKeywords76 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("]"#) -}
+81e539833f00023a0515fbe013a7a80f
+  reservedKeywords77 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords78) -}
+2faee98c714f497425f3d556f1c17509
+  reservedKeywords78 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("["#) -}
+892f455c1472c60e725b1e1bdbfad8af
+  reservedKeywords79 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.$fShowToken2) -}
+a0654105da432417a36499e47554b51c
+  reservedKeywords8 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords68
+                   LamFunLexer.reservedKeywords9) -}
+ce7ff942bfe6d28b3efe212eeb33c0d0
+  reservedKeywords80 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords81) -}
+e16fc9efbdee49e5c56fc2a3ed9d42bf
+  reservedKeywords81 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("("#) -}
+9378caf9daa420c2e7c4d0b2e11e3ee0
+  reservedKeywords82 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.reservedKeywords83) -}
+ea616becdcb2de589160404ccc88d504
+  reservedKeywords83 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\""#) -}
+cae290dcbebe75c7284ee4f7b8505f1b
+  reservedKeywords9 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   LamFunLexer.reservedKeywords66
+                   LamFunLexer.reservedKeywords10) -}
+cc3f52ab7608b9b6147560023efc4884
+  rowEnd :: LamFunLexer.Token a -> LamFunLexer.Row
+  RecSel Left LamFunLexer.Token
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLL),1*U(A,A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LamFunLexer.Token a) ->
+                 case ds of wild { LamFunLexer.Token ds1 ds2 ds3 ds4 ds5 ->
+                 ds3 }) -}
+cc3f52ab7608b9b6147560023efc4884
+  rowStart :: LamFunLexer.Token a -> LamFunLexer.Row
+  RecSel Left LamFunLexer.Token
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLL),1*U(A,1*U(U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LamFunLexer.Token a) ->
+                 case ds of wild { LamFunLexer.Token ds1 ds2 ds3 ds4 ds5 ->
+                 ds2 }) -}
+60aadf1b7f788454b1844686f244d771
+  tab ::
+    (Data.Text.Internal.Text,
+     Data.Text.Internal.Text
+     -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+         Data.Text.Internal.Text))
+  {- Strictness: m,
+     Unfolding: ((LamFunLexer.tokenize19, LamFunLexer.tokenize_f)) -}
+ea4ad5d885175c82dfd54e4ffd789636
+  tokenize ::
+    (LamFunLexer.Row, LamFunLexer.Col)
+    -> Data.Text.Internal.Text
+    -> [LamFunLexer.Token Data.Text.Internal.Text]
+  {- Arity: 2, Strictness: <L,U(U(U),U(U))><S(SSS),1*U(U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (LamFunLexer.Row, LamFunLexer.Col))
+                   (w1 :: Data.Text.Internal.Text) ->
+                 case w1 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 LamFunLexer.$wtokenize w ww1 ww2 ww3 }) -}
+60cb2d2131e9e536a6353c33fe20466e
+  tokenize1 ::
+    [(Data.Text.Internal.Text,
+      Data.Text.Internal.Text
+      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text,
+                      Data.Text.Internal.Text
+                      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+                          Data.Text.Internal.Text))
+                   LamFunLexer.whitespace
+                   LamFunLexer.tokenize2) -}
+6555c00f5a378f44655684d1382dac8f
+  tokenize10 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.tokenize11) -}
+b7fb9c24544a1cf26b9febaad9b5671d
+  tokenize11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("-}"#) -}
+1b4a4331db787edbe5707a765c172358
+  tokenize12 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.tokenize13) -}
+74e6909888417b5a359e52ce7bfe2133
+  tokenize13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("{-"#) -}
+cd7669ae3f92fc0e5215f7a3902d7c69
+  tokenize14 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.tokenize15) -}
+ed773ca7f7be4c0ebd498fb2c1fe0150
+  tokenize15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\n"#) -}
+9000a2fb70c784499253039c5df66756
+  tokenize16 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.tokenize17) -}
+d94d0466573f545c838f887af06f5a3e
+  tokenize17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("--"#) -}
+12d8af4693af3ca88f000775a672ed03
+  tokenize18 ::
+    Data.Text.Internal.Text
+    -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+        Data.Text.Internal.Text)
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 case LamFunLexer.$wquotes ww1 ww2 ww3 of ww4 { (#,#) ww5 ww6 ->
+                 (ww5, ww6) } }) -}
+d21eed287663a686580f673496b95125
+  tokenize19 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.tokenize20) -}
+e6d3f6d63277859a6885c532f48b36ba
+  tokenize2 ::
+    [(Data.Text.Internal.Text,
+      Data.Text.Internal.Text
+      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text,
+                      Data.Text.Internal.Text
+                      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+                          Data.Text.Internal.Text))
+                   LamFunLexer.newline
+                   LamFunLexer.tokenize3) -}
+c69d716aab409eaad2384fd863ab6dd8
+  tokenize20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\t"#) -}
+8fe7924819fcac01c24f7c8b051968f1
+  tokenize21 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamFunLexer.tokenize22) -}
+6e18652bb4f0b641593ef51dc222c50c
+  tokenize22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" "#) -}
+95d550ea394f0a703d88dd1a4fe3b1de
+  tokenize3 ::
+    [(Data.Text.Internal.Text,
+      Data.Text.Internal.Text
+      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text,
+                      Data.Text.Internal.Text
+                      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+                          Data.Text.Internal.Text))
+                   LamFunLexer.tab
+                   LamFunLexer.tokenize4) -}
+aeb467e48e5b58756813422f35953c1e
+  tokenize4 ::
+    [(Data.Text.Internal.Text,
+      Data.Text.Internal.Text
+      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text,
+                      Data.Text.Internal.Text
+                      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+                          Data.Text.Internal.Text))
+                   LamFunLexer.quotes
+                   LamFunLexer.tokenize5) -}
+06dd539d539cd4610e0fd4a0ecd8294e
+  tokenize5 ::
+    [(Data.Text.Internal.Text,
+      Data.Text.Internal.Text
+      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text,
+                      Data.Text.Internal.Text
+                      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+                          Data.Text.Internal.Text))
+                   LamFunLexer.ignoreComment
+                   LamFunLexer.tokenize6) -}
+a8fac7e1b8d622bf19113d6c94d2e3a7
+  tokenize6 ::
+    [(Data.Text.Internal.Text,
+      Data.Text.Internal.Text
+      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Text.Internal.Text,
+                      Data.Text.Internal.Text
+                      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+                          Data.Text.Internal.Text))
+                   LamFunLexer.ignoreComment2
+                   LamFunLexer.tokenize7) -}
+845a8ab24bf74448e9d328104a8fb673
+  tokenize7 ::
+    [(Data.Text.Internal.Text,
+      Data.Text.Internal.Text
+      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+          Data.Text.Internal.Text))]
+  {- Unfolding: (GHC.Base.map
+                   @ Data.Text.Internal.Text
+                   @ (Data.Text.Internal.Text,
+                      Data.Text.Internal.Text
+                      -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+                          Data.Text.Internal.Text))
+                   LamFunLexer.tokenize9
+                   (Data.OldList.sortBy
+                      @ Data.Text.Internal.Text
+                      LamFunLexer.tokenize8
+                      LamFunLexer.reservedKeywords)) -}
+fdb69294bfc33e633e2b60f9afbfa8cf
+  tokenize8 ::
+    Data.Text.Internal.Text
+    -> Data.Text.Internal.Text -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLS),1*U(U,U,U)><S(LSS),1*U(U,U,U)>,
+     Unfolding: (\ (a :: Data.Text.Internal.Text)
+                   (b :: Data.Text.Internal.Text)[OneShot] ->
+                 case a of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                 case b of wild1 { Data.Text.Internal.Text dt4 dt5 dt6 ->
+                 let {
+                   end :: GHC.Prim.Int# = GHC.Prim.+# dt5 dt6
+                 } in
+                 let {
+                   $w$j1 :: GHC.Prim.Int# -> GHC.Types.Ordering
+                     <join 1> {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+                   = \ (w :: GHC.Prim.Int#)[OneShot] ->
+                     case GHC.Prim.<# dt2 w of lwild {
+                       DEFAULT
+                       -> let {
+                            len :: GHC.Prim.Int# = GHC.Prim.uncheckedIShiftRA# dt2 1#
+                          } in
+                          let {
+                            dt3 :: GHC.Prim.Int# = GHC.Prim.*# 2# w
+                          } in
+                          case GHC.Prim.># len dt3 of lwild1 {
+                            DEFAULT
+                            -> let {
+                                 $j :: GHC.Types.Ordering <join 0>
+                                 = Data.Text.$w$ccompare dt dt1 dt2 dt4 dt5 dt6
+                               } in
+                               let {
+                                 $j1 :: GHC.Types.Ordering <join 0>
+                                 = let {
+                                     end1 :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
+                                   } in
+                                   let {
+                                     exit :: GHC.Prim.Int# -> GHC.Types.Ordering
+                                       <join 1> {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (ww :: GHC.Prim.Int#)[OneShot] ->
+                                       case GHC.Prim.<# ww w of lwild2 {
+                                         DEFAULT
+                                         -> case GHC.Prim.==# ww w of lwild3 {
+                                              DEFAULT -> GHC.Types.LT 1# -> $j }
+                                         1# -> GHC.Types.GT }
+                                   } in
+                                   letrec {
+                                     $wloop_cmp :: GHC.Prim.Int#
+                                                   -> GHC.Prim.Int# -> GHC.Types.Ordering
+                                       <join 2> {- Arity: 2, Strictness: <S,U><S,U>, Inline: [2] -}
+                                     = \ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.>=# ww1 end1 of lwild2 {
+                                         DEFAULT
+                                         -> case GHC.Prim.indexWord16Array#
+                                                   dt
+                                                   ww1 of r# { DEFAULT ->
+                                            case GHC.Prim.geWord# r# 55296## of lwild3 {
+                                              DEFAULT
+                                              -> case GHC.Prim.># ww w of lwild4 {
+                                                   DEFAULT
+                                                   -> $wloop_cmp
+                                                        (GHC.Prim.+# ww 1#)
+                                                        (GHC.Prim.+# ww1 1#)
+                                                   1# -> GHC.Types.LT }
+                                              1#
+                                              -> case GHC.Prim.leWord# r# 56319## of lwild4 {
+                                                   DEFAULT
+                                                   -> case GHC.Prim.># ww w of lwild5 {
+                                                        DEFAULT
+                                                        -> $wloop_cmp
+                                                             (GHC.Prim.+# ww 1#)
+                                                             (GHC.Prim.+# ww1 1#)
+                                                        1# -> GHC.Types.LT }
+                                                   1#
+                                                   -> case GHC.Prim.># ww w of lwild5 {
+                                                        DEFAULT
+                                                        -> $wloop_cmp
+                                                             (GHC.Prim.+# ww 1#)
+                                                             (GHC.Prim.+# ww1 2#)
+                                                        1# -> GHC.Types.LT } } } }
+                                         1# -> exit ww }
+                                   } in
+                                   $wloop_cmp 0# dt1
+                               } in
+                               case GHC.Prim.==# len dt2 of lwild2 {
+                                 DEFAULT -> $j1
+                                 1#
+                                 -> case GHC.Prim.==# len w of lwild3 {
+                                      DEFAULT -> $j1
+                                      1#
+                                      -> case GHC.Prim.==# len dt3 of lwild4 {
+                                           DEFAULT -> $j1 1# -> $j } } }
+                            1# -> GHC.Types.LT }
+                       1# -> GHC.Types.GT }
+                 } in
+                 letrec {
+                   $wloop_length :: GHC.Prim.Int#
+                                    -> GHC.Prim.Int# -> GHC.Types.Ordering
+                     <join 2> {- Arity: 2, Strictness: <S,U><S,U>, Inline: [2] -}
+                   = \ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.>=# ww1 end of lwild {
+                       DEFAULT
+                       -> case GHC.Prim.indexWord16Array# dt4 ww1 of r# { DEFAULT ->
+                          case GHC.Prim.geWord# r# 55296## of lwild1 {
+                            DEFAULT -> $wloop_length (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#)
+                            1#
+                            -> case GHC.Prim.leWord# r# 56319## of lwild2 {
+                                 DEFAULT -> $wloop_length (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#)
+                                 1# -> $wloop_length (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 2#) } } }
+                       1# -> $w$j1 ww }
+                 } in
+                 $wloop_length 0# dt5 } }) -}
+8ff5e7eea9ecdf5ff1e83bcde9ae0de6
+  tokenize9 ::
+    Data.Text.Internal.Text
+    -> (Data.Text.Internal.Text,
+        Data.Text.Internal.Text
+        -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+            Data.Text.Internal.Text))
+  {- Arity: 1, Strictness: <L,U(U,U,U)>m,
+     Unfolding: (\ (w :: Data.Text.Internal.Text) ->
+                 let {
+                   lvl17 :: LamFunLexer.DropOrKeep Data.Text.Internal.Text
+                   = LamFunLexer.DropOrKeep
+                       @ Data.Text.Internal.Text
+                       LamFunLexer.New
+                       w
+                 } in
+                 let {
+                   lvl18 :: [LamFunLexer.DropOrKeep Data.Text.Internal.Text]
+                   = GHC.Types.:
+                       @ (LamFunLexer.DropOrKeep Data.Text.Internal.Text)
+                       lvl17
+                       (GHC.Types.[] @ (LamFunLexer.DropOrKeep Data.Text.Internal.Text))
+                 } in
+                 (w,
+                  \ (x1 :: Data.Text.Internal.Text) ->
+                  (lvl18,
+                   case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                   case x1 of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                   case Data.Text.$wstripPrefix ww1 ww2 ww3 ww5 ww6 ww7 of wild {
+                     GHC.Maybe.Nothing -> Data.Maybe.fromJust1 @ Data.Text.Internal.Text
+                     GHC.Maybe.Just x2 -> x2 } } }))) -}
+f84f894b0865ce2898f5b09ff731309a
+  tokenize_f ::
+    Data.Text.Internal.Text
+    -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+        Data.Text.Internal.Text)
+  {- Arity: 1, Strictness: <L,U(U,U,U)>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case LamFunLexer.$wf w of ww { (#,#) ww1 ww2 -> (ww1, ww2) }) -}
+5efb10cee39ea7ac3598b853392524c9
+  tokenize_f1 ::
+    Data.Text.Internal.Text
+    -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+        Data.Text.Internal.Text)
+  {- Arity: 1, Strictness: <L,U(U,U,U)>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case LamFunLexer.$wf1 w of ww { (#,#) ww1 ww2 -> (ww1, ww2) }) -}
+dfd100b6a919521c746a295a2f8db65a
+  tokenize_f2 ::
+    Data.Text.Internal.Text
+    -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+        Data.Text.Internal.Text)
+  {- Arity: 1, Strictness: <L,U(U,U,U)>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case LamFunLexer.$wf2 w of ww { (#,#) ww1 ww2 -> (ww1, ww2) }) -}
+b9aaa032dadceb6cbccf7f26a165755c
+  tokenize_go ::
+    [LamFunLexer.DropOrKeep
+       (LamFunLexer.Token Data.Text.Internal.Text)]
+    -> [LamFunLexer.Token Data.Text.Internal.Text]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+cc3f52ab7608b9b6147560023efc4884
+  unTok :: LamFunLexer.Token a -> a
+  RecSel Left LamFunLexer.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLLL),1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LamFunLexer.Token a) ->
+                 case ds of wild { LamFunLexer.Token ds1 ds2 ds3 ds4 ds5 ->
+                 ds1 }) -}
+4f2062e463d7b22a169b3cf334516c07
+  whitespace ::
+    (Data.Text.Internal.Text,
+     Data.Text.Internal.Text
+     -> ([LamFunLexer.DropOrKeep Data.Text.Internal.Text],
+         Data.Text.Internal.Text))
+  {- Strictness: m,
+     Unfolding: ((LamFunLexer.tokenize21, LamFunLexer.tokenize_f2)) -}
+instance GHC.Classes.Eq [LamFunLexer.Col] = LamFunLexer.$fEqCol
+instance GHC.Classes.Eq [LamFunLexer.DropOrKeepLabel]
+  = LamFunLexer.$fEqDropOrKeepLabel
+instance GHC.Classes.Eq [LamFunLexer.Row] = LamFunLexer.$fEqRow
+instance GHC.Classes.Eq [LamFunLexer.Token] = LamFunLexer.$fEqToken
+instance GHC.Base.Functor [LamFunLexer.DropOrKeep]
+  = LamFunLexer.$fFunctorDropOrKeep
+instance GHC.Generics.Generic [LamFunLexer.Token]
+  = LamFunLexer.$fGenericToken
+instance Data.Hashable.Class.Hashable [LamFunLexer.Col]
+  = LamFunLexer.$fHashableCol
+instance Data.Hashable.Class.Hashable [LamFunLexer.Row]
+  = LamFunLexer.$fHashableRow
+instance Data.Hashable.Class.Hashable [LamFunLexer.Token]
+  = LamFunLexer.$fHashableToken
+instance Data.String.IsString [LamFunLexer.Token]
+  = LamFunLexer.$fIsStringToken
+instance GHC.Num.Num [LamFunLexer.Col] = LamFunLexer.$fNumCol
+instance GHC.Num.Num [LamFunLexer.Row] = LamFunLexer.$fNumRow
+instance GHC.Classes.Ord [LamFunLexer.Token]
+  = LamFunLexer.$fOrdToken
+instance GHC.Show.Show [LamFunLexer.Col] = LamFunLexer.$fShowCol
+instance GHC.Show.Show [LamFunLexer.DropOrKeep]
+  = LamFunLexer.$fShowDropOrKeep
+instance GHC.Show.Show [LamFunLexer.DropOrKeepLabel]
+  = LamFunLexer.$fShowDropOrKeepLabel
+instance GHC.Show.Show [LamFunLexer.Row] = LamFunLexer.$fShowRow
+instance GHC.Show.Show [LamFunLexer.Token]
+  = LamFunLexer.$fShowToken
+instance Data.String.Conv.StringConv [LamFunLexer.Token, .]
+  = LamFunLexer.$fStringConvTokenb
+family instance GHC.Generics.Rep [LamFunLexer.Token]
+  = LamFunLexer.Rep_Token
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

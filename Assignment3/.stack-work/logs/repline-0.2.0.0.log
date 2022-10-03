@@ -1,0 +1,6 @@
+Configuring repline-0.2.0.0...
+Preprocessing library for repline-0.2.0.0..
+Building library for repline-0.2.0.0..
+[1 of 1] Compiling System.Console.Repline ( src/System/Console/Repline.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/System/Console/Repline.o )
+Installing library in /home/bugster2010/.stack/snapshots/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/repline-0.2.0.0-1H1AyW2a4823Z9DCh7DZbj
+Registering library for repline-0.2.0.0..

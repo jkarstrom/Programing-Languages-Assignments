@@ -1,0 +1,6 @@
+Configuring silently-1.2.5...
+Preprocessing library for silently-1.2.5..
+Building library for silently-1.2.5..
+[1 of 1] Compiling System.IO.Silently ( src/System/IO/Silently.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/System/IO/Silently.o )
+Installing library in /home/bugster2010/.stack/snapshots/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/silently-1.2.5-8xYD8dmpR2rF9SB64DYFRz
+Registering library for silently-1.2.5..

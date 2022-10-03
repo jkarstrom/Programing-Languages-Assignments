@@ -1,0 +1,133 @@
+
+==================== FINAL INTERFACE ====================
+2021-11-30 04:27:49.4629989 UTC
+
+interface LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:Utils 8064
+  interface hash: db6521067d355c4af49701a4dc349e23
+  ABI hash: a742cfb063b88d1a82b5ecc559ce60ce
+  export-list hash: 5ce729e5e5661382150a68188fe82e3d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 042a51d467dce40b3c5eecc23e907c8a
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.blue
+  Utils.color
+  Utils.fgcol
+  Utils.highlight
+  Utils.normal
+  Utils.red
+  Utils.Color
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+addDependentFile "/home/bugster2010/.stack/programs/x86_64-linux/ghc-tinfo6-8.6.4/lib/ghc-8.6.4/include/ghcversion.h" a0ce8aeb7f525f4d70decd6c1d3ca2dd
+addDependentFile ".stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/autogen/cabal_macros.h" 7a70fddee143d350fd71c7d6df7ebe48
+addDependentFile "/usr/include/stdc-predef.h" efc8164f95529c96ba8fa4bd2fe7e605
+5fd5c8b8e603a36b0d6ad7907b8a7463
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Utils.$trModule3 Utils.$trModule1) -}
+b47c3e3aad2811a1a295d82338ad7f26
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.$trModule2) -}
+1db028a81885276ef8df7b0cfee66a40
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils"#) -}
+fe85c77e7d14ffc435428304b2bec607
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.$trModule4) -}
+af338c9899754d4bc93b1afc258c99fa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"#) -}
+13b9f72191c2e6211ea01e17b0e0455a
+  type Color = GHC.Types.Int
+7b48b7ee923ca9f07384f08a4cf62d82
+  blue :: Utils.Color
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 6#) -}
+756914a32c50e86714e811c5f3e3f3fd
+  color :: Utils.Color -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(U)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (c :: Utils.Color) (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c1 :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c1 n (Utils.fgcol c))
+                   (GHC.Base.augment
+                      @ GHC.Types.Char
+                      (\ @ b
+                         (c1 :: GHC.Types.Char -> b -> b)[OneShot]
+                         (n :: b)[OneShot] ->
+                       GHC.Base.foldr @ GHC.Types.Char @ b c1 n s)
+                      Utils.normal)) -}
+df945f01c2c1ffcc8593e735f8ed69ac
+  fgcol :: Utils.Color -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(U)>,
+     Unfolding: (\ (col :: Utils.Color) ->
+                 GHC.CString.unpackAppendCString#
+                   Utils.fgcol3
+                   (case col of wild1 { GHC.Types.I# y ->
+                    case GHC.Show.$wshowSignedInt
+                           0#
+                           (GHC.Prim.+# 30# y)
+                           (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                    GHC.Base.++_$s++ @ GHC.Types.Char Utils.fgcol1 ww5 ww6 } })) -}
+af8ee565c7274354aba69a0833cdf305
+  fgcol1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Utils.fgcol2) -}
+623400a3c38e0259ea9fe515deae667f
+  fgcol2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("m"#) -}
+f3a2475bf3f1c6068bd1ce4174d3e835
+  fgcol3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\ESC[0"#) -}
+2a1b9444b98f4538a9258c97d1bb7dbb
+  highlight :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   "\ESC[7m"#
+                   (GHC.Base.augment
+                      @ GHC.Types.Char
+                      (\ @ b
+                         (c :: GHC.Types.Char -> b -> b)[OneShot]
+                         (n :: b)[OneShot] ->
+                       GHC.Base.foldr @ GHC.Types.Char @ b c n s)
+                      Utils.normal)) -}
+91b3b92689d9c676f7e590b9c8feb819
+  normal :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# Utils.normal1) -}
+dc8b2ea67d9ef5c64f4df49cb794a382
+  normal1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\ESC[0m"#) -}
+724fc05c923396fb907056061e525022
+  red :: Utils.Color
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

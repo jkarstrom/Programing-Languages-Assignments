@@ -1,0 +1,6 @@
+Configuring fmlist-0.9.2...
+Preprocessing library for fmlist-0.9.2..
+Building library for fmlist-0.9.2..
+[1 of 1] Compiling Data.FMList      ( Data/FMList.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Data/FMList.o )
+Installing library in /home/bugster2010/.stack/snapshots/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/fmlist-0.9.2-2wB8okaNnKpJPuHuWwT7AH
+Registering library for fmlist-0.9.2..

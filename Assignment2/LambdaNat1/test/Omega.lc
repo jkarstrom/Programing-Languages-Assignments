@@ -1,0 +1,4 @@
+// This program should loop infinitely
+// Traditionally, (\x. x x) (\x. x x) is called Omega
+// Exercise: Do the computation also with pen and paper
+(\x. x x) (\x. x x)

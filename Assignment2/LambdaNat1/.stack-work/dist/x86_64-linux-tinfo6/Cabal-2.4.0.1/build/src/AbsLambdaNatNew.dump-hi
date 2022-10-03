@@ -1,0 +1,1149 @@
+
+==================== FINAL INTERFACE ====================
+2021-10-23 06:33:29.8446064 UTC
+
+interface LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t:AbsLambdaNatNew 8064
+  interface hash: 181fc097dbbbac4e7c54f2ff5032865f
+  ABI hash: 59f8cfb3d8d2a127c6b05d60c5e10a9a
+  export-list hash: 47247e0c8e98f69b84a18220ef18c5d4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b6427d8aeb77a442ff3ccc1f154c876f
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  AbsLambdaNatNew.Exp{AbsLambdaNatNew.EAbs AbsLambdaNatNew.EApp AbsLambdaNatNew.ENat0 AbsLambdaNatNew.ENatS AbsLambdaNatNew.EVar}
+  AbsLambdaNatNew.Id{AbsLambdaNatNew.Id}
+  AbsLambdaNatNew.Program{AbsLambdaNatNew.Prog}
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Read 0604f4258fedea7e033ea68c6d7b40f2
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:Text.ParserCombinators.ReadPrec 9773f55573a0fca144b6966b06590c4e
+import  -/  base-4.12.0.0:Text.Read.Lex cc2610206b1ce0c49789637e16412aa1
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+a2b731a8e12eaf573dbd0cb720db822e
+  $fEqExp :: GHC.Classes.Eq AbsLambdaNatNew.Exp
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Exp
+                  AbsLambdaNatNew.$fEqExp_$c==
+                  AbsLambdaNatNew.$fEqExp_$c/= -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fEqExp_$c/= ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: AbsLambdaNatNew.Exp) (y :: AbsLambdaNatNew.Exp) ->
+                 case AbsLambdaNatNew.$fEqExp_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fEqExp_$c== ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fEqId :: GHC.Classes.Eq AbsLambdaNatNew.Id
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Id
+                  GHC.Base.eqString
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R <GHC.Types.Bool>_R)
+                  GHC.Classes.$fEq[]_$s$c/=1
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R <GHC.Types.Bool>_R) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fEqProgram :: GHC.Classes.Eq AbsLambdaNatNew.Program
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Program
+                  AbsLambdaNatNew.$fEqProgram_$c==
+                  AbsLambdaNatNew.$fEqProgram_$c/= -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fEqProgram_$c/= ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: AbsLambdaNatNew.Program) (y :: AbsLambdaNatNew.Program) ->
+                 case x of wild { AbsLambdaNatNew.Prog a1 ->
+                 case y of wild1 { AbsLambdaNatNew.Prog b1 ->
+                 case AbsLambdaNatNew.$fEqExp_$c== a1 b1 of wild2 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False } } }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fEqProgram_$c== ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: AbsLambdaNatNew.Program)
+                   (ds1 :: AbsLambdaNatNew.Program) ->
+                 case ds of wild { AbsLambdaNatNew.Prog a1 ->
+                 case ds1 of wild1 { AbsLambdaNatNew.Prog b1 ->
+                 AbsLambdaNatNew.$fEqExp_$c== a1 b1 } }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fOrdExp :: GHC.Classes.Ord AbsLambdaNatNew.Exp
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Exp
+                  AbsLambdaNatNew.$fEqExp
+                  AbsLambdaNatNew.$fOrdExp_$ccompare
+                  AbsLambdaNatNew.$fOrdExp_$c<
+                  AbsLambdaNatNew.$fOrdExp_$c<=
+                  AbsLambdaNatNew.$fOrdExp_$c>
+                  AbsLambdaNatNew.$fOrdExp_$c>=
+                  AbsLambdaNatNew.$fOrdExp_$cmax
+                  AbsLambdaNatNew.$fOrdExp_$cmin -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fOrdExp_$c< ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AbsLambdaNatNew.Exp) (y :: AbsLambdaNatNew.Exp) ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fOrdExp_$c<= ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AbsLambdaNatNew.Exp) (y :: AbsLambdaNatNew.Exp) ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fOrdExp_$c> ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AbsLambdaNatNew.Exp) (y :: AbsLambdaNatNew.Exp) ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fOrdExp_$c>= ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AbsLambdaNatNew.Exp) (y :: AbsLambdaNatNew.Exp) ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fOrdExp_$ccompare ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fOrdExp_$cmax ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AbsLambdaNatNew.Exp) (y :: AbsLambdaNatNew.Exp) ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare x y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fOrdExp_$cmin ::
+    AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp -> AbsLambdaNatNew.Exp
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AbsLambdaNatNew.Exp) (y :: AbsLambdaNatNew.Exp) ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare x y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fOrdId :: GHC.Classes.Ord AbsLambdaNatNew.Id
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Id
+                  AbsLambdaNatNew.$fEqId
+                  GHC.Classes.$fOrd[]_$s$ccompare1
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R <GHC.Types.Ordering>_R)
+                  GHC.Classes.$fOrd[]_$s$c<1
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R <GHC.Types.Bool>_R)
+                  GHC.Classes.$fOrd[]_$s$c<=1
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R <GHC.Types.Bool>_R)
+                  GHC.Classes.$fOrd[]_$s$c>1
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R <GHC.Types.Bool>_R)
+                  GHC.Classes.$fOrd[]_$s$c>=1
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R <GHC.Types.Bool>_R)
+                  GHC.Classes.$fOrd[]_$s$cmax1
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0]))
+                  GHC.Classes.$fOrd[]_$s$cmin1
+                    `cast`
+                  (Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])
+                   ->_R Sym (AbsLambdaNatNew.N:Id[0])) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fOrdProgram :: GHC.Classes.Ord AbsLambdaNatNew.Program
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Program
+                  AbsLambdaNatNew.$fEqProgram
+                  AbsLambdaNatNew.$fOrdProgram_$ccompare
+                  AbsLambdaNatNew.$fOrdProgram_$c<
+                  AbsLambdaNatNew.$fOrdProgram_$c<=
+                  AbsLambdaNatNew.$fOrdProgram_$c>
+                  AbsLambdaNatNew.$fOrdProgram_$c>=
+                  AbsLambdaNatNew.$fOrdProgram_$cmax
+                  AbsLambdaNatNew.$fOrdProgram_$cmin -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fOrdProgram_$c< ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AbsLambdaNatNew.Program) (b :: AbsLambdaNatNew.Program) ->
+                 case a of wild { AbsLambdaNatNew.Prog a1 ->
+                 case b of wild1 { AbsLambdaNatNew.Prog b1 ->
+                 AbsLambdaNatNew.$fOrdExp_$c< a1 b1 } }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fOrdProgram_$c<= ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AbsLambdaNatNew.Program) (b :: AbsLambdaNatNew.Program) ->
+                 case b of wild { AbsLambdaNatNew.Prog a1 ->
+                 case a of wild1 { AbsLambdaNatNew.Prog b1 ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare a1 b1 of wild2 {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } } }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fOrdProgram_$c> ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: AbsLambdaNatNew.Program) (b :: AbsLambdaNatNew.Program) ->
+                 AbsLambdaNatNew.$fOrdProgram_$c< b a) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fOrdProgram_$c>= ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AbsLambdaNatNew.Program) (b :: AbsLambdaNatNew.Program) ->
+                 case a of wild { AbsLambdaNatNew.Prog a1 ->
+                 case b of wild1 { AbsLambdaNatNew.Prog b1 ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare a1 b1 of wild2 {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } } }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fOrdProgram_$ccompare ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AbsLambdaNatNew.Program) (b :: AbsLambdaNatNew.Program) ->
+                 case a of wild { AbsLambdaNatNew.Prog a1 ->
+                 case b of wild1 { AbsLambdaNatNew.Prog b1 ->
+                 AbsLambdaNatNew.$fOrdExp_$ccompare a1 b1 } }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fOrdProgram_$cmax ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> AbsLambdaNatNew.Program
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AbsLambdaNatNew.Program) (y :: AbsLambdaNatNew.Program) ->
+                 case y of wild { AbsLambdaNatNew.Prog a1 ->
+                 case x of wild1 { AbsLambdaNatNew.Prog b1 ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare a1 b1 of wild2 {
+                   DEFAULT -> wild GHC.Types.LT -> wild1 } } }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fOrdProgram_$cmin ::
+    AbsLambdaNatNew.Program
+    -> AbsLambdaNatNew.Program -> AbsLambdaNatNew.Program
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AbsLambdaNatNew.Program) (y :: AbsLambdaNatNew.Program) ->
+                 case y of wild { AbsLambdaNatNew.Prog a1 ->
+                 case x of wild1 { AbsLambdaNatNew.Prog b1 ->
+                 case AbsLambdaNatNew.$fOrdExp_$ccompare a1 b1 of wild2 {
+                   DEFAULT -> wild1 GHC.Types.LT -> wild } } }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fReadExp :: GHC.Read.Read AbsLambdaNatNew.Exp
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Exp
+                  AbsLambdaNatNew.$fReadExp_$creadsPrec
+                  AbsLambdaNatNew.$fReadExp_$creadList
+                  AbsLambdaNatNew.$fReadExp1
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <AbsLambdaNatNew.Exp>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                       <AbsLambdaNatNew.Exp>_R))
+                  AbsLambdaNatNew.$fReadExp_$creadListPrec -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fReadExp1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (AbsLambdaNatNew.Exp -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2 -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fReadExp2 :: Text.ParserCombinators.ReadP.P [AbsLambdaNatNew.Exp]
+  {- Unfolding: ((AbsLambdaNatNew.$fReadExp_$creadListPrec
+                    `cast`
+                  (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                       <[AbsLambdaNatNew.Exp]>_R)
+                    GHC.Read.$fRead()8)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.N:ReadP[0] <[AbsLambdaNatNew.Exp]>_R)
+                   @ [AbsLambdaNatNew.Exp]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [AbsLambdaNatNew.Exp])) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fReadExp_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [AbsLambdaNatNew.Exp]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [AbsLambdaNatNew.Exp]
+                   AbsLambdaNatNew.$fReadExp2) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fReadExp_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [AbsLambdaNatNew.Exp]
+  {- Unfolding: (GHC.Read.list
+                   @ AbsLambdaNatNew.Exp
+                   AbsLambdaNatNew.$fReadExp1
+                     `cast`
+                   ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                     ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                   <AbsLambdaNatNew.Exp>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <AbsLambdaNatNew.Exp>_R))) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fReadExp_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS AbsLambdaNatNew.Exp
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ AbsLambdaNatNew.Exp
+                   (AbsLambdaNatNew.$fReadExp1
+                      n
+                      @ AbsLambdaNatNew.Exp
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ AbsLambdaNatNew.Exp))) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fReadId :: GHC.Read.Read AbsLambdaNatNew.Id
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Id
+                  AbsLambdaNatNew.$fReadId_$creadsPrec
+                  AbsLambdaNatNew.$fReadId_$creadList
+                  AbsLambdaNatNew.$fReadId1
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <AbsLambdaNatNew.Id>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                      <AbsLambdaNatNew.Id>_R))
+                  AbsLambdaNatNew.$fReadId_$creadListPrec -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fReadId1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (AbsLambdaNatNew.Id -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2,
+     Unfolding: (GHC.Read.$fRead()6
+                   @ AbsLambdaNatNew.Id
+                   AbsLambdaNatNew.$fReadId2
+                     `cast`
+                   ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                     ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                   <AbsLambdaNatNew.Id>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                       <AbsLambdaNatNew.Id>_R))) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fReadId2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (AbsLambdaNatNew.Id -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,C(U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (w1 :: AbsLambdaNatNew.Id -> Text.ParserCombinators.ReadP.P b) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 AbsLambdaNatNew.$w$creadPrec ww1 @ b w1 }) -}
+6ea040fd1d765b581d4d97934adb072e
+  $fReadId3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   AbsLambdaNatNew.$fReadId4) -}
+70f33b3ece3304d85d6db3a1ea32628f
+  $fReadId4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Id"#) -}
+fd52938afaa4d1450a477a7b6504b752
+  $fReadId5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fReadId6 :: Text.ParserCombinators.ReadP.P [AbsLambdaNatNew.Id]
+  {- Unfolding: ((AbsLambdaNatNew.$fReadId_$creadListPrec
+                    `cast`
+                  (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                       <[AbsLambdaNatNew.Id]>_R)
+                    GHC.Read.$fRead()8)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.N:ReadP[0] <[AbsLambdaNatNew.Id]>_R)
+                   @ [AbsLambdaNatNew.Id]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [AbsLambdaNatNew.Id])) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fReadId_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [AbsLambdaNatNew.Id]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [AbsLambdaNatNew.Id]
+                   AbsLambdaNatNew.$fReadId6) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fReadId_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [AbsLambdaNatNew.Id]
+  {- Unfolding: (GHC.Read.list
+                   @ AbsLambdaNatNew.Id
+                   AbsLambdaNatNew.$fReadId1
+                     `cast`
+                   ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                     ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                   <AbsLambdaNatNew.Id>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                       <AbsLambdaNatNew.Id>_R))) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fReadId_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS AbsLambdaNatNew.Id
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ AbsLambdaNatNew.Id
+                   (GHC.Read.$fRead()6
+                      @ AbsLambdaNatNew.Id
+                      AbsLambdaNatNew.$fReadId2
+                        `cast`
+                      ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <AbsLambdaNatNew.Id>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                          <AbsLambdaNatNew.Id>_R))
+                      n
+                      @ AbsLambdaNatNew.Id
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ AbsLambdaNatNew.Id))) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fReadProgram :: GHC.Read.Read AbsLambdaNatNew.Program
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Program
+                  AbsLambdaNatNew.$fReadProgram_$creadsPrec
+                  AbsLambdaNatNew.$fReadProgram_$creadList
+                  AbsLambdaNatNew.$fReadProgram1
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <AbsLambdaNatNew.Program>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                           <AbsLambdaNatNew.Program>_R))
+                  AbsLambdaNatNew.$fReadProgram_$creadListPrec -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fReadProgram1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (AbsLambdaNatNew.Program -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2,
+     Unfolding: (GHC.Read.$fRead()6
+                   @ AbsLambdaNatNew.Program
+                   AbsLambdaNatNew.$fReadProgram2
+                     `cast`
+                   ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                     ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                   <AbsLambdaNatNew.Program>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                            <AbsLambdaNatNew.Program>_R))) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fReadProgram2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (AbsLambdaNatNew.Program -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,C(U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (w1 :: AbsLambdaNatNew.Program
+                          -> Text.ParserCombinators.ReadP.P b) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 AbsLambdaNatNew.$w$creadPrec1 ww1 @ b w1 }) -}
+c5a2f4b06f3a637bef01ad0320ce3b54
+  $fReadProgram3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   AbsLambdaNatNew.$fReadProgram4) -}
+61a218eaa621f2ceee509e6926b1721c
+  $fReadProgram4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Prog"#) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fReadProgram5 ::
+    Text.ParserCombinators.ReadP.P [AbsLambdaNatNew.Program]
+  {- Unfolding: ((AbsLambdaNatNew.$fReadProgram_$creadListPrec
+                    `cast`
+                  (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                       <[AbsLambdaNatNew.Program]>_R)
+                    GHC.Read.$fRead()8)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.N:ReadP[0]
+                      <[AbsLambdaNatNew.Program]>_R)
+                   @ [AbsLambdaNatNew.Program]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [AbsLambdaNatNew.Program])) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fReadProgram_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [AbsLambdaNatNew.Program]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [AbsLambdaNatNew.Program]
+                   AbsLambdaNatNew.$fReadProgram5) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fReadProgram_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [AbsLambdaNatNew.Program]
+  {- Unfolding: (GHC.Read.list
+                   @ AbsLambdaNatNew.Program
+                   AbsLambdaNatNew.$fReadProgram1
+                     `cast`
+                   ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                     ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                   <AbsLambdaNatNew.Program>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                            <AbsLambdaNatNew.Program>_R))) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fReadProgram_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS AbsLambdaNatNew.Program
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ AbsLambdaNatNew.Program
+                   (GHC.Read.$fRead()6
+                      @ AbsLambdaNatNew.Program
+                      AbsLambdaNatNew.$fReadProgram2
+                        `cast`
+                      ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <AbsLambdaNatNew.Program>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                               <AbsLambdaNatNew.Program>_R))
+                      n
+                      @ AbsLambdaNatNew.Program
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ AbsLambdaNatNew.Program))) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fShowExp :: GHC.Show.Show AbsLambdaNatNew.Exp
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Exp
+                  AbsLambdaNatNew.$fShowExp_$cshowsPrec
+                  AbsLambdaNatNew.$fShowExp_$cshow
+                  AbsLambdaNatNew.$fShowExp_$cshowList -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fShowExp1 :: AbsLambdaNatNew.Exp -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (AbsLambdaNatNew.$fShowExp_$cshowsPrec
+                   AbsLambdaNatNew.$fShowExp2) -}
+435ee239ee531d342d35875af1e4ee48
+  $fShowExp2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fShowExp_$cshow :: AbsLambdaNatNew.Exp -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: AbsLambdaNatNew.Exp) ->
+                 AbsLambdaNatNew.$fShowExp_$cshowsPrec
+                   AbsLambdaNatNew.$fShowExp2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fShowExp_$cshowList :: [AbsLambdaNatNew.Exp] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [AbsLambdaNatNew.Exp]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ AbsLambdaNatNew.Exp
+                   AbsLambdaNatNew.$fShowExp1
+                   ls
+                   s) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  $fShowExp_$cshowsPrec ::
+    GHC.Types.Int -> AbsLambdaNatNew.Exp -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fShowId :: GHC.Show.Show AbsLambdaNatNew.Id
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Id
+                  AbsLambdaNatNew.$fShowId_$cshowsPrec
+                  AbsLambdaNatNew.$fShowId_$cshow
+                  AbsLambdaNatNew.$fShowId_$cshowList -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fShowId1 :: AbsLambdaNatNew.Id -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U><L,U>,
+     Unfolding: (\ (w :: AbsLambdaNatNew.Id) (w1 :: GHC.Base.String) ->
+                 AbsLambdaNatNew.$w$cshowsPrec 0# w w1) -}
+9f00a052f2c92ec9681ab3e4413d9306
+  $fShowId2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Id "#) -}
+35a3a6e3f54eafc0a63d4d5328250cac
+  $fShowId3 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.$fShow(,)3
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fShowId_$cshow :: AbsLambdaNatNew.Id -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: AbsLambdaNatNew.Id) ->
+                 GHC.CString.unpackAppendCString#
+                   AbsLambdaNatNew.$fShowId2
+                   (GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.$fShow(,)3
+                      (GHC.Show.showLitString
+                         x `cast` (AbsLambdaNatNew.N:Id[0])
+                         AbsLambdaNatNew.$fShowId3))) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fShowId_$cshowList :: [AbsLambdaNatNew.Id] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [AbsLambdaNatNew.Id]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ AbsLambdaNatNew.Id
+                   AbsLambdaNatNew.$fShowId1
+                   ls
+                   s) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $fShowId_$cshowsPrec ::
+    GHC.Types.Int -> AbsLambdaNatNew.Id -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: AbsLambdaNatNew.Id)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 AbsLambdaNatNew.$w$cshowsPrec ww1 w1 w2 }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fShowProgram :: GHC.Show.Show AbsLambdaNatNew.Program
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNatNew.Program
+                  AbsLambdaNatNew.$fShowProgram_$cshowsPrec
+                  AbsLambdaNatNew.$fShowProgram_$cshow
+                  AbsLambdaNatNew.$fShowProgram_$cshowList -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fShowProgram1 :: AbsLambdaNatNew.Program -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U)><L,U>,
+     Unfolding: (\ (w :: AbsLambdaNatNew.Program)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { AbsLambdaNatNew.Prog ww1 ->
+                 AbsLambdaNatNew.$w$cshowsPrec1 0# ww1 w1 }) -}
+5285f6f12d2561c999202955e04896a1
+  $fShowProgram2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   AbsLambdaNatNew.$fShowProgram3) -}
+4efb27175a9ca0486127994a2a650617
+  $fShowProgram3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Prog "#) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fShowProgram_$cshow :: AbsLambdaNatNew.Program -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: AbsLambdaNatNew.Program) ->
+                 case x of wild { AbsLambdaNatNew.Prog b1 ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      AbsLambdaNatNew.$fShowProgram2)
+                   (AbsLambdaNatNew.$fShowExp_$cshowsPrec
+                      AbsLambdaNatNew.$fReadId5
+                      b1
+                      (GHC.Types.[] @ GHC.Types.Char)) }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fShowProgram_$cshowList ::
+    [AbsLambdaNatNew.Program] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [AbsLambdaNatNew.Program]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ AbsLambdaNatNew.Program
+                   AbsLambdaNatNew.$fShowProgram1
+                   ls
+                   s) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $fShowProgram_$cshowsPrec ::
+    GHC.Types.Int -> AbsLambdaNatNew.Program -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U)><L,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: AbsLambdaNatNew.Program)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { AbsLambdaNatNew.Prog ww3 ->
+                 AbsLambdaNatNew.$w$cshowsPrec1 ww1 ww3 w2 } }) -}
+b8604825fcc63dda54f47f330aef4961
+  $tc'EAbs :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5744993016245411853##
+                   11828541634706997663##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tc'EAbs2
+                   0#
+                   AbsLambdaNatNew.$tc'EAbs1) -}
+8eb9aaa07d3911da67752fb7a681aaf0
+  $tc'EAbs1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d732c77012106df0044b157a1a937a04
+  $tc'EAbs2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tc'EAbs3) -}
+fe9f0a5b261ce5653281f23406862296
+  $tc'EAbs3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EAbs"#) -}
+dad066c9a14fe264e7a0ba2ad05b44e5
+  $tc'EApp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   669649133636133512##
+                   9444960371574492491##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tc'EApp2
+                   0#
+                   AbsLambdaNatNew.$tc'EApp1) -}
+4a969af5e122b6d7c314e8e399ae7961
+  $tc'EApp1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d4631b4e3d2e0e7852d4d8ae866037ff
+  $tc'EApp2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tc'EApp3) -}
+c8d3480ec508cf8c0c3117b27a46f90e
+  $tc'EApp3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EApp"#) -}
+4bdc9463388148fe7f77d55e2d567e0e
+  $tc'ENat0 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11493608817973443123##
+                   14591353307207323220##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tc'ENat2
+                   0#
+                   AbsLambdaNatNew.$tc'ENat1) -}
+b0760cc769389db5c17aa9d853048d00
+  $tc'ENat1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+467c726190b259cd2d3ed580a827041f
+  $tc'ENat2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tc'ENat3) -}
+6391bc3536fe16dcef400ac99d4f49f7
+  $tc'ENat3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ENat0"#) -}
+0b65a7d4fbde7f8981bc9ad35ac57aa1
+  $tc'ENatS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12491129336992471227##
+                   1235503943443726598##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tc'ENatS2
+                   0#
+                   AbsLambdaNatNew.$tc'ENatS1) -}
+3126e910de3997eb6a91be6b7154c618
+  $tc'ENatS1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+db9d5bbb3c9b619b42845877adf16b79
+  $tc'ENatS2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tc'ENatS3) -}
+dad5da4594755a54ad615a6c32fbca63
+  $tc'ENatS3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ENatS"#) -}
+ef4f14d31f358d595fe6a98228bace80
+  $tc'EVar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2997439039454300444##
+                   6568558117976571005##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tc'EVar2
+                   0#
+                   AbsLambdaNatNew.$tc'EVar1) -}
+b816f97e33aae01b72b8c18c8adf5534
+  $tc'EVar1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e33bebefba654dbf21f578e1e60629ce
+  $tc'EVar2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tc'EVar3) -}
+7932c54f893c4df00f0cff401a7b0f1b
+  $tc'EVar3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EVar"#) -}
+3ff5cde73cf02e78c0903ab17755aa23
+  $tc'Id :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8275000244427795780##
+                   1759210166593439145##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tc'Id2
+                   0#
+                   AbsLambdaNatNew.$tc'Id1) -}
+40f9871c0fddc1ff417d708e6faff218
+  $tc'Id1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7dbd53ae35a18c3f9d9f299875a6a400
+  $tc'Id2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tc'Id3) -}
+8e513dea7f9069cfb879057f3db3a79b
+  $tc'Id3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Id"#) -}
+826a9f7bcea6f2560fc1ae54c5a74bc5
+  $tc'Prog :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8666135857537773695##
+                   3317113793746157692##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tc'Prog2
+                   0#
+                   AbsLambdaNatNew.$tc'Prog1) -}
+921486f08c0dbd7e030cd465fae0ea21
+  $tc'Prog1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+2c8986c00616b679344b7bd0706ab102
+  $tc'Prog2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tc'Prog3) -}
+b50fc14ca6c0123dbdbce5f8a724074e
+  $tc'Prog3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Prog"#) -}
+9b78d5d3cf37f06516dc130ff81aa787
+  $tcExp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6960229576298339403##
+                   3181971903483237206##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tcExp1
+                   0#
+                   GHC.Types.krep$*) -}
+438c9b2bf83ef24fdb33c9fe8275f0cc
+  $tcExp1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tcExp2) -}
+081ddb8808d15cabd0b1e9b414506aed
+  $tcExp2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Exp"#) -}
+d356ca17d7e4a6bf2ae07e43b0d03999
+  $tcId :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   843473484738660219##
+                   1221314687497841520##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tcId1
+                   0#
+                   GHC.Types.krep$*) -}
+da1ac48541ae0cca5935b9fa5aa43623
+  $tcId1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$fReadId4) -}
+d41946380196572768ea2252a39baff6
+  $tcProgram :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3729114499430493322##
+                   7253655217477886735##
+                   AbsLambdaNatNew.$trModule
+                   AbsLambdaNatNew.$tcProgram1
+                   0#
+                   GHC.Types.krep$*) -}
+a05eabcdfe6599eaa921c2766f43cfa7
+  $tcProgram1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$tcProgram2) -}
+17bd39b022882b9f8ae314640a031069
+  $tcProgram2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Program"#) -}
+07b8e9da0b58f8e01519f758c81a034d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   AbsLambdaNatNew.$trModule3
+                   AbsLambdaNatNew.$trModule1) -}
+4d9adb4fcda1641fe493002287adfaa7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$trModule2) -}
+df0d701068d88f990123a4fa096a1ac8
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AbsLambdaNatNew"#) -}
+0254e80c748873f6711c0e37f88aecf3
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNatNew.$trModule4) -}
+d04a066e1aac1d70d717ebac3e3a6994
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"#) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $w$creadPrec ::
+    GHC.Prim.Int#
+    -> forall b.
+       (AbsLambdaNatNew.Id -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,U><L,C(U)>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   @ b
+                   (w :: AbsLambdaNatNew.Id -> Text.ParserCombinators.ReadP.P b) ->
+                 case GHC.Prim.<=# ww 10# of lwild {
+                   DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                   1#
+                   -> let {
+                        lvl117 :: Text.ParserCombinators.ReadP.P b
+                        = let {
+                            lvl118 :: Text.ParserCombinators.ReadP.P b
+                            = GHC.Read.$fRead()6
+                                @ GHC.Base.String
+                                GHC.Read.$fReadChar2
+                                  `cast`
+                                (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                          <GHC.Base.String>_R))
+                                AbsLambdaNatNew.$fReadId5
+                                @ b
+                                (\ (a1 :: GHC.Base.String) ->
+                                 w a1 `cast` (Sym (AbsLambdaNatNew.N:Id[0])))
+                          } in
+                          Text.Read.Lex.expect2
+                            @ b
+                            (\ (a3 :: Text.Read.Lex.Lexeme) ->
+                             case a3 of wild {
+                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                               Text.Read.Lex.Ident a1
+                               -> case GHC.Base.eqString a1 AbsLambdaNatNew.$fReadId3 of wild1 {
+                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                    GHC.Types.True -> lvl118 } })
+                      } in
+                      let {
+                        k :: () -> Text.ParserCombinators.ReadP.P b
+                          {- Arity: 1, Strictness: <L,A>,
+                             Unfolding: InlineRule (1, True, True) (\ (a3 :: ()) -> lvl117) -}
+                        = \ (a3 :: ()) -> lvl117
+                      } in
+                      Text.ParserCombinators.ReadP.Look
+                        @ b
+                        (\ (a :: GHC.Base.String) ->
+                         Text.ParserCombinators.ReadP.skipSpaces2 a @ b k) }) -}
+26d0970caacb9a5a7cb92d44f810d8b8
+  $w$creadPrec1 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (AbsLambdaNatNew.Program -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,U><L,C(U)>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   @ b
+                   (w :: AbsLambdaNatNew.Program
+                         -> Text.ParserCombinators.ReadP.P b) ->
+                 case GHC.Prim.<=# ww 10# of lwild {
+                   DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                   1#
+                   -> let {
+                        lvl117 :: Text.ParserCombinators.ReadP.P b
+                        = let {
+                            lvl118 :: Text.ParserCombinators.ReadP.P b
+                            = AbsLambdaNatNew.$fReadExp1
+                                AbsLambdaNatNew.$fReadId5
+                                @ b
+                                (\ (a1 :: AbsLambdaNatNew.Exp) -> w (AbsLambdaNatNew.Prog a1))
+                          } in
+                          Text.Read.Lex.expect2
+                            @ b
+                            (\ (a3 :: Text.Read.Lex.Lexeme) ->
+                             case a3 of wild {
+                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                               Text.Read.Lex.Ident a1
+                               -> case GHC.Base.eqString
+                                         a1
+                                         AbsLambdaNatNew.$fReadProgram3 of wild1 {
+                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                    GHC.Types.True -> lvl118 } })
+                      } in
+                      let {
+                        k :: () -> Text.ParserCombinators.ReadP.P b
+                          {- Arity: 1, Strictness: <L,A>,
+                             Unfolding: InlineRule (1, True, True) (\ (a3 :: ()) -> lvl117) -}
+                        = \ (a3 :: ()) -> lvl117
+                      } in
+                      Text.ParserCombinators.ReadP.Look
+                        @ b
+                        (\ (a :: GHC.Base.String) ->
+                         Text.ParserCombinators.ReadP.skipSpaces2 a @ b k) }) -}
+3b240bc39df906f4437b6aecfe56e67c
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> AbsLambdaNatNew.Id -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: AbsLambdaNatNew.Id)
+                   (w1 :: GHC.Base.String) ->
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.CString.unpackAppendCString#
+                        AbsLambdaNatNew.$fShowId2
+                        (GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.$fShow(,)3
+                           (GHC.Show.showLitString
+                              w `cast` (AbsLambdaNatNew.N:Id[0])
+                              (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 w1)))
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           AbsLambdaNatNew.$fShowId2
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.$fShow(,)3
+                              (GHC.Show.showLitString
+                                 w `cast` (AbsLambdaNatNew.N:Id[0])
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.$fShow(,)3
+                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1))))) }) -}
+8759f2f19a593d6a5fbeba1df1a61327
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> AbsLambdaNatNew.Exp -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: AbsLambdaNatNew.Exp)
+                   (w :: GHC.Base.String) ->
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        AbsLambdaNatNew.$fShowProgram2
+                        (AbsLambdaNatNew.$fShowExp_$cshowsPrec
+                           AbsLambdaNatNew.$fReadId5
+                           ww1
+                           w)
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           AbsLambdaNatNew.$fShowProgram2
+                           (AbsLambdaNatNew.$fShowExp_$cshowsPrec
+                              AbsLambdaNatNew.$fReadId5
+                              ww1
+                              (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w))) }) -}
+a2b731a8e12eaf573dbd0cb720db822e
+  data Exp
+    = EAbs AbsLambdaNatNew.Id AbsLambdaNatNew.Exp
+    | EApp AbsLambdaNatNew.Exp AbsLambdaNatNew.Exp
+    | ENat0
+    | ENatS AbsLambdaNatNew.Exp
+    | EVar AbsLambdaNatNew.Id
+3b240bc39df906f4437b6aecfe56e67c
+  newtype Id = Id GHC.Base.String
+26d0970caacb9a5a7cb92d44f810d8b8
+  data Program = Prog AbsLambdaNatNew.Exp
+instance [safe] GHC.Classes.Eq [AbsLambdaNatNew.Exp]
+  = AbsLambdaNatNew.$fEqExp
+instance [safe] GHC.Classes.Eq [AbsLambdaNatNew.Id]
+  = AbsLambdaNatNew.$fEqId
+instance [safe] GHC.Classes.Eq [AbsLambdaNatNew.Program]
+  = AbsLambdaNatNew.$fEqProgram
+instance [safe] GHC.Classes.Ord [AbsLambdaNatNew.Exp]
+  = AbsLambdaNatNew.$fOrdExp
+instance [safe] GHC.Classes.Ord [AbsLambdaNatNew.Id]
+  = AbsLambdaNatNew.$fOrdId
+instance [safe] GHC.Classes.Ord [AbsLambdaNatNew.Program]
+  = AbsLambdaNatNew.$fOrdProgram
+instance [safe] GHC.Read.Read [AbsLambdaNatNew.Exp]
+  = AbsLambdaNatNew.$fReadExp
+instance [safe] GHC.Read.Read [AbsLambdaNatNew.Id]
+  = AbsLambdaNatNew.$fReadId
+instance [safe] GHC.Read.Read [AbsLambdaNatNew.Program]
+  = AbsLambdaNatNew.$fReadProgram
+instance [safe] GHC.Show.Show [AbsLambdaNatNew.Exp]
+  = AbsLambdaNatNew.$fShowExp
+instance [safe] GHC.Show.Show [AbsLambdaNatNew.Id]
+  = AbsLambdaNatNew.$fShowId
+instance [safe] GHC.Show.Show [AbsLambdaNatNew.Program]
+  = AbsLambdaNatNew.$fShowProgram
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

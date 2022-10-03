@@ -1,0 +1,7 @@
+Configuring th-expand-syns-0.4.4.0...
+Preprocessing library for th-expand-syns-0.4.4.0..
+Building library for th-expand-syns-0.4.4.0..
+[1 of 2] Compiling Language.Haskell.TH.ExpandSyns.SemigroupCompat ( Language/Haskell/TH/ExpandSyns/SemigroupCompat.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/ExpandSyns/SemigroupCompat.o )
+[2 of 2] Compiling Language.Haskell.TH.ExpandSyns ( Language/Haskell/TH/ExpandSyns.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/ExpandSyns.o )
+Installing library in /home/bugster2010/.stack/snapshots/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/th-expand-syns-0.4.4.0-Jqd7PPo0b5AIUFZ93VfrGv
+Registering library for th-expand-syns-0.4.4.0..

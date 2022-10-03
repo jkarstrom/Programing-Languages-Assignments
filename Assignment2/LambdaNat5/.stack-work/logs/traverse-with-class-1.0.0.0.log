@@ -1,0 +1,204 @@
+Configuring traverse-with-class-1.0.0.0...
+Preprocessing library for traverse-with-class-1.0.0.0..
+Building library for traverse-with-class-1.0.0.0..
+[1 of 5] Compiling Data.Generics.Traversable.Core ( Data/Generics/Traversable/Core.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Data/Generics/Traversable/Core.o )
+[2 of 5] Compiling Data.Generics.Traversable.TH ( Data/Generics/Traversable/TH.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Data/Generics/Traversable/TH.o )
+[3 of 5] Compiling Data.Generics.Traversable.Instances ( Data/Generics/Traversable/Instances.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Data/Generics/Traversable/Instances.o )
+[4 of 5] Compiling Data.Generics.Traversable ( Data/Generics/Traversable.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Data/Generics/Traversable.o )
+
+[;1mData/Generics/Traversable.hs:101:6: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c a’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature:
+        everywhere :: forall c a.
+                      (Rec c a) => (forall d. (Rec c d) => d -> d) -> a -> a[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m101 |[0m[0m   :: [;1m[35mforall c a .[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m      ^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:101:6: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c d’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature:
+        everywhere :: forall c a.
+                      (Rec c a) => (forall d. (Rec c d) => d -> d) -> a -> a[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m101 |[0m[0m   :: [;1m[35mforall c a .[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m      ^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:107:11: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c b’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature: go :: forall b. Rec c b => b -> b
+      In the expression:
+        let
+          go :: forall b. Rec c b => b -> b
+          go = f . gmap @(Rec c) go
+        in go
+      In an equation for ‘everywhere’:
+          everywhere f
+            = let
+                go :: forall b. Rec c b => b -> b
+                go = f . gmap @(Rec c) go
+              in go[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m107 |[0m[0m     go :: [;1m[35mforall b . Rec c b => b -> b[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:113:6: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c a’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature:
+        everywhere' :: forall c a.
+                       (Rec c a) => (forall d. (Rec c d) => d -> d) -> a -> a[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m113 |[0m[0m   :: [;1m[35mforall c a .[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m      ^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:113:6: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c d’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature:
+        everywhere' :: forall c a.
+                       (Rec c a) => (forall d. (Rec c d) => d -> d) -> a -> a[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m113 |[0m[0m   :: [;1m[35mforall c a .[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m      ^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:119:11: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c b’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature: go :: forall b. Rec c b => b -> b
+      In the expression:
+        let
+          go :: forall b. Rec c b => b -> b
+          go = gmap @(Rec c) go . f
+        in go
+      In an equation for ‘everywhere'’:
+          everywhere' f
+            = let
+                go :: forall b. Rec c b => b -> b
+                go = gmap @(Rec c) go . f
+              in go[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m119 |[0m[0m     go :: [;1m[35mforall b . Rec c b => b -> b[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:125:6: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c a’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature:
+        everywhereM :: forall c m a.
+                       (Monad m, Rec c a) => (forall d. (Rec c d) => d -> m d) -> a -> m a[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m125 |[0m[0m   :: [;1m[35mforall c m a .[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m      ^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:125:6: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c d’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature:
+        everywhereM :: forall c m a.
+                       (Monad m, Rec c a) => (forall d. (Rec c d) => d -> m d) -> a -> m a[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m125 |[0m[0m   :: [;1m[35mforall c m a .[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m      ^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:131:11: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c b’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature: go :: forall b. Rec c b => b -> m b
+      In the expression:
+        let
+          go :: forall b. Rec c b => b -> m b
+          go = f <=< gmapM @(Rec c) go
+        in go
+      In an equation for ‘everywhereM’:
+          everywhereM f
+            = let
+                go :: forall b. Rec c b => b -> m b
+                go = f <=< gmapM @(Rec c) go
+              in go[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m131 |[0m[0m     go :: [;1m[35mforall b . Rec c b => b -> m b[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:137:6: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c a’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature:
+        everything :: forall c r a.
+                      (Rec c a) =>
+                      (r -> r -> r) -> (forall d. (Rec c d) => d -> r) -> a -> r[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m137 |[0m[0m   :: [;1m[35mforall c r a .[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m      ^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:137:6: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c d’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature:
+        everything :: forall c r a.
+                      (Rec c a) =>
+                      (r -> r -> r) -> (forall d. (Rec c d) => d -> r) -> a -> r[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m137 |[0m[0m   :: [;1m[35mforall c r a .[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m      ^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1mData/Generics/Traversable.hs:144:11: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    • The constraint ‘Rec c b’ matches an instance declaration
+      instance (GTraversable (Rec c) a, c a) => Rec c a
+        -- Defined at Data/Generics/Traversable.hs:61:10
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    • In the type signature: go :: forall b. Rec c b => b -> r
+      In the expression:
+        let
+          go :: forall b. Rec c b => b -> r
+          go x = gfoldl' @(Rec c) (\ a y -> combine a (go y)) (f x) x
+        in go
+      In an equation for ‘everything’:
+          everything combine f
+            = let
+                go :: forall b. Rec c b => b -> r
+                go x = gfoldl' @(Rec c) (\ a y -> ...) (f x) x
+              in go[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m144 |[0m[0m     go :: [;1m[35mforall b . Rec c b => b -> r[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[5 of 5] Compiling Data.Generics.Traversable.Zipper ( Data/Generics/Traversable/Zipper.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Data/Generics/Traversable/Zipper.o )
+Installing library in /home/bugster2010/.stack/snapshots/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/traverse-with-class-1.0.0.0-DSIATOehFg671TJacMYkXy
+Registering library for traverse-with-class-1.0.0.0..

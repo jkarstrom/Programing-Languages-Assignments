@@ -1,0 +1,40 @@
+-----------------------------------------
+-- Lambda Calculus with Natural Numbers 1
+-----------------------------------------
+
+Prog.   Program ::= Exp ; 
+EAbs.   Exp1 ::= "\\" Id "." Exp ;  
+EApp.   Exp2 ::= Exp2 Exp3 ; 
+ENat0.  Exp3 ::= "0" ; 
+ENatS.  Exp3 ::= "S" Exp3 ; -- "S" is now a 'terminal symbol' and cannot be parsed as an identifier
+EVar.   Exp4 ::= Id ; 
+
+coercions Exp 4 ;
+
+token Id (letter (letter | digit | '_')*) ;
+
+comment "//" ;
+comment "/*" "*/" ;
+
+----------------------------------------------
+----------------------------------------------
+-- Parse the following expressions by running 
+--   echo "myprogram" | ./TestLambdaNat 
+-- in the terminal in the directory where you have TestLambdaNat.
+--
+-- Verify that the following statements are correct:
+--
+-- S 0 is a number                  // echo "S 0" | ./TestLambdaNat
+-- S0 is a variable                 // echo "S0" | ./TestLambdaNat
+-- S S 0 is a number                // echo "S S 0" | ./TestLambdaNat
+-- S (S 0) is not a program         // echo "S (S 0)" | ./TestLambdaNat
+-- S x is not a program             // echo "S x" | ./TestLambdaNat
+--
+-- \x.x x x equals \x. ((x x) x)    // echo "\x.x x x" | ./TestLambdaNat  // echo "\x. ((x x) x)" | ./TestLambdaNat
+-- in the line above, the empty spaces between the x are important (why?)
+-- (\x.x) x x equals (((\x.x) x) x) // echo "(\x.x) x x" | ./TestLambdaNat  // echo "(((\x.x) x) x)" | ./TestLambdaNat
+-- (\x.x) S 0 equals (\x.x) (S 0)   // echo "(\x.x) S 0" | ./TestLambdaNat  // echo "(\x.x) (S 0)" | ./TestLambdaNat
+--
+-- Btw, I say that two strings are equal if they produce the same parse tree (abstract syntax tree)
+----------------------------------------------
+----------------------------------------------

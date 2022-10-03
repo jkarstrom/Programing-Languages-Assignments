@@ -1,0 +1,1799 @@
+
+==================== FINAL INTERFACE ====================
+2021-11-30 04:27:49.0151603 UTC
+
+interface LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:LamArrayInterpreter [orphan module] [family instance module] 8064
+  interface hash: 3e78ea10a892380ec950f4da17cc834e
+  ABI hash: 3d378cd9ad752c57e7639fdba6064d27
+  export-list hash: b77e522c1aec71349d1756210da24d09
+  orphan hash: 339977fb9bd8aa8a6e2daec67bc6d24b
+  flag hash: a4c5b1d3ea3987110007ea1551f4df17
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies: Environment LamFunInterpreter LamFunSyntax
+                     Memory
+package dependencies: array-0.5.3.0 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 containers-0.6.0.1 deepseq-1.4.4.0
+                      ghc-boot-th-8.6.4 ghc-prim-0.5.3 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 mtl-2.2.2 pretty-1.1.3.6 primitive-0.6.4.0
+                      safe-0.3.17 singletons-2.5.1 string-conv-0.1.2 syb-0.7
+                      template-haskell-2.14.0.0 text-1.2.3.1 th-abstraction-0.2.11.0
+                      th-desugar-1.9 th-expand-syns-0.4.4.0 th-lift-0.7.11
+                      th-lift-instances-0.1.12 th-orphans-0.13.6 th-reify-many-0.1.8
+                      transformers-0.5.6.2 vector-0.12.0.2
+orphans: hashable-1.2.7.0:Data.Hashable.Generic
+         singletons-2.5.1:Data.Singletons.Prelude.Applicative
+         singletons-2.5.1:Data.Singletons
+         singletons-2.5.1:Data.Singletons.Prelude.Semigroup
+         singletons-2.5.1:Data.Singletons.Prelude.Const
+         singletons-2.5.1:Data.Singletons.Prelude.Functor
+         singletons-2.5.1:Data.Singletons.Prelude.Identity
+         singletons-2.5.1:Data.Singletons.Prelude.Monoid
+         singletons-2.5.1:Data.Singletons.Prelude.Semigroup.Internal
+         singletons-2.5.1:Data.Singletons.TypeLits
+         singletons-2.5.1:Data.Singletons.ShowSing
+         singletons-2.5.1:Data.Singletons.TypeLits.Internal
+         singletons-2.5.1:Data.Singletons.Prelude.Ord
+         singletons-2.5.1:Data.Singletons.Prelude.Instances
+         singletons-2.5.1:Data.Singletons.Decide
+         th-orphans-0.13.6:Language.Haskell.TH.Instances
+         th-lift-0.7.11:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.12:Instances.TH.Lift
+         vector-0.12.0.2:Data.Vector.Unboxed
+         vector-0.12.0.2:Data.Vector.Fusion.Bundle
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:LamFunSyntax
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.Graph
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         ghc-boot-th-8.6.4:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.4:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         singletons-2.5.1:Data.Singletons
+                         singletons-2.5.1:Data.Singletons.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Applicative
+                         singletons-2.5.1:Data.Singletons.Prelude.Base
+                         singletons-2.5.1:Data.Singletons.Prelude.Bool
+                         singletons-2.5.1:Data.Singletons.Prelude.Const
+                         singletons-2.5.1:Data.Singletons.Prelude.Either
+                         singletons-2.5.1:Data.Singletons.Prelude.Enum
+                         singletons-2.5.1:Data.Singletons.Prelude.Eq
+                         singletons-2.5.1:Data.Singletons.Prelude.Foldable
+                         singletons-2.5.1:Data.Singletons.Prelude.Functor
+                         singletons-2.5.1:Data.Singletons.Prelude.Identity
+                         singletons-2.5.1:Data.Singletons.Prelude.Instances
+                         singletons-2.5.1:Data.Singletons.Prelude.IsString
+                         singletons-2.5.1:Data.Singletons.Prelude.List.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.List.Internal.Disambiguation
+                         singletons-2.5.1:Data.Singletons.Prelude.Maybe
+                         singletons-2.5.1:Data.Singletons.Prelude.Monad.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Monoid
+                         singletons-2.5.1:Data.Singletons.Prelude.Num
+                         singletons-2.5.1:Data.Singletons.Prelude.Ord
+                         singletons-2.5.1:Data.Singletons.Prelude.Semigroup
+                         singletons-2.5.1:Data.Singletons.Prelude.Semigroup.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Show
+                         singletons-2.5.1:Data.Singletons.Prelude.Traversable
+                         singletons-2.5.1:Data.Singletons.Prelude.Tuple
+                         singletons-2.5.1:Data.Singletons.Syntax
+                         singletons-2.5.1:Data.Singletons.TypeLits
+                         singletons-2.5.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.2.11.0:Language.Haskell.TH.Datatype
+                         th-desugar-1.9:Language.Haskell.TH.Desugar.AST
+                         vector-0.12.0.2:Data.Vector vector-0.12.0.2:Data.Vector.Primitive
+                         vector-0.12.0.2:Data.Vector.Storable
+                         vector-0.12.0.2:Data.Vector.Unboxed
+                         vector-0.12.0.2:Data.Vector.Unboxed.Base
+import  -/  Environment fc228636115b3eb33e1f14ea6fd644a7
+  exports: 1f1ead44469ca79e6ce710e614711349
+  Env d0b77d2ef5aedd000f16ba1a07a053e7
+  Environment 01e6a7451762728811aee7ff97fd766d
+  Ident 8b1e0b228bd8fae2b470cb5bf07dfe9b
+  defargs a53be20f512b471df26539c591b0b058
+  define 981930f3482af50e37afcd00bee4e14e
+  make_env 78ff6ce220bc756fbc7a5940c8984246
+import  -/  LamFunInterpreter 4f9d577ae2075ba043d320be0803942f
+  exports: fbb58a90add02d8f60f2004ad1ed3ddf
+  GlobEnv a2020612979c465405ea36dd5164cbce
+  Interpreter bb4116c80579de5e59c10a4e17a158f3
+  runProg 73547b0450869e1f49f4740773ad1814
+import  -/  LamFunSyntax 098d1f7f00dadcfb30a6c4ee65ffc67c
+  exports: 8e863f37e32bf74e275db03d6c750d40
+  Boolean_ 6c5fd79f45db1b9b227339c90503effc
+  Calculate_ 23e3af5c645ff9ba8978cff0e47a89b1
+  Cons_ 81d43fc0ff2435d2c09c8259d17045c5
+  Define_ ca3195bb0c4ec59d67308a85b2bdfadb
+  Defn_ 5a088fa4aebd2efeabd99af587b83fb7
+  Expr_ 5a088fa4aebd2efeabd99af587b83fb7
+  LamArray 3703f095e885cd1c830bc86ef10f3369
+  Lambda_ 5c72eb97518ef217bfc77424c24f327d
+  Nil_ 5a2a281c8722f6fac462c483051cbe81
+  Number_ bb42fa21bd1973b4d98873392fbfcb33
+  Program_ 34eb35ebffca668e964ce8bfefca939f
+  Rec_ 156a8b667f4f21ed4751575f649da00c
+  StrLit_ b3a79cd8e2412a6ffff98ef00e7ac1e4
+  Val_ 2bfba04493a7a11389a4e625db589c98
+  Variable_ af8bd5adb21af8236bfe201d7911ec73
+import  -/  Memory 4175862b35ddc218c8d155eb391b4b11
+  exports: ba5469f4b94f68adee392816ff622181
+  Loc 8d3b85727367ff726701c34e15d5bc3c
+  Location 9cfc796e80d58f970a50a2a7c2f6b39c
+  Mem 089e33f1062267a136658469e2e199fa
+  Memory 7d2fd13f633dd125212152909415829e
+  contents 21f71255842524d3dc53a19dd9a261bf
+  fresh 1238cf123853a19b2f566e318f0ba256
+  init_mem d30ec56b182ea1c815f6ebcfbe99e3a2
+  update 05c0d879997d450c46e0bc12c3e82e1d
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  containers-0.6.0.1:Data.Map d8ba04987faf51abc62bd892a8e4aa44
+import  -/  containers-0.6.0.1:Data.Map.Internal 3e569e355ae39dc42cfe39c88e0e022a
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6d87087aea24143d2650f78480d954a3
+import  -/  string-conv-0.1.2:Data.String.Conv 0dc21ffe2e83297005859948da8debac
+import  -/  text-1.2.3.1:Data.Text 1e51a010d8f8a6fa41d8ea82d69faf13
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+f377ed9aa338f524ee3df7c4fcf38a81
+  $fEqValue :: GHC.Classes.Eq LamArrayInterpreter.Value
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamArrayInterpreter.Value
+                  LamArrayInterpreter.$fEqValue_$c==
+                  LamArrayInterpreter.$fEqValue_$c/= -}
+f377ed9aa338f524ee3df7c4fcf38a81
+  $fEqValue_$c/= ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Value -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: LamArrayInterpreter.Value)
+                   (y :: LamArrayInterpreter.Value) ->
+                 case LamArrayInterpreter.$fEqValue_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+f377ed9aa338f524ee3df7c4fcf38a81
+  $fEqValue_$c== ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Value -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+69a83db85c1245a68934b125fa866f71
+  $fInterpreterLamArray ::
+    LamFunInterpreter.Interpreter 'LamFunSyntax.LamArray
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ 'LamFunSyntax.LamArray
+                  LamArrayInterpreter.$fInterpreterLamArray6
+                    `cast`
+                  (Sym (LamArrayInterpreter.N:LamArrayEnv[0]) ; Sub (Sym (LamArrayInterpreter.D:R:GlobEnvLamArray[0])))
+                  LamArrayInterpreter.$fInterpreterLamArray_$cshow_env
+                  LamArrayInterpreter.$fInterpreterLamArray1
+                    `cast`
+                  (<[LamFunSyntax.Program_
+                       'LamFunSyntax.LamArray Data.Text.Internal.Text]>_R
+                   ->_R <(LamFunInterpreter.GlobEnv 'LamFunSyntax.LamArray,
+                          LamFunInterpreter.RawEnv 'LamFunSyntax.LamArray)>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <(LamFunInterpreter.GlobEnv 'LamFunSyntax.LamArray,
+                                   LamFunInterpreter.RawEnv 'LamFunSyntax.LamArray)>_R)) -}
+553c05d8b1f02c6bc3099323b4c1bf33
+  $fInterpreterLamArray1 ::
+    [LamFunSyntax.Program_
+       'LamFunSyntax.LamArray Data.Text.Internal.Text]
+    -> (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamArray,
+        LamFunInterpreter.RawEnv 'LamFunSyntax.LamArray)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamArray,
+           LamFunInterpreter.RawEnv 'LamFunSyntax.LamArray) #)
+  {- Arity: 3, Strictness: <S,1*U><L,U(U(U,U(U,U)),U)><S,U> -}
+c976381e6c68d91c522ff5228711759a
+  $fInterpreterLamArray10 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray131
+                   LamArrayInterpreter.$fInterpreterLamArray11) -}
+42b37f1c6eb434081bc1437547ea73b8
+  $fInterpreterLamArray100 :: LamArrayInterpreter.Value
+  {- Strictness: x -}
+f6b9862b99e55842401dc1efb640fd85
+  $fInterpreterLamArray101 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray102) -}
+930d2c41cca06000d895b911f38cee64
+  $fInterpreterLamArray102 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<="#) -}
+3b67392533fc0e92e17424d9ddfb3ef8
+  $fInterpreterLamArray103 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray107,
+                  LamArrayInterpreter.$fInterpreterLamArray104)) -}
+e89561c2a2e4cee04770e4cdcf7bdb81
+  $fInterpreterLamArray104 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray105) -}
+13d43cbab169ac01462b732551ee1c0d
+  $fInterpreterLamArray105 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray106
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray106
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.BoolVal
+                                     (GHC.Integer.Type.ltInteger a1 b1) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+0ccd443153901a1d8dee7e178a70c731
+  $fInterpreterLamArray106 :: LamArrayInterpreter.Value
+  {- Strictness: x -}
+0b3ab73c8d1db4a6769f018a972073b0
+  $fInterpreterLamArray107 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray108) -}
+04b058d07e20558395c3ab386278000a
+  $fInterpreterLamArray108 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<"#) -}
+dfe431d8cabb7980406d067b5eef0868
+  $fInterpreterLamArray109 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray113,
+                  LamArrayInterpreter.$fInterpreterLamArray110)) -}
+7b9065e9b234ecef0897fb1ba256bf68
+  $fInterpreterLamArray11 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray124
+                   LamArrayInterpreter.$fInterpreterLamArray12) -}
+a8eee1b065c371b7e2fc76b227ff83c8
+  $fInterpreterLamArray110 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray111) -}
+1a0a2b7baa51dfac63b7d7e46a70478b
+  $fInterpreterLamArray111 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (args :: LamArrayInterpreter.Value) ->
+                 let {
+                   x :: LamArrayInterpreter.Value
+                   = case args of wild {
+                       DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray112
+                       LamArrayInterpreter.IntVal a
+                       -> LamArrayInterpreter.IntVal (GHC.Integer.Type.negateInteger a) }
+                 } in
+                 \ (mem :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char, x, mem)) -}
+864a30252edd84daa4365cd5100390b2
+  $fInterpreterLamArray112 :: LamArrayInterpreter.Value
+  {- Strictness: x -}
+69bd3b3846f3478ae52a98ad39ae8cea
+  $fInterpreterLamArray113 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray114) -}
+9d5f3ab5176f6b7e76b60942dfab27b7
+  $fInterpreterLamArray114 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("~"#) -}
+bb474115bba362cba956ef10f6d79679
+  $fInterpreterLamArray115 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray122,
+                  LamArrayInterpreter.$fInterpreterLamArray116)) -}
+c168a588775a7155ec0042f92b69e724
+  $fInterpreterLamArray116 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray117) -}
+03041828178055869cf590fe9352f986
+  $fInterpreterLamArray117 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.IntVal
+                                     (LamArrayInterpreter.$fInterpreterLamArray118 a1 b1) }
+                           LamArrayInterpreter.Addr ds
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.Addr ds1
+                                -> LamArrayInterpreter.Addr
+                                     (LamArrayInterpreter.$fInterpreterLamArray118
+                                        ds `cast` (Memory.N:Location[0])
+                                        ds1 `cast` (Memory.N:Location[0]))
+                                       `cast`
+                                     (Sym (Memory.N:Location[0])) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+0de04a29ed6919ade9afe5ff1cede2fb
+  $fInterpreterLamArray118 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: GHC.Integer.Type.Integer)
+                   (b :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.eqInteger#
+                        b
+                        LamArrayInterpreter.$fInterpreterLamArray120 of wild {
+                   DEFAULT -> GHC.Real.$fIntegralInteger_$cmod a b
+                   1# -> LamArrayInterpreter.$fInterpreterLamArray119 }) -}
+9d6b7db7193b02832e6e44c6179ca213
+  $fInterpreterLamArray119 :: GHC.Integer.Type.Integer
+  {- Strictness: x -}
+2fe81b13c6b3b21b54cf17539f38cc4f
+  $fInterpreterLamArray12 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray115
+                   LamArrayInterpreter.$fInterpreterLamArray13) -}
+656c4cf44ce17259a62a9d76562ecd9a
+  $fInterpreterLamArray120 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+ea101f106dfbceda22f235432bfd8418
+  $fInterpreterLamArray121 :: LamArrayInterpreter.Value
+  {- Strictness: x -}
+6364089be535a387cbeeae0ff4bb603f
+  $fInterpreterLamArray122 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray123) -}
+3fa92d3667ff330be4d054154202fec7
+  $fInterpreterLamArray123 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("mod"#) -}
+d8e0c8d4fe1591da1e4fb4ae066b4cbf
+  $fInterpreterLamArray124 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray129,
+                  LamArrayInterpreter.$fInterpreterLamArray125)) -}
+a811173012b6919781666b79463816c3
+  $fInterpreterLamArray125 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray126) -}
+be41762f2a251dfd8dd4d60bcec45397
+  $fInterpreterLamArray126 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.IntVal
+                                     (LamArrayInterpreter.$fInterpreterLamArray127 a1 b1) }
+                           LamArrayInterpreter.Addr ds
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.Addr ds1
+                                -> LamArrayInterpreter.Addr
+                                     (LamArrayInterpreter.$fInterpreterLamArray127
+                                        ds `cast` (Memory.N:Location[0])
+                                        ds1 `cast` (Memory.N:Location[0]))
+                                       `cast`
+                                     (Sym (Memory.N:Location[0])) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+2a9ca97d0f58e58d48f4534697e970f6
+  $fInterpreterLamArray127 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: GHC.Integer.Type.Integer)
+                   (b :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.eqInteger#
+                        b
+                        LamArrayInterpreter.$fInterpreterLamArray120 of wild {
+                   DEFAULT -> GHC.Real.$fIntegralInteger_$cdiv a b
+                   1# -> LamArrayInterpreter.$fInterpreterLamArray128 }) -}
+e9644bda6329e105298dabed6c8e0f16
+  $fInterpreterLamArray128 :: GHC.Integer.Type.Integer
+  {- Strictness: x -}
+e4521f7ac3a79dffa6c25833e8d90ddd
+  $fInterpreterLamArray129 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray130) -}
+01f9ce5b2adf0cb7c5666c5ff46d0ffb
+  $fInterpreterLamArray13 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray109
+                   LamArrayInterpreter.$fInterpreterLamArray14) -}
+9661a20dee8315817e0bd9e52952371b
+  $fInterpreterLamArray130 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/"#) -}
+210fe13f5498b454bb7a35c26c7e2122
+  $fInterpreterLamArray131 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray134,
+                  LamArrayInterpreter.$fInterpreterLamArray132)) -}
+001a1d143cb5cea252ace62173ee978d
+  $fInterpreterLamArray132 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray133) -}
+e616b5154cb910cee428c56dc636e5bf
+  $fInterpreterLamArray133 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.IntVal
+                                     (GHC.Integer.Type.timesInteger a1 b1) }
+                           LamArrayInterpreter.Addr ds
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.Addr ds1
+                                -> LamArrayInterpreter.Addr
+                                     (GHC.Integer.Type.timesInteger
+                                        ds `cast` (Memory.N:Location[0])
+                                        ds1 `cast` (Memory.N:Location[0]))
+                                       `cast`
+                                     (Sym (Memory.N:Location[0])) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+d438f2aadf611bcea609a1bd536c945d
+  $fInterpreterLamArray134 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray135) -}
+be95de1e17d8d2eabb04cbc5361f3a57
+  $fInterpreterLamArray135 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("*"#) -}
+5277d1cded51f9f11fe3197c7c325892
+  $fInterpreterLamArray136 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray139,
+                  LamArrayInterpreter.$fInterpreterLamArray137)) -}
+05a2389dbccf181fd758eb74c54e4796
+  $fInterpreterLamArray137 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray138) -}
+cbf23db0d36c6e25eefaba2b399103db
+  $fInterpreterLamArray138 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.IntVal
+                                     (GHC.Integer.Type.minusInteger a1 b1) }
+                           LamArrayInterpreter.Addr ds
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.Addr ds1
+                                -> LamArrayInterpreter.Addr
+                                     (GHC.Integer.Type.minusInteger
+                                        ds `cast` (Memory.N:Location[0])
+                                        ds1 `cast` (Memory.N:Location[0]))
+                                       `cast`
+                                     (Sym (Memory.N:Location[0])) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+9a59052ee316bb0528f10ac1b10908d3
+  $fInterpreterLamArray139 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray140) -}
+1c7dc3fe2b201d77fec88a66b44906c6
+  $fInterpreterLamArray14 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray103
+                   LamArrayInterpreter.$fInterpreterLamArray15) -}
+997434a73575db49efb5b05c06bfc615
+  $fInterpreterLamArray140 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("-"#) -}
+a5882293607f4b5cdf28a52af9964f99
+  $fInterpreterLamArray141 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray144,
+                  LamArrayInterpreter.$fInterpreterLamArray142)) -}
+89a96b0537710f12da029189c603951d
+  $fInterpreterLamArray142 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray143) -}
+b5319e461f4e4f2edaeac4fd52dfa667
+  $fInterpreterLamArray143 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.IntVal
+                                     (GHC.Integer.Type.plusInteger a1 b1) }
+                           LamArrayInterpreter.Addr ds
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray121
+                                LamArrayInterpreter.Addr ds1
+                                -> LamArrayInterpreter.Addr
+                                     (GHC.Integer.Type.plusInteger
+                                        ds `cast` (Memory.N:Location[0])
+                                        ds1 `cast` (Memory.N:Location[0]))
+                                       `cast`
+                                     (Sym (Memory.N:Location[0])) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+7dc06b3c64ea80108fc633752c2fa312
+  $fInterpreterLamArray144 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray145) -}
+81487e4e0ca70afea3b58ee74c37196d
+  $fInterpreterLamArray145 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("+"#) -}
+aa466144ca0af8b2d21f328df44c75c5
+  $fInterpreterLamArray15 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray97
+                   LamArrayInterpreter.$fInterpreterLamArray16) -}
+f9b86d76475e8839745c22f8fdd4acfb
+  $fInterpreterLamArray16 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray91
+                   LamArrayInterpreter.$fInterpreterLamArray17) -}
+d79386a0c71440fb591f69aa26af8eda
+  $fInterpreterLamArray17 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray85
+                   LamArrayInterpreter.$fInterpreterLamArray18) -}
+4bd2e73e1dd2f09bf711d398ea95d67d
+  $fInterpreterLamArray18 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray80
+                   LamArrayInterpreter.$fInterpreterLamArray19) -}
+570402e0fc2a6862ffbc004b487440b4
+  $fInterpreterLamArray19 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray75
+                   LamArrayInterpreter.$fInterpreterLamArray20) -}
+4deaacd2cdb39e0ead46fb003ef09295
+  $fInterpreterLamArray2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray3) -}
+c99ca1116ffdf9c2729c30139dbfa3d1
+  $fInterpreterLamArray20 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray68
+                   LamArrayInterpreter.$fInterpreterLamArray21) -}
+e6b47102e5706e2247ed781dcd6d7b92
+  $fInterpreterLamArray21 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray62
+                   LamArrayInterpreter.$fInterpreterLamArray22) -}
+dc311926ca69426de42d3eec3ba9e45a
+  $fInterpreterLamArray22 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray56
+                   LamArrayInterpreter.$fInterpreterLamArray23) -}
+8f1293b9113850c240ecac193e2baa80
+  $fInterpreterLamArray23 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray51
+                   LamArrayInterpreter.$fInterpreterLamArray24) -}
+0ab50a9141b611978b9cfc670390dbab
+  $fInterpreterLamArray24 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray46
+                   LamArrayInterpreter.$fInterpreterLamArray25) -}
+a054ac2eacdad02b744178a3b31c6d1f
+  $fInterpreterLamArray25 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray40
+                   LamArrayInterpreter.$fInterpreterLamArray26) -}
+bf5de6c2fe3b61e2347e497ca687a1ba
+  $fInterpreterLamArray26 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray34
+                   LamArrayInterpreter.$fInterpreterLamArray27) -}
+15287e9268e63d9588f0e4124153d5fa
+  $fInterpreterLamArray27 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray28
+                   (GHC.Types.[] @ (Environment.Ident, LamArrayInterpreter.Value))) -}
+c066b77c7b20fe976344a6a8a0b19374
+  $fInterpreterLamArray28 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray32,
+                  LamArrayInterpreter.$fInterpreterLamArray29)) -}
+1e5a4dc4195c120a31d33b045f047aa9
+  $fInterpreterLamArray29 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray30) -}
+b4f82ae20ce41a692fb872385438c9a9
+  $fInterpreterLamArray3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\n"#) -}
+960e345bb4cbdebdf7b1809bea7cc2e2
+  $fInterpreterLamArray30 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> (GHC.Base.String, LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <S,1*U><L,U>m,
+     Unfolding: (\ (ds :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> case LamArrayInterpreter.$fInterpreterLamArray31
+                      ret_ty (GHC.Base.String, LamArrayInterpreter.Value,
+                              LamArrayInterpreter.Mem)
+                      of {}
+                   LamArrayInterpreter.IntVal a
+                   -> (GHC.Types.[] @ GHC.Types.Char,
+                       LamArrayInterpreter.Addr a `cast` (Sym (Memory.N:Location[0])),
+                       eta) }) -}
+ea4355808bc67da26640a4a852fdf1af
+  $fInterpreterLamArray31 ::
+    LamArrayInterpreter.M LamArrayInterpreter.Value
+  {- Strictness: x -}
+8c259de0a85f586ef9e104f8c24aced0
+  $fInterpreterLamArray32 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray33) -}
+22ddec0df25b2fa4ba9c51f4963f1682
+  $fInterpreterLamArray33 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("addr"#) -}
+29dbbef824d18c2a80761c0c195113c0
+  $fInterpreterLamArray34 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray38,
+                  LamArrayInterpreter.$fInterpreterLamArray35)) -}
+84e3b6fad42e447f80ef2ab6936aaa70
+  $fInterpreterLamArray35 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray36) -}
+eb84a61592f40c643725705930df4222
+  $fInterpreterLamArray36 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> (GHC.Base.String, LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <S,1*U><L,U(U,U)>m,
+     Unfolding: (\ (ds :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> case LamArrayInterpreter.$fInterpreterLamArray37
+                      ret_ty (GHC.Base.String, LamArrayInterpreter.Value,
+                              LamArrayInterpreter.Mem)
+                      of {}
+                   LamArrayInterpreter.Addr a
+                   -> (GHC.Types.[] @ GHC.Types.Char,
+                       Memory.contents @ LamArrayInterpreter.Value eta a, eta) }) -}
+bed5d42dd6e73cd2dbdb87057bf28382
+  $fInterpreterLamArray37 ::
+    LamArrayInterpreter.M LamArrayInterpreter.Value
+  {- Strictness: x -}
+9b7fd2440c6f0e7896eb2dac323ddfa9
+  $fInterpreterLamArray38 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray39) -}
+cb1bbce3775f5fe11920bf8bf11d8c6e
+  $fInterpreterLamArray39 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("!"#) -}
+5ccc7fc85c290b5f222fb2e4feed7a85
+  $fInterpreterLamArray4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("\n\
+                 \Memory:\n"#) -}
+7c79990c8efac91bd429f1b08b492f9b
+  $fInterpreterLamArray40 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray44,
+                  LamArrayInterpreter.$fInterpreterLamArray41)) -}
+bf6ba78830e80f88fea837eb83723150
+  $fInterpreterLamArray41 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray42) -}
+b67381f5125ff7be38a4911f863e6a73
+  $fInterpreterLamArray42 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> (GHC.Base.String, LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <S,1*U><L,1*U(U,1*U)>m,
+     Unfolding: (\ (x :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 case x of wild {
+                   DEFAULT
+                   -> let {
+                        ds :: (GHC.Base.String, Memory.Location, LamArrayInterpreter.Mem)
+                        = case LamArrayInterpreter.$wnew
+                                 LamArrayInterpreter.$fInterpreterLamArray43
+                                 eta of ww { (#,,#) ww1 ww2 ww3 ->
+                          (ww1, ww2, ww3) }
+                      } in
+                      (case ds of wild1 { (,,) s1 x1 mem' -> s1 },
+                       LamArrayInterpreter.Addr
+                         (case ds of wild1 { (,,) s1 x1 mem' -> x1 }),
+                       case ds of wild1 { (,,) s1 x1 mem' -> mem' })
+                   LamArrayInterpreter.Cons ds ds1
+                   -> case ds of wild1 {
+                        DEFAULT
+                        -> let {
+                             ds2 :: (GHC.Base.String, Memory.Location, LamArrayInterpreter.Mem)
+                             = case LamArrayInterpreter.$wnew
+                                      LamArrayInterpreter.$fInterpreterLamArray43
+                                      eta of ww { (#,,#) ww1 ww2 ww3 ->
+                               (ww1, ww2, ww3) }
+                           } in
+                           (case ds2 of wild2 { (,,) s1 x1 mem' -> s1 },
+                            LamArrayInterpreter.Addr
+                              (case ds2 of wild2 { (,,) s1 x1 mem' -> x1 }),
+                            case ds2 of wild2 { (,,) s1 x1 mem' -> mem' })
+                        LamArrayInterpreter.IntVal n
+                        -> case ds1 of wild2 {
+                             DEFAULT
+                             -> let {
+                                  ds2 :: (GHC.Base.String, Memory.Location, LamArrayInterpreter.Mem)
+                                  = case LamArrayInterpreter.$wnew
+                                           LamArrayInterpreter.$fInterpreterLamArray43
+                                           eta of ww { (#,,#) ww1 ww2 ww3 ->
+                                    (ww1, ww2, ww3) }
+                                } in
+                                (case ds2 of wild3 { (,,) s1 x1 mem' -> s1 },
+                                 LamArrayInterpreter.Addr
+                                   (case ds2 of wild3 { (,,) s1 x1 mem' -> x1 }),
+                                 case ds2 of wild3 { (,,) s1 x1 mem' -> mem' })
+                             LamArrayInterpreter.Nil
+                             -> let {
+                                  ds2 :: (GHC.Base.String, Memory.Location, LamArrayInterpreter.Mem)
+                                  = case LamArrayInterpreter.$wnew
+                                           n
+                                           eta of ww { (#,,#) ww1 ww2 ww3 ->
+                                    (ww1, ww2, ww3) }
+                                } in
+                                (case ds2 of wild3 { (,,) s1 x1 mem' -> s1 },
+                                 LamArrayInterpreter.Addr
+                                   (case ds2 of wild3 { (,,) s1 x1 mem' -> x1 }),
+                                 case ds2 of wild3 { (,,) s1 x1 mem' -> mem' }) } } }) -}
+9f29b6f340177ee622c47a9a261dbbec
+  $fInterpreterLamArray43 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+a7c842448350c1b265e8f59284790f4b
+  $fInterpreterLamArray44 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray45) -}
+8f062ca2f78e3cdb20d9e5eadbe31304
+  $fInterpreterLamArray45 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("new"#) -}
+0b1310e29148563becdc68da6b2d217c
+  $fInterpreterLamArray46 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray49,
+                  LamArrayInterpreter.$fInterpreterLamArray47)) -}
+b3241c0cb26f4edc9b2696d52a9fca2f
+  $fInterpreterLamArray47 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray48) -}
+0711b3978743d0cf17cee6bb8f2d7f48
+  $fInterpreterLamArray48 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (v :: LamArrayInterpreter.Value) ->
+                 let {
+                   lvl79 :: [GHC.Types.Char]
+                   = GHC.Base.++
+                       @ GHC.Types.Char
+                       (LamArrayInterpreter.$fInterpreterLamArray_$cshow v)
+                       LamArrayInterpreter.$fInterpreterLamArray2
+                 } in
+                 \ (mem :: LamArrayInterpreter.Mem) -> (lvl79, v, mem)) -}
+e43a0433e5c45974a1c7d3f2e28f42e0
+  $fInterpreterLamArray49 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray50) -}
+3a9ae127df31068e8db733bed37a81ec
+  $fInterpreterLamArray5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Env:\n"#) -}
+d71e502e95d2012b73bb49f746f712f4
+  $fInterpreterLamArray50 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("println"#) -}
+3f3d74c5ffacf49eb2befcdf20f79141
+  $fInterpreterLamArray51 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray54,
+                  LamArrayInterpreter.$fInterpreterLamArray52)) -}
+aa789c487582396371cd88cbd235bab6
+  $fInterpreterLamArray52 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray53) -}
+ba149a8582a007e3df2157f71f96a92e
+  $fInterpreterLamArray53 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (v :: LamArrayInterpreter.Value) ->
+                 let {
+                   lvl79 :: [GHC.Types.Char]
+                   = LamArrayInterpreter.$fInterpreterLamArray_$cshow v
+                 } in
+                 \ (mem :: LamArrayInterpreter.Mem) -> (lvl79, v, mem)) -}
+7382f3f1795bff1f2cf1e372feb1cfd4
+  $fInterpreterLamArray54 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray55) -}
+41ce7dbefa89bf0888a4fd1d0774206d
+  $fInterpreterLamArray55 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("print"#) -}
+69dc73f80e282b29d3b377d9e49c0f24
+  $fInterpreterLamArray56 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray60,
+                  LamArrayInterpreter.$fInterpreterLamArray57)) -}
+45bfeb5b92fdb3f997743cd85100efee
+  $fInterpreterLamArray57 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray58) -}
+088eeb8d963c6acd41904fbed51da512
+  $fInterpreterLamArray58 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,1*U><L,U>m,
+     Unfolding: (\ (args :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  case args of wild {
+                    DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray59
+                    LamArrayInterpreter.Cons ds t -> t },
+                  eta)) -}
+72ad5ded61298e4d52d9e3e812b2d004
+  $fInterpreterLamArray59 :: LamArrayInterpreter.Value
+  {- Strictness: x -}
+21aa79fee3306d11ec0de5d027fc6364
+  $fInterpreterLamArray6 ::
+    (Environment.Environment LamArrayInterpreter.Value,
+     Memory.Memory LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray7
+                    `cast`
+                  (Sym (Environment.N:Environment[0]) <LamArrayInterpreter.Value>_N),
+                  (Memory.init_mem1 @ LamArrayInterpreter.Value)
+                    `cast`
+                  (Sym (Memory.N:Memory[0] <LamArrayInterpreter.Value>_R)))) -}
+e8a02ab41f868d711b63086201c11967
+  $fInterpreterLamArray60 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray61) -}
+217ed4d85be4cce32831fe83acaa69b4
+  $fInterpreterLamArray61 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("tail"#) -}
+1521d2eaebf7f2ba4d94c157787458f0
+  $fInterpreterLamArray62 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray66,
+                  LamArrayInterpreter.$fInterpreterLamArray63)) -}
+2b47b25b27f656ac1cead0a076866af5
+  $fInterpreterLamArray63 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray64) -}
+c0a8e685790b5242334c64b1002ef8cf
+  $fInterpreterLamArray64 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,1*U><L,U>m,
+     Unfolding: (\ (args :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  case args of wild {
+                    DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray65
+                    LamArrayInterpreter.Cons h ds -> h },
+                  eta)) -}
+39afacb357afb6548354396a3b359563
+  $fInterpreterLamArray65 :: LamArrayInterpreter.Value
+  {- Strictness: x -}
+1ea25742e28ae6120718a94cc8fa03d3
+  $fInterpreterLamArray66 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray67) -}
+9b0543df691fb6c508cdfe55d599325f
+  $fInterpreterLamArray67 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("head"#) -}
+fe9b1b7ceab7b6e043942e7b5f212dcf
+  $fInterpreterLamArray68 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray73,
+                  LamArrayInterpreter.$fInterpreterLamArray69)) -}
+3f448fdebc22099a4ed992f079deb48a
+  $fInterpreterLamArray69 :: LamArrayInterpreter.Value
+  {- HasNoCafRefs, Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray70) -}
+3df37b83130d0adacbe0528374162a61
+  $fInterpreterLamArray7 ::
+    Data.Map.Internal.Map Environment.Ident LamArrayInterpreter.Value
+  {- Unfolding: (Environment.$sfromList
+                   @ LamArrayInterpreter.Value
+                   LamArrayInterpreter.$fInterpreterLamArray8) -}
+8fc1817edcebfbadc1f00538066e7631
+  $fInterpreterLamArray70 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><L,U>m,
+     Unfolding: (\ (args :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  case args of wild {
+                    DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray72
+                    LamArrayInterpreter.IntVal ds
+                    -> LamArrayInterpreter.$fInterpreterLamArray71 },
+                  eta)) -}
+4934c5c393ff71fb1758d518b4bd7e83
+  $fInterpreterLamArray71 :: LamArrayInterpreter.Value
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (LamArrayInterpreter.BoolVal GHC.Types.True) -}
+5f853586fcdb99d6f83f4194c42e080e
+  $fInterpreterLamArray72 :: LamArrayInterpreter.Value
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (LamArrayInterpreter.BoolVal GHC.Types.False) -}
+57f14097451ed02f4425363e9a41c972
+  $fInterpreterLamArray73 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray74) -}
+b58847ca63cf1c9a88cd00d42c94203e
+  $fInterpreterLamArray74 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("int?"#) -}
+63c89bac1a7ea73c3da9efee98b3776c
+  $fInterpreterLamArray75 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray78,
+                  LamArrayInterpreter.$fInterpreterLamArray76)) -}
+e036151eb2edbbb7f71c3d40f6947986
+  $fInterpreterLamArray76 :: LamArrayInterpreter.Value
+  {- HasNoCafRefs, Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray77) -}
+c75b1cb1eb211a91c7b576facddeb5f5
+  $fInterpreterLamArray77 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: GHC.Types.Bool
+                       = case LamArrayInterpreter.$fEqValue_$c== a b of wild {
+                           GHC.Types.False -> GHC.Types.True
+                           GHC.Types.True -> GHC.Types.False }
+                     } in
+                     let {
+                       x1 :: LamArrayInterpreter.Value = LamArrayInterpreter.BoolVal x
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x1, mem)),
+                  eta)) -}
+6cd187a1cecc4f170c573ac044af4831
+  $fInterpreterLamArray78 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray79) -}
+0e92c19f6f151c92baed2c900afeaa8e
+  $fInterpreterLamArray79 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("!="#) -}
+511101a433fba75468552181be271582
+  $fInterpreterLamArray8 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray141
+                   LamArrayInterpreter.$fInterpreterLamArray9) -}
+01ddd76c022f7aad7ed4032a6797c12d
+  $fInterpreterLamArray80 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray83,
+                  LamArrayInterpreter.$fInterpreterLamArray81)) -}
+457a5aaaac8d32a6e9add9c16a5f7888
+  $fInterpreterLamArray81 :: LamArrayInterpreter.Value
+  {- HasNoCafRefs, Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray82) -}
+d67be23258a56c64286a65d4f6d96ad4
+  $fInterpreterLamArray82 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: GHC.Types.Bool = LamArrayInterpreter.$fEqValue_$c== a b
+                     } in
+                     let {
+                       x1 :: LamArrayInterpreter.Value = LamArrayInterpreter.BoolVal x
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x1, mem)),
+                  eta)) -}
+85cf4031f721cfa8453883e651e0e48c
+  $fInterpreterLamArray83 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray84) -}
+ea6ca5eeecff23bec99e5478f6287bbf
+  $fInterpreterLamArray84 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("=="#) -}
+46edd21506b00782c20d373479c8980e
+  $fInterpreterLamArray85 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray89,
+                  LamArrayInterpreter.$fInterpreterLamArray86)) -}
+27abd0e3967450465bff7d806bfa93cf
+  $fInterpreterLamArray86 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray87) -}
+35731100e75131782314538e6961890f
+  $fInterpreterLamArray87 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray88
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray88
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.BoolVal
+                                     (GHC.Integer.Type.geInteger a1 b1) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+d72b0d89e02b4a544261bc829aeaf24e
+  $fInterpreterLamArray88 :: LamArrayInterpreter.Value
+  {- Strictness: x -}
+7b23bf3c1f923efa343f1b117ae5df46
+  $fInterpreterLamArray89 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray90) -}
+a6069ec8351737e8420967fe6014a183
+  $fInterpreterLamArray9 ::
+    [(Environment.Ident, LamArrayInterpreter.Value)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Environment.Ident, LamArrayInterpreter.Value)
+                   LamArrayInterpreter.$fInterpreterLamArray136
+                   LamArrayInterpreter.$fInterpreterLamArray10) -}
+aecfdfd79ee63409d32a4a36a0c11766
+  $fInterpreterLamArray90 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (">="#) -}
+e63ea637daf756737c81c7840b8c2925
+  $fInterpreterLamArray91 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray95,
+                  LamArrayInterpreter.$fInterpreterLamArray92)) -}
+29c80ae8e5de0f485b4c141656a66b52
+  $fInterpreterLamArray92 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray93) -}
+88b0dacd9abfec0fca456f30e86dce80
+  $fInterpreterLamArray93 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray94
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray94
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.BoolVal
+                                     (GHC.Integer.Type.gtInteger a1 b1) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+f204d34bf373bae03db643e64cacb6d6
+  $fInterpreterLamArray94 :: LamArrayInterpreter.Value
+  {- Strictness: x -}
+51493ca7c3b721b9ea8e6243571d185d
+  $fInterpreterLamArray95 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   LamArrayInterpreter.$fInterpreterLamArray96) -}
+94b5f6c7b8ce7edd1642510848e917e1
+  $fInterpreterLamArray96 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (">"#) -}
+daee5be905b115ed58c94a18a2d10875
+  $fInterpreterLamArray97 ::
+    (Environment.Ident, LamArrayInterpreter.Value)
+  {- Strictness: m,
+     Unfolding: ((LamArrayInterpreter.$fInterpreterLamArray101,
+                  LamArrayInterpreter.$fInterpreterLamArray98)) -}
+97ca9d005cfde701de23644fb9aa8ee4
+  $fInterpreterLamArray98 :: LamArrayInterpreter.Value
+  {- Strictness: m7,
+     Unfolding: (LamArrayInterpreter.Function
+                   LamArrayInterpreter.$fInterpreterLamArray99) -}
+331f30dfa5c7519ab59d60ac54c29c77
+  $fInterpreterLamArray99 ::
+    LamArrayInterpreter.Value
+    -> LamArrayInterpreter.Mem
+    -> ([GHC.Types.Char], LamArrayInterpreter.Value,
+        LamArrayInterpreter.Mem)
+  {- Arity: 2, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (a :: LamArrayInterpreter.Value)
+                   (eta :: LamArrayInterpreter.Mem) ->
+                 (GHC.Types.[] @ GHC.Types.Char,
+                  LamArrayInterpreter.Function
+                    (\ (b :: LamArrayInterpreter.Value) ->
+                     let {
+                       x :: LamArrayInterpreter.Value
+                       = case a of wild {
+                           DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray100
+                           LamArrayInterpreter.IntVal a1
+                           -> case b of wild1 {
+                                DEFAULT -> LamArrayInterpreter.$fInterpreterLamArray100
+                                LamArrayInterpreter.IntVal b1
+                                -> LamArrayInterpreter.BoolVal
+                                     (GHC.Integer.Type.leInteger a1 b1) } }
+                     } in
+                     \ (mem :: LamArrayInterpreter.Mem) ->
+                     (GHC.Types.[] @ GHC.Types.Char, x, mem)),
+                  eta)) -}
+f377ed9aa338f524ee3df7c4fcf38a81
+  $fInterpreterLamArray_$cshow ::
+    LamArrayInterpreter.Value -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+877c20418655bb162bdf13060efd1f4d
+  $fInterpreterLamArray_$cshow_env ::
+    LamFunInterpreter.GlobEnv 'LamFunSyntax.LamArray -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(LS),1*U(1*U,1*U(A,1*U))>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: LamFunInterpreter.GlobEnv 'LamFunSyntax.LamArray) ->
+                 case w `cast`
+                      (Sub (LamArrayInterpreter.D:R:GlobEnvLamArray[0]) ; LamArrayInterpreter.N:LamArrayEnv[0]) of ww { (,) ww1 ww2 ->
+                 case ww2
+                        `cast`
+                      (Memory.N:Memory[0]
+                           <LamArrayInterpreter.Value>_R) of ww3 { (,) ww4 ww5 ->
+                 LamArrayInterpreter.$w$cshow_env ww1 ww5 } }) -}
+a6aa056ab6446321190bc25c658ec8ef
+  $fInterpreterLamArray_go1 ::
+    [[GHC.Types.Char]]
+    -> Data.Map.Internal.Map
+         GHC.Integer.Type.Integer
+         (GHC.Maybe.Maybe LamArrayInterpreter.Value)
+    -> [[GHC.Types.Char]]
+  {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+b1e4393d876a0f022b365cb703a4f280
+  $fInterpreterLamArray_go13 ::
+    [[GHC.Types.Char]]
+    -> Data.Map.Internal.Map
+         Data.Text.Internal.Text LamArrayInterpreter.Value
+    -> [[GHC.Types.Char]]
+  {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+f377ed9aa338f524ee3df7c4fcf38a81
+  $fShowValue :: GHC.Show.Show LamArrayInterpreter.Value
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamArrayInterpreter.Value
+                  LamArrayInterpreter.$fShowValue_$cshowsPrec
+                  LamArrayInterpreter.$fInterpreterLamArray_$cshow
+                  LamArrayInterpreter.$fShowValue_$cshowList -}
+f377ed9aa338f524ee3df7c4fcf38a81
+  $fShowValue1 ::
+    LamArrayInterpreter.Value -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LamArrayInterpreter.Value)
+                   (s :: GHC.Base.String)[OneShot] ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (LamArrayInterpreter.$fInterpreterLamArray_$cshow x))
+                   s) -}
+f377ed9aa338f524ee3df7c4fcf38a81
+  $fShowValue_$cshowList ::
+    [LamArrayInterpreter.Value] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [LamArrayInterpreter.Value]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ LamArrayInterpreter.Value
+                   LamArrayInterpreter.$fShowValue1
+                   ls
+                   s) -}
+f377ed9aa338f524ee3df7c4fcf38a81
+  $fShowValue_$cshowsPrec ::
+    GHC.Types.Int -> LamArrayInterpreter.Value -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: LamArrayInterpreter.Value)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (LamArrayInterpreter.$fInterpreterLamArray_$cshow x))
+                   s) -}
+58b8f7d2cdb56165e34acc660f9b4299
+  $tc'Addr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10033779625562458507##
+                   11404632559246372827##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tc'Addr2
+                   0#
+                   LamArrayInterpreter.$tc'Addr1) -}
+abe4cee02b35008da7c05c33237498a4
+  $tc'Addr1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d3fa9de28445c7ba9cf43ccf9f8fa124
+  $tc'Addr2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$tc'Addr3) -}
+029a8353dacbec76fbe5f5cf87c382b2
+  $tc'Addr3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Addr"#) -}
+02c02c70025f2f69e01529b7b4cbd0f2
+  $tc'BoolVal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5330661296544683003##
+                   17474120126087453336##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tc'BoolVal2
+                   0#
+                   LamArrayInterpreter.$tc'BoolVal1) -}
+3c193156e1ae67aa8125ef09b356c2b1
+  $tc'BoolVal1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7c951d38c7d588e721634ddb2dae3fa0
+  $tc'BoolVal2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$tc'BoolVal3) -}
+7b9745b4a55932f34782c4fc714269a7
+  $tc'BoolVal3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BoolVal"#) -}
+60eeba275b81623324d03280d5fb2ba7
+  $tc'Cons :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15184742194977585637##
+                   6236393253243326322##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tc'Cons2
+                   0#
+                   LamArrayInterpreter.$tc'Cons1) -}
+171ba79c418743acc7c64a83b68b3539
+  $tc'Cons1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d5f9e673a7b3f1b83eafcb7f31e65653
+  $tc'Cons2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$tc'Cons3) -}
+2a82a32066e169a4ca9df7ddc14a89a3
+  $tc'Cons3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Cons"#) -}
+7ed6339f6e6b933cb55672d82e872194
+  $tc'Function :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15733743118670679058##
+                   4222527654019481862##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tc'Function2
+                   0#
+                   LamArrayInterpreter.$tc'Function1) -}
+19b42880cbe7f621723d314d4b99c5e1
+  $tc'Function1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+41e1078ed725233f77a230cd9c788a22
+  $tc'Function2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$tc'Function3) -}
+29d196b6d9fc36905db62f5971727cd3
+  $tc'Function3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Function"#) -}
+04a9faee9cbaabd14929352d8b3b0c61
+  $tc'IntVal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8181002523557362773##
+                   9219757480482568815##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tc'IntVal2
+                   0#
+                   LamArrayInterpreter.$tc'IntVal1) -}
+10a8972a9d7b6a19e7f082ddaaf40e28
+  $tc'IntVal1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dac529239d1ceb932d3952e696dcded2
+  $tc'IntVal2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$tc'IntVal3) -}
+9d5df579ab319d2de687d37b4f7f59aa
+  $tc'IntVal3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IntVal"#) -}
+874894f34be180582e064f6e87660ce1
+  $tc'LamArrayEnv :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10407482683618339809##
+                   16226208039691876366##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tc'LamArrayEnv2
+                   0#
+                   LamArrayInterpreter.$tc'LamArrayEnv1) -}
+8a536635e5737429e5de64bf0fb612c5
+  $tc'LamArrayEnv1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+4459ea599d3cb12f8252059a40aaa1fd
+  $tc'LamArrayEnv2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   LamArrayInterpreter.$tc'LamArrayEnv3) -}
+b2b01418fa03a98c4c0832adbedb38a4
+  $tc'LamArrayEnv3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LamArrayEnv"#) -}
+86341fe7a57fab12fb146ec4c4b3a3c4
+  $tc'Nil :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10522675702441938407##
+                   4928527379645405990##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tc'Nil2
+                   0#
+                   LamArrayInterpreter.$tc'Nil1) -}
+205c61552129ff217c70c9bb42a8db90
+  $tc'Nil1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+cfe1a9716a9e979114bcfed78c4e95d5
+  $tc'Nil2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$tc'Nil3) -}
+8f8b0ccf9bb190c599d31eec57db375b
+  $tc'Nil3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Nil"#) -}
+622b4afcea010bf9cd3e4e7bb69c7151
+  $tc'StrVal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14433157186217544952##
+                   17442365179742474100##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tc'StrVal2
+                   0#
+                   LamArrayInterpreter.$tc'StrVal1) -}
+f212a4bdba3094590a3c2ea9c2954241
+  $tc'StrVal1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+8c503403614b5f93c062d490755af8ad
+  $tc'StrVal2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$tc'StrVal3) -}
+235958bddb73a3a25b31f72bbee3cd3f
+  $tc'StrVal3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'StrVal"#) -}
+e9030a59d39fcb6a4315a0e8b5d7aac0
+  $tcLamArrayEnv :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12089487593189307806##
+                   3800957548038978064##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tcLamArrayEnv1
+                   0#
+                   GHC.Types.krep$*) -}
+eb7ca1311739cb6f73d7107e771dd7f1
+  $tcLamArrayEnv1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   LamArrayInterpreter.$tcLamArrayEnv2) -}
+4aaa2a8c9812948429c67feb2e9f3fec
+  $tcLamArrayEnv2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamArrayEnv"#) -}
+4efc71b3bedf20f1877f4b6522396c01
+  $tcValue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10908987685599497776##
+                   11641334866826649817##
+                   LamArrayInterpreter.$trModule
+                   LamArrayInterpreter.$tcValue1
+                   0#
+                   GHC.Types.krep$*) -}
+f5da9dfc0ef676bf029ed14d408d4f23
+  $tcValue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$tcValue2) -}
+c8d24a711c352bada1ffc0e13f0aba3a
+  $tcValue2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Value"#) -}
+e61452c3ca756aed0d5e4d8046130ec1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LamArrayInterpreter.$trModule3
+                   LamArrayInterpreter.$trModule1) -}
+3412f521e9aed5722df48fd1d3f8dafb
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$trModule2) -}
+5333e6c7caec896ff39138ebf494fadf
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamArrayInterpreter"#) -}
+d44c5deada165fdcf7d20241eda52815
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamArrayInterpreter.$trModule4) -}
+d0671f25e1e4b13c33b609b7ebc666be
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"#) -}
+a8ca94239c553fa60e7c921e6110cfc3
+  $w$cshow_env ::
+    LamArrayInterpreter.Env
+    -> Data.Map.Internal.Map
+         GHC.Integer.Type.Integer
+         (GHC.Maybe.Maybe LamArrayInterpreter.Value)
+    -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: LamArrayInterpreter.Env)
+                   (ww1 :: Data.Map.Internal.Map
+                             GHC.Integer.Type.Integer
+                             (GHC.Maybe.Maybe LamArrayInterpreter.Value)) ->
+                 GHC.CString.unpackAppendCString#
+                   LamArrayInterpreter.$fInterpreterLamArray5
+                   (let {
+                      n :: [GHC.Types.Char]
+                      = GHC.CString.unpackAppendCString#
+                          LamArrayInterpreter.$fInterpreterLamArray4
+                          (case LamArrayInterpreter.$fInterpreterLamArray_go1
+                                  (GHC.Types.[] @ [GHC.Types.Char])
+                                  ww1 of wild {
+                             [] -> GHC.Types.[] @ GHC.Types.Char
+                             : x xs1
+                             -> Data.OldList.intercalate_$spoly_go
+                                  @ GHC.Types.Char
+                                  x
+                                  (Data.OldList.prependToAll
+                                     @ [GHC.Types.Char]
+                                     LamArrayInterpreter.$fInterpreterLamArray2
+                                     xs1) })
+                    } in
+                    case LamArrayInterpreter.$fInterpreterLamArray_go13
+                           (GHC.Types.[] @ [GHC.Types.Char])
+                           ww
+                             `cast`
+                           (Environment.N:Environment[0] <LamArrayInterpreter.Value>_N) of wild {
+                      [] -> n
+                      : x xs1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           (Data.OldList.intercalate_$spoly_go
+                              @ GHC.Types.Char
+                              x
+                              (Data.OldList.prependToAll
+                                 @ [GHC.Types.Char]
+                                 LamArrayInterpreter.$fInterpreterLamArray2
+                                 xs1))
+                           n })) -}
+9056e4f9372a8945e20c8b5c960dda4b
+  $w$sgo13 ::
+    Environment.Ident
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map Environment.Ident a1
+    -> Data.Map.Internal.Map Environment.Ident a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+59dee13e188e38aef93c7cbd3fb6ac90
+  $wnew ::
+    GHC.Integer.Type.Integer
+    -> LamArrayInterpreter.Mem
+    -> (# GHC.Base.String, Memory.Location, LamArrayInterpreter.Mem #)
+  {- Arity: 2, Strictness: <S,U><L,1*U(U,1*U)>, Inline: [2] -}
+9db38648c64b0cb772694eb6d44bca67
+  axiom LamArrayInterpreter.D:R:GlobEnvLamArray::
+      LamFunInterpreter.GlobEnv 'LamFunSyntax.LamArray
+        = LamArrayInterpreter.LamArrayEnv
+988c7d49b55647b6596d0991b582fb25
+  type Defn =
+    LamFunSyntax.Defn_ 'LamFunSyntax.LamArray Environment.Ident
+56de0615445e3b59c05b57efc8a36ce5
+  type Env = Environment.Environment LamArrayInterpreter.Value
+9ed11242882db0c4ff8063609cc1e5bd
+  type Expr =
+    LamFunSyntax.Expr_ 'LamFunSyntax.LamArray Environment.Ident
+9db38648c64b0cb772694eb6d44bca67
+  newtype LamArrayEnv
+    = LamArrayEnv (LamArrayInterpreter.Env, LamArrayInterpreter.Mem)
+f377ed9aa338f524ee3df7c4fcf38a81
+  type M a =
+    LamArrayInterpreter.Mem
+    -> (GHC.Base.String, a, LamArrayInterpreter.Mem)
+f377ed9aa338f524ee3df7c4fcf38a81
+  type Mem = Memory.Memory LamArrayInterpreter.Value
+ecdb696543ef28fb87e3266b9d1eeedb
+  type Program =
+    LamFunSyntax.Program_ 'LamFunSyntax.LamArray Environment.Ident
+f377ed9aa338f524ee3df7c4fcf38a81
+  data Value
+    = IntVal GHC.Integer.Type.Integer
+    | BoolVal GHC.Types.Bool
+    | StrVal Data.Text.Internal.Text
+    | Addr Memory.Location
+    | Nil
+    | Cons LamArrayInterpreter.Value LamArrayInterpreter.Value
+    | Function (LamArrayInterpreter.Value
+                -> LamArrayInterpreter.M LamArrayInterpreter.Value)
+instance GHC.Classes.Eq [LamArrayInterpreter.Value]
+  = LamArrayInterpreter.$fEqValue
+instance [orphan] LamFunInterpreter.Interpreter [LamFunSyntax.LamArray]
+  = LamArrayInterpreter.$fInterpreterLamArray
+instance GHC.Show.Show [LamArrayInterpreter.Value]
+  = LamArrayInterpreter.$fShowValue
+family instance LamFunInterpreter.GlobEnv [LamFunSyntax.LamArray]
+  = LamArrayInterpreter.D:R:GlobEnvLamArray
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

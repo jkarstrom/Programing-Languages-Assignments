@@ -1,0 +1,411 @@
+
+==================== FINAL INTERFACE ====================
+2021-11-30 04:27:42.3248411 UTC
+
+interface LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:Environment 8064
+  interface hash: 865241b9641291505e9324c34e264572
+  ABI hash: fc228636115b3eb33e1f14ea6fd644a7
+  export-list hash: 1f1ead44469ca79e6ce710e614711349
+  orphan hash: da1c9ea01bef1e7758318480f729699d
+  flag hash: b6427d8aeb77a442ff3ccc1f154c876f
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Environment.defargs
+  Environment.define
+  Environment.empty_env
+  Environment.find
+  Environment.make_env
+  Environment.maybe_find
+  Environment.names
+  Environment.within
+  Environment.Environment{Environment.Env}
+  Environment.Ident
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0* binary-0.8.6.0
+                      bytestring-0.10.8.2 containers-0.6.0.1 deepseq-1.4.4.0
+                      ghc-prim-0.5.3 integer-gmp-1.0.2.0 text-1.2.3.1*
+orphans: text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         text-1.2.3.1:Data.Text
+import  -/  base-4.12.0.0:Data.Foldable 5f70351366640f007be66681d2212df8
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  containers-0.6.0.1:Data.Map d8ba04987faf51abc62bd892a8e4aa44
+import  -/  containers-0.6.0.1:Data.Map.Internal 3e569e355ae39dc42cfe39c88e0e022a
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  text-1.2.3.1:Data.Text 1e51a010d8f8a6fa41d8ea82d69faf13
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+c900b3999b7cee5e44f4a1aa54c17234
+  $sfromList ::
+    [(Environment.Ident, a)]
+    -> Data.Map.Internal.Map Environment.Ident a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(Environment.Ident, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Internal.Tip @ Environment.Ident @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                           Data.Map.Internal.Bin
+                             @ Environment.Ident
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ Environment.Ident @ a)
+                             (Data.Map.Internal.Tip @ Environment.Ident @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                           case ky of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                           case Data.Text.$w$ccompare ww1 ww2 ww3 ww5 ww6 ww7 of wild4 {
+                             DEFAULT
+                             -> Environment.$sfromList1
+                                  @ a
+                                  wild2
+                                  (Data.Map.Internal.Bin
+                                     @ Environment.Ident
+                                     @ a
+                                     1#
+                                     ww
+                                     x
+                                     (Data.Map.Internal.Tip @ Environment.Ident @ a)
+                                     (Data.Map.Internal.Tip @ Environment.Ident @ a))
+                             GHC.Types.LT
+                             -> Environment.$wpoly_go1
+                                  @ a
+                                  1#
+                                  (Data.Map.Internal.Bin
+                                     @ Environment.Ident
+                                     @ a
+                                     1#
+                                     ww
+                                     x
+                                     (Data.Map.Internal.Tip @ Environment.Ident @ a)
+                                     (Data.Map.Internal.Tip @ Environment.Ident @ a))
+                                  wild2 } } } } } } }) -}
+bd8ca3ae83dedb3582dc6d5505f68622
+  $sfromList1 ::
+    [(Environment.Ident, a)]
+    -> Data.Map.Internal.Map Environment.Ident a
+    -> Data.Map.Internal.Map Environment.Ident a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+a86f481142fcfa1eb92f4b6b19ef06e3
+  $sinsert_$sgo13 ::
+    Environment.Ident
+    -> Environment.Ident
+    -> a1
+    -> Data.Map.Internal.Map Environment.Ident a1
+    -> Data.Map.Internal.Map Environment.Ident a1
+  {- Arity: 4, Strictness: <L,U><S(SSS),1*U(U,U,U)><L,U><S,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a1
+                   (w :: Environment.Ident)
+                   (w1 :: Environment.Ident)
+                   (w2 :: a1)
+                   (w3 :: Data.Map.Internal.Map Environment.Ident a1) ->
+                 case w1 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Environment.$w$sgo13 @ a1 w ww1 ww2 ww3 w2 w3 }) -}
+c34d2b0b33b9405aef161bc4714566a8
+  $slookup1 ::
+    Environment.Ident
+    -> Data.Map.Internal.Map Environment.Ident a -> GHC.Maybe.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)><S,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (w :: Environment.Ident)
+                   (w1 :: Data.Map.Internal.Map Environment.Ident a) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Environment.$wpoly_go2 @ a ww1 ww2 ww3 w1 }) -}
+a366e0279d1d79c4187445a3a9c0b23e
+  $sunion ::
+    Data.Map.Internal.Map Environment.Ident a
+    -> Data.Map.Internal.Map Environment.Ident a
+    -> Data.Map.Internal.Map Environment.Ident a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
+ba4de53af26a613aacba9e79122fb492
+  $tc'Env :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2637990054658300130##
+                   5869297073582586801##
+                   Environment.$trModule
+                   Environment.$tc'Env2
+                   1#
+                   Environment.$tc'Env1) -}
+7f934b5e5d762a8c84ecf16b966b41ba
+  $tc'Env1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ec6a75b4c723b8373d98ef19218c45cf
+  $tc'Env2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Environment.$tc'Env3) -}
+5619a32bb9912aeef80656dc0264d3da
+  $tc'Env3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Env"#) -}
+6c93f26055204942fb17876eac6932e8
+  $tcEnvironment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4160047689348078780##
+                   16708949313866428132##
+                   Environment.$trModule
+                   Environment.$trModule1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+ed5a914170d0d11096d892f1569b0715
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Environment.$trModule3
+                   Environment.$trModule1) -}
+19e20f05a266fe5dd81c54a572e6b08a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Environment.$trModule2) -}
+a3a422728c409a807147856c6e239801
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Environment"#) -}
+6d0b4fa3d5e5de8f2d5178da8dcc9bae
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Environment.$trModule4) -}
+f3f96ae55b4fe1c9501da885d9aa5e35
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"#) -}
+53b1f2f610ed241996cb701c07b12017
+  $w$sgo1 ::
+    Environment.Ident
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map Environment.Ident a1
+    -> Data.Map.Internal.Map Environment.Ident a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+9a8ae2532d3dca2531901d1e2f6f8f35
+  $w$sgo13 ::
+    Environment.Ident
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map Environment.Ident a1
+    -> Data.Map.Internal.Map Environment.Ident a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+f4e01631ea173994ef21704ad2978358
+  $wlvl :: GHC.Prim.ByteArray# -> GHC.Prim.Int# -> GHC.Prim.Int# -> v
+  {- Arity: 3, Strictness: <B,U><B,U><B,U>x, Inline: [2] -}
+d0bb6c564b8d94bc942b3dbebf311780
+  $wpoly_go1 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map Environment.Ident a
+    -> [(Environment.Ident, a)]
+    -> Data.Map.Internal.Map Environment.Ident a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [2] -}
+2b36a89a4bfc76308ecbe224f879257c
+  $wpoly_go13 ::
+    Environment.Ident
+    -> Data.Map.Internal.Map Environment.Ident a
+    -> (# Data.Map.Internal.Map Environment.Ident a,
+          Data.Map.Internal.Map Environment.Ident a #)
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><S,1*U>, Inline: [2] -}
+bdf930ae87f49cb24ebf125fab49e964
+  $wpoly_go2 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map Environment.Ident a
+    -> GHC.Maybe.Maybe a
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+01e6a7451762728811aee7ff97fd766d
+  newtype Environment v
+    = Env (Data.Map.Internal.Map Environment.Ident v)
+8b1e0b228bd8fae2b470cb5bf07dfe9b
+  type Ident = Data.Text.Internal.Text
+a53be20f512b471df26539c591b0b058
+  defargs ::
+    Environment.Environment v
+    -> [Environment.Ident] -> [v] -> Environment.Environment v
+  {- Arity: 3, Strictness: <S,1*U><S,U><S,U>,
+     Unfolding: (\ @ v
+                   (env :: Environment.Environment v)
+                   (fps :: [Environment.Ident])
+                   (args :: [v]) ->
+                 case GHC.List.$wlenAcc @ v args 0# of ww2 { DEFAULT ->
+                 case GHC.List.$wlenAcc
+                        @ Data.Text.Internal.Text
+                        fps
+                        0# of ww1 { DEFAULT ->
+                 case GHC.Prim.==# ww2 ww1 of lwild {
+                   DEFAULT -> Environment.defargs2 @ v
+                   1# -> Environment.defargs1 @ v fps args env } } }) -}
+26ab2dfbdde5d5f22b7ed54643db7859
+  defargs1 ::
+    [Data.Text.Internal.Text]
+    -> [v] -> Environment.Environment v -> Environment.Environment v
+  {- Arity: 3, Strictness: <S,1*U><L,1*U><S,1*U> -}
+3b2012831ac6acdd2af4049b651d3c75
+  defargs2 :: Environment.Environment v
+  {- Strictness: x -}
+981930f3482af50e37afcd00bee4e14e
+  define ::
+    Environment.Environment v
+    -> Environment.Ident -> v -> Environment.Environment v
+  {- Arity: 3, Strictness: <S,1*U><S(SSS),U(U,U,U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Environment.define1
+                  `cast`
+                (forall (v :: <*>_N).
+                 <Environment.Environment v>_R
+                 ->_R <Environment.Ident>_R
+                 ->_R <v>_R
+                 ->_R Sym (Environment.N:Environment[0]) <v>_N) -}
+3edcbf7ad9976808c154463c836fb984
+  define1 ::
+    Environment.Environment v
+    -> Environment.Ident
+    -> v
+    -> Data.Map.Internal.Map Environment.Ident v
+  {- Arity: 3, Strictness: <S,1*U><S(SSS),U(U,U,U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ v
+                   (ds :: Environment.Environment v)
+                   (x :: Environment.Ident)
+                   (v1 :: v) ->
+                 Environment.$sinsert_$sgo13
+                   @ v
+                   x
+                   x
+                   v1
+                   ds `cast` (Environment.N:Environment[0] <v>_N)) -}
+c84516ecb5bee9454505372ad4a8bb89
+  empty_env :: Environment.Environment v
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Map.Internal.Tip @ Environment.Ident)
+                  `cast`
+                (forall (v :: <*>_N). Sym (Environment.N:Environment[0]) <v>_N) -}
+3f786a160879071fc996a258af2b0c19
+  find :: Environment.Environment v -> Environment.Ident -> v
+  {- Arity: 2, Strictness: <S,1*U><S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v
+                   (ds :: Environment.Environment v)
+                   (x :: Environment.Ident) ->
+                 case Environment.$slookup1
+                        @ v
+                        x
+                        ds `cast` (Environment.N:Environment[0] <v>_N) of wild {
+                   GHC.Maybe.Nothing -> Environment.find1 @ v x
+                   GHC.Maybe.Just v1 -> v1 }) -}
+a91bd462b0cd1bf49b8ff63db75900f3
+  find1 :: Environment.Ident -> v
+  {- Arity: 1, Strictness: <B,1*U(U,U,U)>x, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ v (w :: Environment.Ident) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Environment.$wlvl @ v ww1 ww2 ww3 }) -}
+78ff6ce220bc756fbc7a5940c8984246
+  make_env :: [(Environment.Ident, v)] -> Environment.Environment v
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Environment.$sfromList
+                  `cast`
+                (forall (v :: <*>_N).
+                 <[(Environment.Ident, v)]>_R
+                 ->_R Sym (Environment.N:Environment[0]) <v>_N) -}
+19885ccfb9a7b05eab13f0488d341dee
+  maybe_find ::
+    Environment.Environment v -> Environment.Ident -> GHC.Maybe.Maybe v
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ v
+                   (ds :: Environment.Environment v)
+                   (x :: Environment.Ident) ->
+                 Environment.$slookup1
+                   @ v
+                   x
+                   ds `cast` (Environment.N:Environment[0] <v>_N)) -}
+82f3a3df03ffdc54959ea8a095e86a95
+  names :: Environment.Environment v -> [Environment.Ident]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Map.Internal.keys @ Environment.Ident)
+                  `cast`
+                (forall (v :: <*>_N).
+                 Sym (Environment.N:Environment[0]) <v>_N
+                 ->_R <[Environment.Ident]>_R) -}
+38d95df6fb16cedc6da1950811555351
+  within ::
+    Environment.Environment v
+    -> Environment.Environment v -> Environment.Environment v
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Environment.within1
+                  `cast`
+                (forall (v :: <*>_N).
+                 <Environment.Environment v>_R
+                 ->_R <Environment.Environment v>_R
+                 ->_R Sym (Environment.N:Environment[0]) <v>_N) -}
+a068274dd416aa47c0bb16b40e5375f4
+  within1 ::
+    Environment.Environment v
+    -> Environment.Environment v
+    -> Data.Map.Internal.Map Environment.Ident v
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ v
+                   (ds :: Environment.Environment v)
+                   (ds1 :: Environment.Environment v) ->
+                 Environment.$sunion
+                   @ v
+                   ds1 `cast` (Environment.N:Environment[0] <v>_N)
+                   ds `cast` (Environment.N:Environment[0] <v>_N)) -}
+"SPEC/Environment fromList @ Ident _" [orphan] forall @ a
+                                                      ($dOrd :: GHC.Classes.Ord Environment.Ident)
+  Data.Map.Internal.fromList @ Data.Text.Internal.Text @ a $dOrd
+  = Environment.$sfromList @ a
+"SPEC/Environment union @ Ident _" [orphan] forall @ a
+                                                   ($dOrd :: GHC.Classes.Ord Environment.Ident)
+  Data.Map.Internal.union @ Data.Text.Internal.Text @ a $dOrd
+  = Environment.$sunion @ a
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

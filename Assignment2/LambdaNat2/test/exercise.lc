@@ -1,0 +1,16 @@
+// Paste one of the comments in the command line
+// Do not run the interpreter without predicting a result first
+
+/*
+echo "(\ x.x) S 0" | stack exec LambdaNat-exe
+echo "\ x.x S 0" | stack exec LambdaNat-exe
+echo "(\ x.\ y.x) S 0  S S 0" | stack exec LambdaNat-exe
+echo "(\ x.\ y.y) S 0  S S 0" | stack exec LambdaNat-exe
+echo "(\ x.\ y.x) S 0  S S 0 S S S 0" | stack exec LambdaNat-exe
+echo "(\ x.\ y.y) S 0  S S 0 S S S 0" | stack exec LambdaNat-exe
+echo "(\ x. S x) S S 0" | stack exec LambdaNat-exe
+echo "(\ x. S y) S S 0" | stack exec LambdaNat-exe
+echo "(\ x. \y. S x y) S S 0" | stack exec LambdaNat-exe
+*/
+
+// make up your own

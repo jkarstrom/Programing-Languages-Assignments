@@ -1,0 +1,545 @@
+
+==================== FINAL INTERFACE ====================
+2021-11-30 04:27:47.2507821 UTC
+
+interface LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:LamInterpreter [orphan module] [family instance module] 8064
+  interface hash: 25149add9444f9c0546eca3e01ae3bc2
+  ABI hash: 361a00693a217e3b9283e6a93de05445
+  export-list hash: 40b7106fe9c601e0d09fcceeff373848
+  orphan hash: 0c20558d9039f32e51bb34baaacfcc85
+  flag hash: f6a4602d7b4e6756c78bfabdcbfb4e18
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies: Environment LamFunInterpreter LamFunSyntax
+package dependencies: array-0.5.3.0 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 containers-0.6.0.1 deepseq-1.4.4.0
+                      ghc-boot-th-8.6.4 ghc-prim-0.5.3 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 mtl-2.2.2 pretty-1.1.3.6 primitive-0.6.4.0
+                      safe-0.3.17 singletons-2.5.1 string-conv-0.1.2 syb-0.7
+                      template-haskell-2.14.0.0 text-1.2.3.1 th-abstraction-0.2.11.0
+                      th-desugar-1.9 th-expand-syns-0.4.4.0 th-lift-0.7.11
+                      th-lift-instances-0.1.12 th-orphans-0.13.6 th-reify-many-0.1.8
+                      transformers-0.5.6.2 vector-0.12.0.2
+orphans: hashable-1.2.7.0:Data.Hashable.Generic
+         singletons-2.5.1:Data.Singletons.Prelude.Applicative
+         singletons-2.5.1:Data.Singletons
+         singletons-2.5.1:Data.Singletons.Prelude.Semigroup
+         singletons-2.5.1:Data.Singletons.Prelude.Const
+         singletons-2.5.1:Data.Singletons.Prelude.Functor
+         singletons-2.5.1:Data.Singletons.Prelude.Identity
+         singletons-2.5.1:Data.Singletons.Prelude.Monoid
+         singletons-2.5.1:Data.Singletons.Prelude.Semigroup.Internal
+         singletons-2.5.1:Data.Singletons.TypeLits
+         singletons-2.5.1:Data.Singletons.ShowSing
+         singletons-2.5.1:Data.Singletons.TypeLits.Internal
+         singletons-2.5.1:Data.Singletons.Prelude.Ord
+         singletons-2.5.1:Data.Singletons.Prelude.Instances
+         singletons-2.5.1:Data.Singletons.Decide
+         th-orphans-0.13.6:Language.Haskell.TH.Instances
+         th-lift-0.7.11:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.12:Instances.TH.Lift
+         vector-0.12.0.2:Data.Vector.Unboxed
+         vector-0.12.0.2:Data.Vector.Fusion.Bundle
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:LamFunSyntax
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.Graph
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         ghc-boot-th-8.6.4:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.4:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         singletons-2.5.1:Data.Singletons
+                         singletons-2.5.1:Data.Singletons.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Applicative
+                         singletons-2.5.1:Data.Singletons.Prelude.Base
+                         singletons-2.5.1:Data.Singletons.Prelude.Bool
+                         singletons-2.5.1:Data.Singletons.Prelude.Const
+                         singletons-2.5.1:Data.Singletons.Prelude.Either
+                         singletons-2.5.1:Data.Singletons.Prelude.Enum
+                         singletons-2.5.1:Data.Singletons.Prelude.Eq
+                         singletons-2.5.1:Data.Singletons.Prelude.Foldable
+                         singletons-2.5.1:Data.Singletons.Prelude.Functor
+                         singletons-2.5.1:Data.Singletons.Prelude.Identity
+                         singletons-2.5.1:Data.Singletons.Prelude.Instances
+                         singletons-2.5.1:Data.Singletons.Prelude.IsString
+                         singletons-2.5.1:Data.Singletons.Prelude.List.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.List.Internal.Disambiguation
+                         singletons-2.5.1:Data.Singletons.Prelude.Maybe
+                         singletons-2.5.1:Data.Singletons.Prelude.Monad.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Monoid
+                         singletons-2.5.1:Data.Singletons.Prelude.Num
+                         singletons-2.5.1:Data.Singletons.Prelude.Ord
+                         singletons-2.5.1:Data.Singletons.Prelude.Semigroup
+                         singletons-2.5.1:Data.Singletons.Prelude.Semigroup.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Show
+                         singletons-2.5.1:Data.Singletons.Prelude.Traversable
+                         singletons-2.5.1:Data.Singletons.Prelude.Tuple
+                         singletons-2.5.1:Data.Singletons.Syntax
+                         singletons-2.5.1:Data.Singletons.TypeLits
+                         singletons-2.5.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.2.11.0:Language.Haskell.TH.Datatype
+                         th-desugar-1.9:Language.Haskell.TH.Desugar.AST
+                         vector-0.12.0.2:Data.Vector vector-0.12.0.2:Data.Vector.Primitive
+                         vector-0.12.0.2:Data.Vector.Storable
+                         vector-0.12.0.2:Data.Vector.Unboxed
+                         vector-0.12.0.2:Data.Vector.Unboxed.Base
+import  -/  Environment fc228636115b3eb33e1f14ea6fd644a7
+  exports: 1f1ead44469ca79e6ce710e614711349
+  Ident 8b1e0b228bd8fae2b470cb5bf07dfe9b
+import  -/  LamFunInterpreter 4f9d577ae2075ba043d320be0803942f
+  exports: fbb58a90add02d8f60f2004ad1ed3ddf
+  GlobEnv a2020612979c465405ea36dd5164cbce
+  Interpreter bb4116c80579de5e59c10a4e17a158f3
+  init_env 2bf20acf373a65046fb35005e3e34686
+  runProg 73547b0450869e1f49f4740773ad1814
+import  -/  LamFunSyntax 098d1f7f00dadcfb30a6c4ee65ffc67c
+  exports: 8e863f37e32bf74e275db03d6c750d40
+  App_ 32b4e618f9302fe098293a28541084c8
+  Calculate_ 23e3af5c645ff9ba8978cff0e47a89b1
+  Expr_ 5a088fa4aebd2efeabd99af587b83fb7
+  LamCBN f1026ef92e4de6d60913898f9a85a6bd
+  LamCBV 5ea2c3c1ab643af4dbbf4d54d8fef0bf
+  Lambda_ 5c72eb97518ef217bfc77424c24f327d
+  Program_ 34eb35ebffca668e964ce8bfefca939f
+  Variable_ af8bd5adb21af8236bfe201d7911ec73
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  containers-0.6.0.1:Data.Map d8ba04987faf51abc62bd892a8e4aa44
+import  -/  containers-0.6.0.1:Data.Map.Internal 3e569e355ae39dc42cfe39c88e0e022a
+import  -/  containers-0.6.0.1:Data.Set afd5ab7eac5658da18a4fffc2d1b683c
+import  -/  containers-0.6.0.1:Data.Set.Internal eb14001b3965a26111e6fe1cc9d493c4
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  string-conv-0.1.2:Data.String.Conv 0dc21ffe2e83297005859948da8debac
+ff756c1875c1622cb5b32f4375026569
+  $fInterpreterLamCBN ::
+    LamFunInterpreter.Interpreter 'LamFunSyntax.LamCBN
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ 'LamFunSyntax.LamCBN
+                  GHC.Tuple.()
+                    `cast`
+                  (Sym (LamInterpreter.N:EnvCBN[0]) ; Sub (Sym (LamInterpreter.D:R:GlobEnvLamCBN[0])))
+                  LamInterpreter.$fInterpreterLamCBN_$cshow_env
+                  LamInterpreter.$fInterpreterLamCBN1
+                    `cast`
+                  (<[LamFunSyntax.Program_
+                       'LamFunSyntax.LamCBN Data.Text.Internal.Text]>_R
+                   ->_R <(LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN,
+                          LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBN)>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <(LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN,
+                                   LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBN)>_R)) -}
+6e2598924bb7463bf108ec5604493a0f
+  $fInterpreterLamCBN1 ::
+    [LamFunSyntax.Program_
+       'LamFunSyntax.LamCBN Data.Text.Internal.Text]
+    -> (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN,
+        LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBN)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN,
+           LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBN) #)
+  {- Arity: 3, Strictness: <S,1*U><L,A><S,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: [LamFunSyntax.Program_
+                            'LamFunSyntax.LamCBN Data.Text.Internal.Text])
+                   (w1 :: (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN,
+                           LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBN))
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 LamInterpreter.$w$crunProg w w2) -}
+76ed471dc60d08a9f97489dc118ad292
+  $fInterpreterLamCBN_$cshow_env ::
+    LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN) ->
+                 GHC.Types.[] @ GHC.Types.Char) -}
+db862c746fda1d8ef3499de4ae158e42
+  $fInterpreterLamCBV ::
+    LamFunInterpreter.Interpreter 'LamFunSyntax.LamCBV
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ 'LamFunSyntax.LamCBV
+                  GHC.Tuple.()
+                    `cast`
+                  (Sym (LamInterpreter.N:EnvCBV[0]) ; Sub (Sym (LamInterpreter.D:R:GlobEnvLamCBV[0])))
+                  LamInterpreter.$fInterpreterLamCBV_$cshow_env
+                  LamInterpreter.$fInterpreterLamCBV1
+                    `cast`
+                  (<[LamFunSyntax.Program_
+                       'LamFunSyntax.LamCBV Data.Text.Internal.Text]>_R
+                   ->_R <(LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV,
+                          LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBV)>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <(LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV,
+                                   LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBV)>_R)) -}
+edabeadc0af921bd252239420a43182a
+  $fInterpreterLamCBV1 ::
+    [LamFunSyntax.Program_
+       'LamFunSyntax.LamCBV Data.Text.Internal.Text]
+    -> (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV,
+        LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBV)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV,
+           LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBV) #)
+  {- Arity: 3, Strictness: <S,1*U><L,A><S,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: [LamFunSyntax.Program_
+                            'LamFunSyntax.LamCBV Data.Text.Internal.Text])
+                   (w1 :: (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV,
+                           LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBV))
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 LamInterpreter.$w$crunProg1 w w2) -}
+ab0a07a621574fe6542123a43347bdff
+  $fInterpreterLamCBV_$cshow_env ::
+    LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV) ->
+                 GHC.Types.[] @ GHC.Types.Char) -}
+a134844e2947ae8031d62f81a7d03f3f
+  $fShowValue :: GHC.Show.Show LamInterpreter.Value
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamInterpreter.Value
+                  LamInterpreter.$fShowValue_$cshowsPrec
+                  LamInterpreter.$fShowValue_$cshow
+                  LamInterpreter.$fShowValue_$cshowList -}
+a134844e2947ae8031d62f81a7d03f3f
+  $fShowValue1 ::
+    LamInterpreter.Value -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LamInterpreter.Value) (s :: GHC.Base.String)[OneShot] ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (LamInterpreter.$fShowValue_show_
+                         x `cast` (LamInterpreter.N:Value[0])))
+                   s) -}
+a134844e2947ae8031d62f81a7d03f3f
+  $fShowValue_$cshow :: LamInterpreter.Value -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: LamInterpreter.Value) ->
+                 LamInterpreter.$fShowValue_show_
+                   ds `cast` (LamInterpreter.N:Value[0])) -}
+a134844e2947ae8031d62f81a7d03f3f
+  $fShowValue_$cshowList :: [LamInterpreter.Value] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [LamInterpreter.Value]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ LamInterpreter.Value
+                   LamInterpreter.$fShowValue1
+                   ls
+                   s) -}
+a134844e2947ae8031d62f81a7d03f3f
+  $fShowValue_$cshowsPrec ::
+    GHC.Types.Int -> LamInterpreter.Value -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: LamInterpreter.Value)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (LamInterpreter.$fShowValue_show_
+                         x `cast` (LamInterpreter.N:Value[0])))
+                   s) -}
+0e925a837e54139279712ba1c38d539a
+  $fShowValue_show_ ::
+    LamFunSyntax.Expr_ 'LamFunSyntax.LamCBN Environment.Ident
+    -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+e7bd2e05c17b07ae2e3b4c49c8ef3898
+  $s$wsplitS ::
+    Environment.Ident
+    -> Data.Set.Internal.Set Environment.Ident
+    -> (# Data.Set.Internal.Set Environment.Ident,
+          Data.Set.Internal.Set Environment.Ident #)
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><S,1*U>, Inline: [~] -}
+665aa0da7e5fbc45913759be198c28e7
+  $sunion ::
+    Data.Set.Internal.Set Environment.Ident
+    -> Data.Set.Internal.Set Environment.Ident
+    -> Data.Set.Internal.Set Environment.Ident
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
+8e4bf114463f1cc79ce5ea8065ae8d4d
+  $tc'EnvCBN :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18274719984896403518##
+                   3183087240707157149##
+                   LamInterpreter.$trModule
+                   LamInterpreter.$tc'EnvCBN2
+                   0#
+                   LamInterpreter.$tc'EnvCBN1) -}
+2db7c2b79300a7484a3946e28bbb7797
+  $tc'EnvCBN1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a0e3081645416d46ce85d06bf4ec5871
+  $tc'EnvCBN2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamInterpreter.$tc'EnvCBN3) -}
+41d62e1e6f600c6d2bc917d2bd35c91e
+  $tc'EnvCBN3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EnvCBN"#) -}
+7e4b983ab842f3b60d2a6b30b4bcee37
+  $tc'EnvCBV :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   820857422610862035##
+                   11917764909568033230##
+                   LamInterpreter.$trModule
+                   LamInterpreter.$tc'EnvCBV2
+                   0#
+                   LamInterpreter.$tc'EnvCBV1) -}
+ac1bcd8929c9256407f51aa69418da1c
+  $tc'EnvCBV1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1ce7c82fde6c8795e87f08e428c40770
+  $tc'EnvCBV2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamInterpreter.$tc'EnvCBV3) -}
+0b31ff8b543d70debf981275e31b73fc
+  $tc'EnvCBV3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EnvCBV"#) -}
+74d300b3541744676d526f052a6f82ec
+  $tc'Value :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1414016440960094926##
+                   17964817693050739211##
+                   LamInterpreter.$trModule
+                   LamInterpreter.$tc'Value2
+                   0#
+                   LamInterpreter.$tc'Value1) -}
+ba19d2eec70c372c6eb3b8c38f4b9d9d
+  $tc'Value1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7e113d7cb11446f54face88d71264469
+  $tc'Value2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamInterpreter.$tc'Value3) -}
+2196e0d15a9b6d14b56f417f9666ee2e
+  $tc'Value3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Value"#) -}
+1fe64f62d52aa72d7b42585444cd8c6f
+  $tcEnvCBN :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5507861882602868812##
+                   18134658878745215990##
+                   LamInterpreter.$trModule
+                   LamInterpreter.$tcEnvCBN1
+                   0#
+                   GHC.Types.krep$*) -}
+c8e4b2e06b243ed09acaae8250e0c7fc
+  $tcEnvCBN1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamInterpreter.$tcEnvCBN2) -}
+198580e30f95eda8fc836cd3b20d3c44
+  $tcEnvCBN2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("EnvCBN"#) -}
+f3309bc8625d638c7bae57b85f1b6ce7
+  $tcEnvCBV :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13632308414948596114##
+                   13058227596930681617##
+                   LamInterpreter.$trModule
+                   LamInterpreter.$tcEnvCBV1
+                   0#
+                   GHC.Types.krep$*) -}
+d118f85340707fb38a3096966d4681c0
+  $tcEnvCBV1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamInterpreter.$tcEnvCBV2) -}
+c89d895ca46cf5c8ca5bed44910ad003
+  $tcEnvCBV2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("EnvCBV"#) -}
+bbf3eac8f0488e00375985c6449d4691
+  $tcValue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15395559561383465591##
+                   2969667787483271902##
+                   LamInterpreter.$trModule
+                   LamInterpreter.$tcValue1
+                   0#
+                   GHC.Types.krep$*) -}
+25588ed5ef856d13ef9e1ceb09310bab
+  $tcValue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamInterpreter.$tcValue2) -}
+d4ded759cf16ff25e640d028b6f3a00f
+  $tcValue2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Value"#) -}
+f558d96e49968511c716cb503741018c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LamInterpreter.$trModule3
+                   LamInterpreter.$trModule1) -}
+2a9fa10fcd1e8ff449cf84410a759f98
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamInterpreter.$trModule2) -}
+2a920d170c4675849095a594cd29a674
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamInterpreter"#) -}
+8178d4b9cae9c7b206dba70f4ebf97fd
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamInterpreter.$trModule4) -}
+88e318797a98a918935e6867f249ae9a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"#) -}
+ff5c9895713f532db6b2ad5be665ae6e
+  $w$crunProg ::
+    [LamFunSyntax.Program_
+       'LamFunSyntax.LamCBN Data.Text.Internal.Text]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN,
+           LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBN) #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [2] -}
+aa768c457d0b95d8edd1f8db5101e7b3
+  $w$crunProg1 ::
+    [LamFunSyntax.Program_
+       'LamFunSyntax.LamCBV Data.Text.Internal.Text]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV,
+           LamFunInterpreter.RawEnv 'LamFunSyntax.LamCBV) #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [2] -}
+89c20165b1ebb27a9ead27a06ff2ef95
+  $w$sgo1 ::
+    Environment.Ident
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set Environment.Ident
+    -> Data.Set.Internal.Set Environment.Ident
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+1afdb1195a85c9201d602c2073b9e3c2
+  $w$sgo3 ::
+    Environment.Ident
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set Environment.Ident
+    -> Data.Set.Internal.Set Environment.Ident
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+4e35dd925009f75d7566043ac4e9cecd
+  $wgo3 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set Environment.Ident
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+601078eb192b63c8d7f46249f02ecaab
+  axiom LamInterpreter.D:R:GlobEnvLamCBN::
+      LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBN
+        = LamInterpreter.EnvCBN
+82a5bea271abf9448f15b44c27acce72
+  axiom LamInterpreter.D:R:GlobEnvLamCBV::
+      LamFunInterpreter.GlobEnv 'LamFunSyntax.LamCBV
+        = LamInterpreter.EnvCBV
+601078eb192b63c8d7f46249f02ecaab
+  newtype EnvCBN = EnvCBN ()
+82a5bea271abf9448f15b44c27acce72
+  newtype EnvCBV = EnvCBV ()
+a791c1359709c20a58f5eeee40c28c5e
+  type Expr =
+    LamFunSyntax.Expr_ 'LamFunSyntax.LamCBN Environment.Ident
+0c61fea2caec06c331845865dc6cc9cc
+  type Program =
+    LamFunSyntax.Program_ 'LamFunSyntax.LamCBN Environment.Ident
+a134844e2947ae8031d62f81a7d03f3f
+  newtype Value = Value LamInterpreter.Expr
+instance [orphan] LamFunInterpreter.Interpreter [LamFunSyntax.LamCBN]
+  = LamInterpreter.$fInterpreterLamCBN
+instance [orphan] LamFunInterpreter.Interpreter [LamFunSyntax.LamCBV]
+  = LamInterpreter.$fInterpreterLamCBV
+instance GHC.Show.Show [LamInterpreter.Value]
+  = LamInterpreter.$fShowValue
+family instance LamFunInterpreter.GlobEnv [LamFunSyntax.LamCBV]
+  = LamInterpreter.D:R:GlobEnvLamCBV
+family instance LamFunInterpreter.GlobEnv [LamFunSyntax.LamCBN]
+  = LamInterpreter.D:R:GlobEnvLamCBN
+"SPEC/LamInterpreter $wsplitS @ Ident" [orphan] [2] forall (w :: GHC.Classes.Ord
+                                                                   Environment.Ident)
+  Data.Set.Internal.$wsplitS @ Data.Text.Internal.Text w
+  = LamInterpreter.$s$wsplitS
+"SPEC/LamInterpreter union @ Ident" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                Environment.Ident)
+  Data.Set.Internal.union @ Data.Text.Internal.Text $dOrd
+  = LamInterpreter.$sunion
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

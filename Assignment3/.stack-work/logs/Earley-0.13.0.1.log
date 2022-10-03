@@ -1,0 +1,29 @@
+Configuring Earley-0.13.0.1...
+Preprocessing library for Earley-0.13.0.1..
+Building library for Earley-0.13.0.1..
+[1 of 8] Compiling Text.Earley.Grammar ( Text/Earley/Grammar.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Text/Earley/Grammar.o )
+[2 of 8] Compiling Text.Earley.Generator.Internal ( Text/Earley/Generator/Internal.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Text/Earley/Generator/Internal.o )
+
+[;1mText/Earley/Generator/Internal.hs:16:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Data.Semigroup’ is redundant
+      except perhaps to import instances from ‘Data.Semigroup’
+    To import instances alone, use: import Data.Semigroup()[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m [;1m[35mimport Data.Semigroup[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[3 of 8] Compiling Text.Earley.Generator ( Text/Earley/Generator.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Text/Earley/Generator.o )
+[4 of 8] Compiling Text.Earley.Derived ( Text/Earley/Derived.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Text/Earley/Derived.o )
+[5 of 8] Compiling Text.Earley.Parser.Internal ( Text/Earley/Parser/Internal.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Text/Earley/Parser/Internal.o )
+
+[;1mText/Earley/Parser/Internal.hs:16:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Data.Semigroup’ is redundant
+      except perhaps to import instances from ‘Data.Semigroup’
+    To import instances alone, use: import Data.Semigroup()[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m [;1m[35mimport Data.Semigroup[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[6 of 8] Compiling Text.Earley.Parser ( Text/Earley/Parser.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Text/Earley/Parser.o )
+[7 of 8] Compiling Text.Earley      ( Text/Earley.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Text/Earley.o )
+[8 of 8] Compiling Text.Earley.Mixfix ( Text/Earley/Mixfix.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Text/Earley/Mixfix.o )
+Installing library in /home/bugster2010/.stack/snapshots/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/Earley-0.13.0.1-GtC9zn0VIsH87k7huVejgm
+Registering library for Earley-0.13.0.1..

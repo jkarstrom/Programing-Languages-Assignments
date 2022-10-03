@@ -1,0 +1,45 @@
+-----------------------------------------
+-- Lambda Calculus with Natural Numbers 1
+-----------------------------------------
+
+Prog.      Program ::= Exp ;
+EAbs.      Exp1 ::= "\\" Id "." Exp ;
+EIf.       Exp2 ::= "if" Exp "=" Exp "then" Exp "else" Exp ;
+ELet.      Exp2 ::= "let" Id "=" Exp "in" Exp ;               -- let x = A in B is sugar for (\x.B)A
+ERec.      Exp2 ::= "let rec" Id "=" Exp "in" Exp ;
+EMinusOne. Exp2 ::= "minus_one" Exp ;                         -- because we do not have pattern matching in LambdaNat
+EApp.      Exp3 ::= Exp3 Exp4 ;
+ENat0.     Exp4 ::= "0" ;
+ENatS.     Exp4 ::= "S" Exp4 ;
+EVar.      Exp5 ::= Id ;
+internal EFix. Exp2 ::= "fix" Exp ;                           -- to implement "let rec" 
+
+coercions Exp 5 ;
+
+token Id (letter (letter | digit | '_')*) ;
+
+comment "//" ;
+comment "/*" "*/" ;
+
+----------------------------------------------
+----------------------------------------------
+-- Parse the following expressions by running
+--   echo "myprogram" | ./TestLambdaNat
+-- in the terminal in the directory where you have TestLambdaNat.
+--
+-- Verify that the following statements are correct:
+--
+-- S 0 is a number                  // echo "S 0" | ./TestLambdaNat
+-- S0 is a variable                 // echo "S0" | ./TestLambdaNat
+-- S S 0 is a number                // echo "S S 0" | ./TestLambdaNat
+-- S (S 0) is not a program         // echo "S (S 0)" | ./TestLambdaNat
+-- S x is not a program             // echo "S x" | ./TestLambdaNat
+--
+-- \x.x x x equals \x. ((x x) x)    // echo "\x.x x x" | ./TestLambdaNat  // echo "\x. ((x x) x)" | ./TestLambdaNat
+-- in the line above, the empty spaces between the x are important (why?)
+-- (\x.x) x x equals (((\x.x) x) x) // echo "(\x.x) x x" | ./TestLambdaNat  // echo "(((\x.x) x) x)" | ./TestLambdaNat
+-- (\x.x) S 0 equals (\x.x) (S 0)   // echo "(\x.x) S 0" | ./TestLambdaNat  // echo "(\x.x) (S 0)" | ./TestLambdaNat
+--
+-- Btw, I say that two strings are equal if they produce the same parse tree (abstract syntax tree)
+----------------------------------------------
+----------------------------------------------

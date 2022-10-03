@@ -1,0 +1,202 @@
+val newCList = \e.
+    let val a = new [] in
+    a := [e,a];
+    a;;
+
+-- complete the following functions
+val next = \a.
+    case !a of { [e',a'] -> a' };;
+
+val get = \a.
+    case !a of { [e',a'] -> e' };;
+
+val insert = \e. \a.
+  let val c= newCList e in
+  let val d= next a in
+  a := [get a, next c];
+  c := [get c, d];;
+
+val delete = \a.
+    let val f = next(next a) in
+    a := [get a, f];;
+
+val update = \e. \a.
+    a := [e,next a];;
+
+
+
+
+
+
+
+
+-- After completing your solution to round-robin.lc
+-- add the definitions below to round_robin.lc and
+-- you can run a round robin algorithm.
+
+-- `testAll;;` should produce true for each test.
+
+rec toListAux = \h. \b. case b == h of {
+        true -> [] ,
+        false -> case !b of {
+            [v, b'] -> v : (toListAux h b')
+        }
+};;
+
+val cListToList = \a. case !a of {
+    [v, a'] -> v : (toListAux a a')
+};;
+
+-- Tests for the insert function
+
+val testInsert1 =
+    let val l = newCList "a" in
+    insert "b" l;
+    cListToList l == ["a", "b"]
+;;
+
+val testInsert2 =
+    let val l = newCList "a" in
+    insert "c" l;
+    insert "b" l;
+    cListToList l == ["a", "b", "c"]
+;;
+
+-- Tests for the delete function
+
+val testDelete1 =
+    let val l1 = new [] in
+    let val l2 = new [] in
+    let val l3 = new [] in
+    l1 := ["a", l2];
+    l2 := ["b", l3];
+    l3 := ["c", l1];
+    delete l1;
+    cListToList l1 == ["a", "c"]
+;;
+
+val testDelete2 =
+    let val l = newCList "a" in
+    delete l;
+    cListToList l == ["a"]
+;;
+
+-- Tests for the get/next functions
+
+val testNext1 =
+    let val l1 = new [] in
+    let val l2 = new [] in
+    l1 := ["a", l2];
+    l2 := ["b", l1];
+    (next l1) == l2
+;;
+
+val testNext2 =
+    let val l1 = new [] in
+    let val l2 = new [] in
+    l1 := ["a", l2];
+    l2 := ["b", l1];
+    (next (next l1)) == l1
+;;
+
+val testGet1 =
+    let val l = newCList "a" in
+    (get l) == "a"
+;;
+
+val testNextGet1 =
+    let val l1 = new [] in
+    let val l2 = new [] in
+    l1 := ["a", l2];
+    l2 := ["b", l1];
+    (get (next l1)) == "b"
+;;
+
+-- Tests for the update function
+
+val testUpdate1 =
+    let val l = newCList "a" in
+    update "b" l;
+    cListToList l == ["b"]
+;;
+
+val testUpdate2 =
+    let val l1 = new [] in
+    let val l2 = new [] in
+    l1 := ["a", l2];
+    l2 := ["b", l1];
+    update "c" l1;
+    cListToList l1 == ["c", "b"]
+;;
+
+-- Tests for the round robin algorithm
+
+rec roundRobin = \ts. \a. case ts of {
+    [] -> a,
+    (0 : ts') -> (
+        let val c = get (next a) in
+        case c of {
+            0 -> delete a ,
+            _ -> update (c-1) (next a)
+        };
+        roundRobin ts' (next a)
+    ),
+    (t : ts') -> (
+        case [a == (next a) , (get a) == 0] of {
+            [true,true] -> update t a,
+            _ -> insert t a
+        };
+        roundRobin ts' (next a)
+    )
+};;
+
+rec toListAux = \h. \b. case b == h of {
+        true -> [] ,
+        false -> case !b of {
+            [v, b'] -> v : (toListAux h b')
+        }
+};;
+
+val cListToList = \a. case !a of {
+    [v, a'] -> v : (toListAux a a')
+};;
+
+val tick = 0;;
+
+val addTask = \n.n;;
+
+val testRRobin = \ts. cListToList (roundRobin ts (newCList 0));;
+
+val test1 = (testRRobin [tick]) == [0];;
+
+val test2 = (testRRobin [addTask 3, addTask 4, tick, tick]) == [3, 2];;
+
+val test3 = (testRRobin [addTask 6, tick, tick]) == [4];;
+
+val test4 = (testRRobin [addTask 6, tick, tick,addTask 5]) == [5,4];;
+
+val test5 = (testRRobin [addTask 6, tick, tick,addTask 5,tick]) == [3,5];;
+
+val test5 = (testRRobin [addTask 6, tick, tick,addTask 5,tick]) == [3,5];;
+
+val test6 = (testRRobin [addTask 6, tick, tick,addTask 1, tick, tick, tick, tick]) == [2];;
+
+val testAll =
+    print "testInsert1 passing..." ; println testInsert1;
+    print "testInsert2 passing..." ; println testInsert2;
+    print "testDelete1 passing..." ; println testDelete1;
+    print "testDelete2 passing..." ; println testDelete2;
+    print "testNext1 passing..." ; println testNext1;
+    print "testNext2 passing..." ; println testNext2;
+    print "testGet1 passing..." ; println testGet1;
+    print "testNextGet1 passing..." ; println testNextGet1;
+    print "testUpdate1 passing..." ; println testUpdate1;
+    print "testUpdate2 passing..." ; println testUpdate2;
+    print "test1 passing..." ; println test1;
+    print "test2 passing..." ; println test2;
+    print "test3 passing..." ; println test3;
+    print "test4 passing..." ; println test4;
+    print "test5 passing..." ; println test5;
+    print "test6 passing..." ; print test6;
+    ""
+    ;;

@@ -1,0 +1,15 @@
+Configuring th-desugar-1.9...
+Preprocessing library for th-desugar-1.9..
+Building library for th-desugar-1.9..
+[ 1 of 10] Compiling Language.Haskell.TH.Desugar.AST ( Language/Haskell/TH/Desugar/AST.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/AST.o )
+[ 2 of 10] Compiling Language.Haskell.TH.Desugar.Util ( Language/Haskell/TH/Desugar/Util.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/Util.o )
+[ 3 of 10] Compiling Language.Haskell.TH.Desugar.Sweeten ( Language/Haskell/TH/Desugar/Sweeten.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/Sweeten.o )
+[ 4 of 10] Compiling Language.Haskell.TH.Desugar.Reify ( Language/Haskell/TH/Desugar/Reify.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/Reify.o )
+[ 5 of 10] Compiling Language.Haskell.TH.Desugar.Core ( Language/Haskell/TH/Desugar/Core.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/Core.o )
+[ 6 of 10] Compiling Language.Haskell.TH.Desugar.Subst ( Language/Haskell/TH/Desugar/Subst.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/Subst.o )
+[ 7 of 10] Compiling Language.Haskell.TH.Desugar.Match ( Language/Haskell/TH/Desugar/Match.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/Match.o )
+[ 8 of 10] Compiling Language.Haskell.TH.Desugar.Expand ( Language/Haskell/TH/Desugar/Expand.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/Expand.o )
+[ 9 of 10] Compiling Language.Haskell.TH.Desugar ( Language/Haskell/TH/Desugar.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar.o )
+[10 of 10] Compiling Language.Haskell.TH.Desugar.Lift ( Language/Haskell/TH/Desugar/Lift.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Language/Haskell/TH/Desugar/Lift.o )
+Installing library in /home/bugster2010/.stack/snapshots/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/th-desugar-1.9-FOkXhaOYnTDGVvV8OvkXJn
+Registering library for th-desugar-1.9..

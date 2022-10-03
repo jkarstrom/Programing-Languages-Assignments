@@ -1,0 +1,59 @@
+src/LamFunSyntax.hs:12:3-88: Splicing declarations
+    singletons
+      [d| data Version_aD2M
+            = LamCBN_aD2N |
+              LamCBV_aD2O |
+              LamNat_aD2P |
+              LamRec_aD2Q |
+              LamMem_aD2R |
+              LamArray_aD2S |]
+  ======>
+    data Version_aI9N
+      = LamCBN_aI9O |
+        LamCBV_aI9P |
+        LamNat_aI9Q |
+        LamRec_aI9R |
+        LamMem_aI9S |
+        LamArray_aI9T
+    type LamCBNSym0 = LamCBN_aI9O
+    type LamCBVSym0 = LamCBV_aI9P
+    type LamNatSym0 = LamNat_aI9Q
+    type LamRecSym0 = LamRec_aI9R
+    type LamMemSym0 = LamMem_aI9S
+    type LamArraySym0 = LamArray_aI9T
+    data instance Sing :: Version_aI9N -> ghc-prim-0.5.3:GHC.Types.Type
+      where
+        SLamCBN :: Sing LamCBN_aI9O
+        SLamCBV :: Sing LamCBV_aI9P
+        SLamNat :: Sing LamNat_aI9Q
+        SLamRec :: Sing LamRec_aI9R
+        SLamMem :: Sing LamMem_aI9S
+        SLamArray :: Sing LamArray_aI9T
+    type SVersion =
+        (Sing :: Version_aI9N -> ghc-prim-0.5.3:GHC.Types.Type)
+    instance SingKind Version_aI9N where
+      type Demote Version_aI9N = Version_aI9N
+      fromSing SLamCBN = LamCBN_aI9O
+      fromSing SLamCBV = LamCBV_aI9P
+      fromSing SLamNat = LamNat_aI9Q
+      fromSing SLamRec = LamRec_aI9R
+      fromSing SLamMem = LamMem_aI9S
+      fromSing SLamArray = LamArray_aI9T
+      toSing LamCBN_aI9O = SomeSing SLamCBN
+      toSing LamCBV_aI9P = SomeSing SLamCBV
+      toSing LamNat_aI9Q = SomeSing SLamNat
+      toSing LamRec_aI9R = SomeSing SLamRec
+      toSing LamMem_aI9S = SomeSing SLamMem
+      toSing LamArray_aI9T = SomeSing SLamArray
+    instance SingI LamCBN_aI9O where
+      sing = SLamCBN
+    instance SingI LamCBV_aI9P where
+      sing = SLamCBV
+    instance SingI LamNat_aI9Q where
+      sing = SLamNat
+    instance SingI LamRec_aI9R where
+      sing = SLamRec
+    instance SingI LamMem_aI9S where
+      sing = SLamMem
+    instance SingI LamArray_aI9T where
+      sing = SLamArray

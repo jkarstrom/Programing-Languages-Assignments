@@ -1,0 +1,408 @@
+
+==================== FINAL INTERFACE ====================
+2021-11-30 04:27:48.1206477 UTC
+
+interface LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:Memory 8064
+  interface hash: 535e9913b6a5890a39d9841fe8231fed
+  ABI hash: 4175862b35ddc218c8d155eb391b4b11
+  export-list hash: ba5469f4b94f68adee392816ff622181
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b6427d8aeb77a442ff3ccc1f154c876f
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Memory.array
+  Memory.contents
+  Memory.dump
+  Memory.fresh
+  Memory.index
+  Memory.init_mem
+  Memory.update
+  Memory.Location{Memory.Loc}
+  Memory.Memory{Memory.Mem}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0*
+                      containers-0.6.0.1 deepseq-1.4.4.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Set.Internal
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  containers-0.6.0.1:Data.Map d8ba04987faf51abc62bd892a8e4aa44
+import  -/  containers-0.6.0.1:Data.Map.Internal 3e569e355ae39dc42cfe39c88e0e022a
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6d87087aea24143d2650f78480d954a3
+9cfc796e80d58f970a50a2a7c2f6b39c
+  $fEqLocation :: GHC.Classes.Eq Memory.Location
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Memory.Location
+                  GHC.Integer.Type.eqInteger
+                    `cast`
+                  (Sym (Memory.N:Location[0])
+                   ->_R Sym (Memory.N:Location[0])
+                   ->_R <GHC.Types.Bool>_R)
+                  GHC.Integer.Type.neqInteger
+                    `cast`
+                  (Sym (Memory.N:Location[0])
+                   ->_R Sym (Memory.N:Location[0])
+                   ->_R <GHC.Types.Bool>_R) -}
+9cfc796e80d58f970a50a2a7c2f6b39c
+  $fShowLocation :: GHC.Show.Show Memory.Location
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Memory.Location
+                  Memory.$fShowLocation_$cshowsPrec
+                  GHC.Show.$fShowInteger_$cshow
+                    `cast`
+                  (Sym (Memory.N:Location[0]) ->_R <GHC.Base.String>_R)
+                  Memory.$fShowLocation_$cshowList -}
+9cfc796e80d58f970a50a2a7c2f6b39c
+  $fShowLocation1 ::
+    Memory.Location -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,U><L,1*U>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Memory.Location) (s :: GHC.Base.String)[OneShot] ->
+                 case GHC.Show.$w$cshowsPrec4
+                        0#
+                        x `cast` (Memory.N:Location[0])
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Base.++_$s++ @ GHC.Types.Char s ww3 ww4 }) -}
+9cfc796e80d58f970a50a2a7c2f6b39c
+  $fShowLocation_$cshowList :: [Memory.Location] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Memory.Location]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Memory.Location
+                   Memory.$fShowLocation1
+                   ls
+                   s) -}
+9cfc796e80d58f970a50a2a7c2f6b39c
+  $fShowLocation_$cshowsPrec ::
+    GHC.Types.Int -> Memory.Location -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,U><L,1*U>m2,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: Memory.Location)
+                   (s :: GHC.Base.String) ->
+                 case GHC.Show.$w$cshowsPrec4
+                        0#
+                        x `cast` (Memory.N:Location[0])
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Base.++_$s++ @ GHC.Types.Char s ww3 ww4 }) -}
+de062d6dd108744001449bbc9ab0c421
+  $sinsert_$sgo13 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> a1
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a1
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+0d36bef60d0917e025e6a5b8527bcd3e
+  $slookup1 ::
+    GHC.Integer.Type.Integer
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a
+    -> GHC.Maybe.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+592fc6d58ecd4bff5717fbd299a52201
+  $tc'Loc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17945983155680098992##
+                   4978626431903598027##
+                   Memory.$trModule
+                   Memory.$tc'Loc2
+                   0#
+                   Memory.$tc'Loc1) -}
+6dc072d20e437c7b71148b051a23a845
+  $tc'Loc1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7fae12008f7b8e4b744c2491f1d07978
+  $tc'Loc2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Memory.$tc'Loc3) -}
+31e97dfef138173e01935c61788ce65c
+  $tc'Loc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Loc"#) -}
+751d5c96eb0636333fc899ae18247a6b
+  $tc'Mem :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13324466870727800479##
+                   289075755183967241##
+                   Memory.$trModule
+                   Memory.$tc'Mem2
+                   1#
+                   Memory.$tc'Mem1) -}
+ec471ed503607ad28b9ace31cfa95aa9
+  $tc'Mem1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fd7e362a2523e239f9780d63acc01e61
+  $tc'Mem2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Memory.$tc'Mem3) -}
+33d0cbee5e934f6f1b94a75e7aa47259
+  $tc'Mem3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Mem"#) -}
+50ce3a7f5f32d5a0ab6a968793d8e61b
+  $tcLocation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4583015892268051708##
+                   3831949029381402892##
+                   Memory.$trModule
+                   Memory.$tcLocation1
+                   0#
+                   GHC.Types.krep$*) -}
+baa48071ab5ebf4dad2e041de87ae396
+  $tcLocation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Memory.$tcLocation2) -}
+c134955ff8b2ca2e10f048608315333c
+  $tcLocation2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Location"#) -}
+ff328f7a80e8f54c4d214f1418b38687
+  $tcMemory :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8174572798675047861##
+                   4893074002580545402##
+                   Memory.$trModule
+                   Memory.$trModule1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+e67120a7770b9189039c3873e24c66f7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Memory.$trModule3
+                   Memory.$trModule1) -}
+ac5f2049e9722e32c35a39040b25cc6e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Memory.$trModule2) -}
+25b6062276e41de73bbda2b8a8c9c3d8
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Memory"#) -}
+3761d7eb52002810dab7ab83ce617912
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Memory.$trModule4) -}
+f84d9bcdba1d0ebd376537c079c976ff
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"#) -}
+9ed35c4927083be7b8407b5040817c5c
+  $wcontents ::
+    Data.Map.Internal.Map GHC.Integer.Type.Integer (GHC.Maybe.Maybe a)
+    -> Memory.Location -> a
+  {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [2],
+     Unfolding: (\ @ a
+                   (ww :: Data.Map.Internal.Map
+                            GHC.Integer.Type.Integer (GHC.Maybe.Maybe a))
+                   (w :: Memory.Location) ->
+                 case Memory.$slookup1
+                        @ (GHC.Maybe.Maybe a)
+                        w `cast` (Memory.N:Location[0])
+                        ww of wild {
+                   GHC.Maybe.Nothing -> Memory.contents2 @ a w
+                   GHC.Maybe.Just ds
+                   -> case ds of wild1 {
+                        GHC.Maybe.Nothing -> Memory.contents1 @ a w
+                        GHC.Maybe.Just v -> v } }) -}
+5c7b5e311895685469fbda4c8728f392
+  $wdump ::
+    GHC.Show.Show a =>
+    Data.Map.Internal.Map GHC.Integer.Type.Integer (GHC.Maybe.Maybe a)
+    -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: Data.Map.Internal.Map
+                            GHC.Integer.Type.Integer (GHC.Maybe.Maybe a)) ->
+                 GHC.Show.showList__
+                   @ (GHC.Integer.Type.Integer, GHC.Maybe.Maybe a)
+                   (\ (w3 :: (GHC.Integer.Type.Integer, GHC.Maybe.Maybe a))
+                      (w4 :: GHC.Base.String)[OneShot] ->
+                    case w3 of ww1 { (,) ww2 ww3 ->
+                    GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.$fShow(,)4
+                      (case GHC.Show.$w$cshowsPrec4
+                              0#
+                              ww2
+                              (GHC.Types.:
+                                 @ GHC.Types.Char
+                                 GHC.Show.showList__1
+                                 (GHC.Show.$fShow(,)_$sgo1
+                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w4)
+                                    (GHC.Show.$fShowMaybe_$cshowsPrec @ a w GHC.Show.$fShow(,)1 ww3)
+                                    (GHC.Types.[] @ GHC.Show.ShowS))) of ww4 { (#,#) ww5 ww6 ->
+                       GHC.Types.: @ GHC.Types.Char ww5 ww6 }) })
+                   (Data.Map.Internal.$fDataMap_go
+                      @ GHC.Integer.Type.Integer
+                      @ (GHC.Maybe.Maybe a)
+                      (GHC.Types.[] @ (GHC.Integer.Type.Integer, GHC.Maybe.Maybe a))
+                      ww)
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+9cfc796e80d58f970a50a2a7c2f6b39c
+  newtype Location = Loc GHC.Integer.Type.Integer
+7d2fd13f633dd125212152909415829e
+  newtype Memory a
+    = Mem (GHC.Integer.Type.Integer,
+           Data.Map.Internal.Map GHC.Integer.Type.Integer (GHC.Maybe.Maybe a))
+1dd7036ed8dbaf7e3a5bf9c8ef1f22a8
+  array ::
+    Memory.Memory a
+    -> GHC.Integer.Type.Integer -> (Memory.Location, Memory.Memory a)
+  {- Arity: 2, Strictness: <S,1*U(U,U)><L,U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (ds :: Memory.Memory a) (k :: GHC.Integer.Type.Integer) ->
+                 case ds `cast` (Memory.N:Memory[0] <a>_R) of wild { (,) n s ->
+                 (n `cast` (Sym (Memory.N:Location[0])),
+                  (GHC.Integer.Type.plusInteger n k, s)
+                    `cast`
+                  (Sym (Memory.N:Memory[0] <a>_R))) }) -}
+21f71255842524d3dc53a19dd9a261bf
+  contents :: Memory.Memory a -> Memory.Location -> a
+  {- Arity: 2, Strictness: <S(LS),1*U(A,1*U)><S,U>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: Memory.Memory a) (w1 :: Memory.Location) ->
+                 case w `cast` (Memory.N:Memory[0] <a>_R) of ww { (,) ww1 ww2 ->
+                 Memory.$wcontents @ a ww2 w1 }) -}
+a39d41b2e5f26015c5ce2e738d0d77c1
+  contents1 :: Memory.Location -> a
+  {- Arity: 1, Strictness: <B,U>x -}
+128563a84500d1d7893b6f7a01a7059f
+  contents2 :: Memory.Location -> a
+  {- Arity: 1, Strictness: <B,U>x -}
+120ae7cb4a02d0bf2efc0d6f9c66b529
+  dump :: GHC.Show.Show a => Memory.Memory a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S(LS),1*U(A,1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Show.Show a) (w1 :: Memory.Memory a) ->
+                 case w1 `cast` (Memory.N:Memory[0] <a>_R) of ww { (,) ww1 ww2 ->
+                 Memory.$wdump @ a w ww2 }) -}
+1238cf123853a19b2f566e318f0ba256
+  fresh :: Memory.Memory a -> (Memory.Location, Memory.Memory a)
+  {- Arity: 1, Strictness: <S,1*U(U,1*U)>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Memory.Memory a) ->
+                 case w `cast` (Memory.N:Memory[0] <a>_R) of ww { (,) ww1 ww2 ->
+                 (ww1 `cast` (Sym (Memory.N:Location[0])),
+                  (GHC.Integer.Type.plusInteger ww1 Memory.fresh1,
+                   Memory.$sinsert_$sgo13
+                     @ (GHC.Maybe.Maybe a)
+                     ww1
+                     ww1
+                     (GHC.Maybe.Nothing @ a)
+                     ww2)
+                    `cast`
+                  (Sym (Memory.N:Memory[0] <a>_R))) }) -}
+4c3cf5a7adb0001984954426ae09a6b5
+  fresh1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+e3bee91a0bd9a632fb5ce3928eddfd7b
+  index ::
+    Memory.Memory a
+    -> Memory.Location -> GHC.Integer.Type.Integer -> Memory.Location
+  {- Arity: 3, Strictness: <L,A><S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Memory.index1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Memory.Memory a>_R
+                 ->_R <Memory.Location>_R
+                 ->_R <GHC.Integer.Type.Integer>_R
+                 ->_R Sym (Memory.N:Location[0])) -}
+7215475586dd5746f146bdf6181986a4
+  index1 ::
+    Memory.Memory a
+    -> Memory.Location
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <L,A><S,1*U><S,U>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (mem :: Memory.Memory a)
+                   (ds :: Memory.Location)
+                   (i :: GHC.Integer.Type.Integer) ->
+                 GHC.Integer.Type.plusInteger ds `cast` (Memory.N:Location[0]) i) -}
+d30ec56b182ea1c815f6ebcfbe99e3a2
+  init_mem :: Memory.Memory a
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Memory.init_mem1
+                  `cast`
+                (forall (a :: <*>_N). Sym (Memory.N:Memory[0] <a>_R)) -}
+0404e3d1afe132fd4aa5a18125055348
+  init_mem1 ::
+    (GHC.Integer.Type.Integer,
+     Data.Map.Internal.Map GHC.Integer.Type.Integer (GHC.Maybe.Maybe a))
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (\ @ a ->
+                 (Memory.init_mem2,
+                  Data.Map.Internal.Tip
+                    @ GHC.Integer.Type.Integer
+                    @ (GHC.Maybe.Maybe a))) -}
+84559a283dbe5c269d372e20417bc73a
+  init_mem2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+05c0d879997d450c46e0bc12c3e82e1d
+  update ::
+    Memory.Memory a -> Memory.Location -> a -> Memory.Memory a
+  {- Arity: 3, Strictness: <S(LS),1*U(U,U)><S,U><L,U>m, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a (w :: Memory.Memory a) (w1 :: Memory.Location) (w2 :: a) ->
+                 case w `cast` (Memory.N:Memory[0] <a>_R) of ww { (,) ww1 ww2 ->
+                 case Memory.$slookup1
+                        @ (GHC.Maybe.Maybe a)
+                        w1 `cast` (Memory.N:Location[0])
+                        ww2 of wild {
+                   GHC.Maybe.Nothing -> Memory.update1 @ a w1
+                   GHC.Maybe.Just ds
+                   -> (ww1,
+                       Memory.$sinsert_$sgo13
+                         @ (GHC.Maybe.Maybe a)
+                         w1 `cast` (Memory.N:Location[0])
+                         w1 `cast` (Memory.N:Location[0])
+                         (GHC.Maybe.Just @ a w2)
+                         ww2)
+                        `cast`
+                      (Sym (Memory.N:Memory[0] <a>_R)) } }) -}
+d4ec7baac8fb05d0915efb2f7717e55e
+  update1 :: Memory.Location -> Memory.Memory a
+  {- Arity: 1, Strictness: <B,U>x -}
+instance [safe] GHC.Classes.Eq [Memory.Location]
+  = Memory.$fEqLocation
+instance [safe] GHC.Show.Show [Memory.Location]
+  = Memory.$fShowLocation
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

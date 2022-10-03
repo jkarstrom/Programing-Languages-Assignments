@@ -1,0 +1,6 @@
+Configuring th-lift-instances-0.1.12...
+Preprocessing library for th-lift-instances-0.1.12..
+Building library for th-lift-instances-0.1.12..
+[1 of 1] Compiling Instances.TH.Lift ( src/Instances/TH/Lift.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Instances/TH/Lift.o )
+Installing library in /home/bugster2010/.stack/snapshots/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/th-lift-instances-0.1.12-EuuyPWVX9MvJPyrnAoAMo6
+Registering library for th-lift-instances-0.1.12..

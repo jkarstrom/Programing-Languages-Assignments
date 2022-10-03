@@ -1,0 +1,2841 @@
+
+==================== FINAL INTERFACE ====================
+2021-11-30 04:27:45.4585748 UTC
+
+interface LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On:LamFunSyntax [family instance module] 8064
+  interface hash: d890535964fb3c93c969bf262d1bf0f8
+  ABI hash: 098d1f7f00dadcfb30a6c4ee65ffc67c
+  export-list hash: 8e863f37e32bf74e275db03d6c750d40
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e1dbd5c186dc48fc2ba35c3fefaae143
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  LamFunSyntax.unsafeMkAssign_
+  LamFunSyntax.unsafeMkBoolean_
+  LamFunSyntax.unsafeMkCase_
+  LamFunSyntax.unsafeMkCons_
+  LamFunSyntax.unsafeMkContents_
+  LamFunSyntax.unsafeMkDefine_
+  LamFunSyntax.unsafeMkLet_
+  LamFunSyntax.unsafeMkNil_
+  LamFunSyntax.unsafeMkNumber_
+  LamFunSyntax.unsafeMkRec_
+  LamFunSyntax.unsafeMkSequence_
+  LamFunSyntax.unsafeMkStrLit_
+  LamFunSyntax.unsafeMkWhile_
+  LamFunSyntax.<:
+  LamFunSyntax.Defn_{LamFunSyntax.Rec_ LamFunSyntax.Val_}
+  LamFunSyntax.Expr_{LamFunSyntax.App_ LamFunSyntax.Assign_ LamFunSyntax.Boolean_ LamFunSyntax.Case_ LamFunSyntax.Cons_ LamFunSyntax.Contents_ LamFunSyntax.Lambda_ LamFunSyntax.Let_ LamFunSyntax.Nil_ LamFunSyntax.Number_ LamFunSyntax.Sequence_ LamFunSyntax.StrLit_ LamFunSyntax.Variable_ LamFunSyntax.While_}
+  LamFunSyntax.LamArraySym0
+  LamFunSyntax.LamCBNSym0
+  LamFunSyntax.LamCBVSym0
+  LamFunSyntax.LamMemSym0
+  LamFunSyntax.LamNatSym0
+  LamFunSyntax.LamRecSym0
+  LamFunSyntax.Program_{LamFunSyntax.Calculate_ LamFunSyntax.Define_}
+  LamFunSyntax.SVersion
+  LamFunSyntax.Version{LamFunSyntax.LamArray LamFunSyntax.LamCBN LamFunSyntax.LamCBV LamFunSyntax.LamMem LamFunSyntax.LamNat LamFunSyntax.LamRec}
+  Data.Singletons.Internal.Sing{LamFunSyntax.SLamArray LamFunSyntax.SLamCBN LamFunSyntax.SLamCBV LamFunSyntax.SLamMem LamFunSyntax.SLamNat LamFunSyntax.SLamRec}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 containers-0.6.0.1 deepseq-1.4.4.0
+                      ghc-boot-th-8.6.4 ghc-prim-0.5.3 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 mtl-2.2.2 pretty-1.1.3.6 primitive-0.6.4.0
+                      safe-0.3.17 singletons-2.5.1 syb-0.7 template-haskell-2.14.0.0
+                      text-1.2.3.1 th-abstraction-0.2.11.0 th-desugar-1.9
+                      th-expand-syns-0.4.4.0 th-lift-0.7.11 th-lift-instances-0.1.12
+                      th-orphans-0.13.6 th-reify-many-0.1.8 transformers-0.5.6.2
+                      vector-0.12.0.2
+orphans: hashable-1.2.7.0:Data.Hashable.Generic
+         singletons-2.5.1:Data.Singletons
+         singletons-2.5.1:Data.Singletons.Prelude.Semigroup
+         singletons-2.5.1:Data.Singletons.Prelude.Applicative
+         singletons-2.5.1:Data.Singletons.Prelude.Const
+         singletons-2.5.1:Data.Singletons.Prelude.Functor
+         singletons-2.5.1:Data.Singletons.Prelude.Identity
+         singletons-2.5.1:Data.Singletons.Prelude.Monoid
+         singletons-2.5.1:Data.Singletons.Prelude.Semigroup.Internal
+         singletons-2.5.1:Data.Singletons.TypeLits
+         singletons-2.5.1:Data.Singletons.ShowSing
+         singletons-2.5.1:Data.Singletons.TypeLits.Internal
+         singletons-2.5.1:Data.Singletons.Prelude.Ord
+         singletons-2.5.1:Data.Singletons.Prelude.Instances
+         singletons-2.5.1:Data.Singletons.Decide
+         th-orphans-0.13.6:Language.Haskell.TH.Instances
+         th-lift-0.7.11:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.12:Instances.TH.Lift
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show vector-0.12.0.2:Data.Vector.Unboxed
+         vector-0.12.0.2:Data.Vector.Fusion.Bundle
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.Graph
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         ghc-boot-th-8.6.4:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.4:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         singletons-2.5.1:Data.Singletons
+                         singletons-2.5.1:Data.Singletons.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Applicative
+                         singletons-2.5.1:Data.Singletons.Prelude.Base
+                         singletons-2.5.1:Data.Singletons.Prelude.Bool
+                         singletons-2.5.1:Data.Singletons.Prelude.Const
+                         singletons-2.5.1:Data.Singletons.Prelude.Either
+                         singletons-2.5.1:Data.Singletons.Prelude.Enum
+                         singletons-2.5.1:Data.Singletons.Prelude.Eq
+                         singletons-2.5.1:Data.Singletons.Prelude.Foldable
+                         singletons-2.5.1:Data.Singletons.Prelude.Functor
+                         singletons-2.5.1:Data.Singletons.Prelude.Identity
+                         singletons-2.5.1:Data.Singletons.Prelude.Instances
+                         singletons-2.5.1:Data.Singletons.Prelude.IsString
+                         singletons-2.5.1:Data.Singletons.Prelude.List.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.List.Internal.Disambiguation
+                         singletons-2.5.1:Data.Singletons.Prelude.Maybe
+                         singletons-2.5.1:Data.Singletons.Prelude.Monad.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Monoid
+                         singletons-2.5.1:Data.Singletons.Prelude.Num
+                         singletons-2.5.1:Data.Singletons.Prelude.Ord
+                         singletons-2.5.1:Data.Singletons.Prelude.Semigroup
+                         singletons-2.5.1:Data.Singletons.Prelude.Semigroup.Internal
+                         singletons-2.5.1:Data.Singletons.Prelude.Show
+                         singletons-2.5.1:Data.Singletons.Prelude.Traversable
+                         singletons-2.5.1:Data.Singletons.Prelude.Tuple
+                         singletons-2.5.1:Data.Singletons.Syntax
+                         singletons-2.5.1:Data.Singletons.TypeLits
+                         singletons-2.5.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.2.11.0:Language.Haskell.TH.Datatype
+                         th-desugar-1.9:Language.Haskell.TH.Desugar.AST
+                         vector-0.12.0.2:Data.Vector vector-0.12.0.2:Data.Vector.Primitive
+                         vector-0.12.0.2:Data.Vector.Storable
+                         vector-0.12.0.2:Data.Vector.Unboxed
+                         vector-0.12.0.2:Data.Vector.Unboxed.Base
+import  -/  base-4.12.0.0:Data.Type.Equality f6b04445a1c9b5058ef9dbe9a2aeb06a
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Generics 4de68d952daf417059d0523dece232ea
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:Unsafe.Coerce 9ab5addbda535c4a3443ba35ca948ecf
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  hashable-1.2.7.0:Data.Hashable fef6fd6d72163c0bc7f37a55cb5ebfed
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6d87087aea24143d2650f78480d954a3
+import  -/  singletons-2.5.1:Data.Singletons.Internal 3383ecc7c6d9935f4cf18f0b26ad969a
+import  -/  singletons-2.5.1:Data.Singletons.Single 348bcec8068f599944b1353cd9a108ec
+import  -/  singletons-2.5.1:Data.Singletons.TH 96430a3f4b6825db345f67171d2437fd
+5a088fa4aebd2efeabd99af587b83fb7
+  $fEqDefn_ ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (LamFunSyntax.Defn_ v a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Classes.Eq a).
+                  @ (LamFunSyntax.Defn_ v a)
+                  (LamFunSyntax.$fEqDefn__$c== @ a @ v v1)
+                  (LamFunSyntax.$fEqDefn__$c/= @ a @ v v1) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fEqDefn__$c/= ::
+    GHC.Classes.Eq a =>
+    LamFunSyntax.Defn_ v a -> LamFunSyntax.Defn_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: LamFunSyntax.Defn_ v a)
+                   (y :: LamFunSyntax.Defn_ v a) ->
+                 case LamFunSyntax.$fEqDefn__$c== @ a @ v $dEq x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fEqDefn__$c== ::
+    GHC.Classes.Eq a =>
+    LamFunSyntax.Defn_ v a -> LamFunSyntax.Defn_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dEq :: GHC.Classes.Eq a)
+                   (ds :: LamFunSyntax.Defn_ v a)
+                   (ds1 :: LamFunSyntax.Defn_ v a) ->
+                 case ds of wild {
+                   LamFunSyntax.Val_ a1 a2
+                   -> case ds1 of wild1 {
+                        LamFunSyntax.Val_ b1 b2
+                        -> case GHC.Classes.== @ a $dEq a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> LamFunSyntax.$fEqDefn__$c==1 @ a @ v $dEq a2 b2 }
+                        LamFunSyntax.Rec_ ipv ipv1 ipv2 -> GHC.Types.False }
+                   LamFunSyntax.Rec_ $d~ a1 a2
+                   -> case ds1 of wild1 {
+                        LamFunSyntax.Val_ ipv ipv1 -> GHC.Types.False
+                        LamFunSyntax.Rec_ $d~1 b1 b2
+                        -> case GHC.Classes.== @ a $dEq a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> LamFunSyntax.$fEqDefn__$c==1 @ a @ v $dEq a2 b2 } } }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fEqDefn__$c==1 ::
+    GHC.Classes.Eq a =>
+    LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)> -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fEqExpr_ ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (LamFunSyntax.Expr_ v a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Classes.Eq a).
+                  @ (LamFunSyntax.Expr_ v a)
+                  (LamFunSyntax.$fEqDefn__$c==1 @ a @ v v1)
+                  (LamFunSyntax.$fEqExpr__$c/= @ a @ v v1) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fEqExpr__$c/= ::
+    GHC.Classes.Eq a =>
+    LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)><L,U><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: LamFunSyntax.Expr_ v a)
+                   (y :: LamFunSyntax.Expr_ v a) ->
+                 case LamFunSyntax.$fEqDefn__$c==1 @ a @ v $dEq x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fEqProgram_ ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (LamFunSyntax.Program_ v a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Classes.Eq a).
+                  @ (LamFunSyntax.Program_ v a)
+                  (LamFunSyntax.$fEqProgram__$c== @ a @ v v1)
+                  (LamFunSyntax.$fEqProgram__$c/= @ a @ v v1) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fEqProgram__$c/= ::
+    GHC.Classes.Eq a =>
+    LamFunSyntax.Program_ v a
+    -> LamFunSyntax.Program_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: LamFunSyntax.Program_ v a)
+                   (y :: LamFunSyntax.Program_ v a) ->
+                 case LamFunSyntax.$fEqProgram__$c== @ a @ v $dEq x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fEqProgram__$c== ::
+    GHC.Classes.Eq a =>
+    LamFunSyntax.Program_ v a
+    -> LamFunSyntax.Program_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dEq :: GHC.Classes.Eq a)
+                   (ds :: LamFunSyntax.Program_ v a)
+                   (ds1 :: LamFunSyntax.Program_ v a) ->
+                 case ds of wild {
+                   LamFunSyntax.Calculate_ a1
+                   -> case ds1 of wild1 {
+                        LamFunSyntax.Calculate_ b1
+                        -> LamFunSyntax.$fEqDefn__$c==1 @ a @ v $dEq a1 b1
+                        LamFunSyntax.Define_ ipv ipv1 -> GHC.Types.False }
+                   LamFunSyntax.Define_ $d~ a1
+                   -> case ds1 of wild1 {
+                        LamFunSyntax.Calculate_ ipv -> GHC.Types.False
+                        LamFunSyntax.Define_ $d~1 b1
+                        -> LamFunSyntax.$fEqDefn__$c== @ a @ v $dEq a1 b1 } }) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fEqVersion :: GHC.Classes.Eq LamFunSyntax.Version
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunSyntax.Version
+                  LamFunSyntax.$fEqVersion_$c==
+                  LamFunSyntax.$fEqVersion_$c/= -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fEqVersion_$c/= ::
+    LamFunSyntax.Version -> LamFunSyntax.Version -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: LamFunSyntax.Version) (y :: LamFunSyntax.Version) ->
+                 case x of wild {
+                   LamFunSyntax.LamCBN
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True LamFunSyntax.LamCBN -> GHC.Types.False }
+                   LamFunSyntax.LamCBV
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True LamFunSyntax.LamCBV -> GHC.Types.False }
+                   LamFunSyntax.LamNat
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True LamFunSyntax.LamNat -> GHC.Types.False }
+                   LamFunSyntax.LamRec
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True LamFunSyntax.LamRec -> GHC.Types.False }
+                   LamFunSyntax.LamMem
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True LamFunSyntax.LamMem -> GHC.Types.False }
+                   LamFunSyntax.LamArray
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        LamFunSyntax.LamArray -> GHC.Types.False } }) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fEqVersion_$c== ::
+    LamFunSyntax.Version -> LamFunSyntax.Version -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: LamFunSyntax.Version)
+                   (ds1 :: LamFunSyntax.Version) ->
+                 case ds of wild {
+                   LamFunSyntax.LamCBN
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False LamFunSyntax.LamCBN -> GHC.Types.True }
+                   LamFunSyntax.LamCBV
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False LamFunSyntax.LamCBV -> GHC.Types.True }
+                   LamFunSyntax.LamNat
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False LamFunSyntax.LamNat -> GHC.Types.True }
+                   LamFunSyntax.LamRec
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False LamFunSyntax.LamRec -> GHC.Types.True }
+                   LamFunSyntax.LamMem
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False LamFunSyntax.LamMem -> GHC.Types.True }
+                   LamFunSyntax.LamArray
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LamFunSyntax.LamArray -> GHC.Types.True } }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fFunctorDefn_ :: GHC.Base.Functor (LamFunSyntax.Defn_ v)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ v :: LamFunSyntax.Version.
+                  @ (LamFunSyntax.Defn_ v)
+                  (LamFunSyntax.$fFunctorDefn__$cfmap @ v)
+                  (LamFunSyntax.$fFunctorDefn__$c<$ @ v) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fFunctorDefn__$c<$ ::
+    a -> LamFunSyntax.Defn_ v b -> LamFunSyntax.Defn_ v a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   @ b
+                   (z :: a)
+                   (ds :: LamFunSyntax.Defn_ v b) ->
+                 case ds of wild {
+                   LamFunSyntax.Val_ a1 a2
+                   -> LamFunSyntax.Val_
+                        @ v
+                        @ a
+                        z
+                        (LamFunSyntax.$fFunctorDefn__$c<$1 @ v @ a @ b z a2)
+                   LamFunSyntax.Rec_ $d~ a1 a2
+                   -> case GHC.Types.heq_sel
+                             @ GHC.Types.Bool
+                             @ GHC.Types.Bool
+                             @ ('LamFunSyntax.LamRec LamFunSyntax.<: v)
+                             @ 'GHC.Types.True
+                             $d~
+                               `cast`
+                             (Data.Type.Equality.N:~[0] <GHC.Types.Bool>_N <'LamFunSyntax.LamRec
+                                                                            LamFunSyntax.<: v>_N <'GHC.Types.True>_N) of co { DEFAULT ->
+                      LamFunSyntax.Rec_
+                        @ v
+                        @ a
+                        $d~
+                        z
+                        (LamFunSyntax.$fFunctorDefn__$c<$1 @ v @ a @ b z a2) } }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fFunctorDefn__$c<$1 ::
+    a -> LamFunSyntax.Expr_ v b -> LamFunSyntax.Expr_ v a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fFunctorDefn__$cfmap ::
+    (a -> b) -> LamFunSyntax.Defn_ v a -> LamFunSyntax.Defn_ v b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   @ b
+                   (f6 :: a -> b)
+                   (ds :: LamFunSyntax.Defn_ v a) ->
+                 case ds of wild {
+                   LamFunSyntax.Val_ a1 a2
+                   -> LamFunSyntax.Val_
+                        @ v
+                        @ b
+                        (f6 a1)
+                        (LamFunSyntax.$fFunctorDefn__$cfmap1 @ v @ a @ b f6 a2)
+                   LamFunSyntax.Rec_ $d~ a1 a2
+                   -> case GHC.Types.heq_sel
+                             @ GHC.Types.Bool
+                             @ GHC.Types.Bool
+                             @ ('LamFunSyntax.LamRec LamFunSyntax.<: v)
+                             @ 'GHC.Types.True
+                             $d~
+                               `cast`
+                             (Data.Type.Equality.N:~[0] <GHC.Types.Bool>_N <'LamFunSyntax.LamRec
+                                                                            LamFunSyntax.<: v>_N <'GHC.Types.True>_N) of co { DEFAULT ->
+                      LamFunSyntax.Rec_
+                        @ v
+                        @ b
+                        $d~
+                        (f6 a1)
+                        (LamFunSyntax.$fFunctorDefn__$cfmap1 @ v @ a @ b f6 a2) } }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fFunctorDefn__$cfmap1 ::
+    (a -> b) -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fFunctorExpr_ :: GHC.Base.Functor (LamFunSyntax.Expr_ v)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ v :: LamFunSyntax.Version.
+                  @ (LamFunSyntax.Expr_ v)
+                  (LamFunSyntax.$fFunctorDefn__$cfmap1 @ v)
+                  (LamFunSyntax.$fFunctorDefn__$c<$1 @ v) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fFunctorProgram_ :: GHC.Base.Functor (LamFunSyntax.Program_ v)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ v :: LamFunSyntax.Version.
+                  @ (LamFunSyntax.Program_ v)
+                  (LamFunSyntax.$fFunctorProgram__$cfmap @ v)
+                  (LamFunSyntax.$fFunctorProgram__$c<$ @ v) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fFunctorProgram__$c<$ ::
+    a -> LamFunSyntax.Program_ v b -> LamFunSyntax.Program_ v a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   @ b
+                   (z :: a)
+                   (ds :: LamFunSyntax.Program_ v b) ->
+                 case ds of wild {
+                   LamFunSyntax.Calculate_ a1
+                   -> LamFunSyntax.Calculate_
+                        @ v
+                        @ a
+                        (LamFunSyntax.$fFunctorDefn__$c<$1 @ v @ a @ b z a1)
+                   LamFunSyntax.Define_ $d~ a1
+                   -> case GHC.Types.heq_sel
+                             @ GHC.Types.Bool
+                             @ GHC.Types.Bool
+                             @ ('LamFunSyntax.LamNat LamFunSyntax.<: v)
+                             @ 'GHC.Types.True
+                             $d~
+                               `cast`
+                             (Data.Type.Equality.N:~[0] <GHC.Types.Bool>_N <'LamFunSyntax.LamNat
+                                                                            LamFunSyntax.<: v>_N <'GHC.Types.True>_N) of co { DEFAULT ->
+                      LamFunSyntax.Define_
+                        @ v
+                        @ a
+                        $d~
+                        (LamFunSyntax.$fFunctorDefn__$c<$ @ v @ a @ b z a1) } }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fFunctorProgram__$cfmap ::
+    (a -> b) -> LamFunSyntax.Program_ v a -> LamFunSyntax.Program_ v b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   @ b
+                   (f6 :: a -> b)
+                   (ds :: LamFunSyntax.Program_ v a) ->
+                 case ds of wild {
+                   LamFunSyntax.Calculate_ a1
+                   -> LamFunSyntax.Calculate_
+                        @ v
+                        @ b
+                        (LamFunSyntax.$fFunctorDefn__$cfmap1 @ v @ a @ b f6 a1)
+                   LamFunSyntax.Define_ $d~ a1
+                   -> case GHC.Types.heq_sel
+                             @ GHC.Types.Bool
+                             @ GHC.Types.Bool
+                             @ ('LamFunSyntax.LamNat LamFunSyntax.<: v)
+                             @ 'GHC.Types.True
+                             $d~
+                               `cast`
+                             (Data.Type.Equality.N:~[0] <GHC.Types.Bool>_N <'LamFunSyntax.LamNat
+                                                                            LamFunSyntax.<: v>_N <'GHC.Types.True>_N) of co { DEFAULT ->
+                      LamFunSyntax.Define_
+                        @ v
+                        @ b
+                        $d~
+                        (LamFunSyntax.$fFunctorDefn__$cfmap @ v @ a @ b f6 a1) } }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn_ ::
+    GHC.Classes.Ord a => GHC.Classes.Ord (LamFunSyntax.Defn_ v a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Classes.Ord a).
+                  @ (LamFunSyntax.Defn_ v a)
+                  (LamFunSyntax.$fOrdDefn__$cp1Ord @ a @ v v1)
+                  (LamFunSyntax.$fOrdDefn__$ccompare1 @ a @ v v1)
+                  (LamFunSyntax.$fOrdDefn__$c< @ a @ v v1)
+                  (LamFunSyntax.$fOrdDefn__$c<= @ a @ v v1)
+                  (\ (a1 :: LamFunSyntax.Defn_ v a) (b :: LamFunSyntax.Defn_ v a) ->
+                   LamFunSyntax.$fOrdDefn__$c< @ a @ v v1 b a1)
+                  (LamFunSyntax.$fOrdDefn__$c>= @ a @ v v1)
+                  (LamFunSyntax.$fOrdDefn__$cmax @ a @ v v1)
+                  (LamFunSyntax.$fOrdDefn__$cmin @ a @ v v1) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$c< ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Defn_ v a -> LamFunSyntax.Defn_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: LamFunSyntax.Defn_ v a)
+                   (b :: LamFunSyntax.Defn_ v a) ->
+                 case a1 of wild {
+                   LamFunSyntax.Val_ a2 a3
+                   -> case b of wild1 {
+                        LamFunSyntax.Val_ b1 b2
+                        -> case GHC.Classes.compare @ a $dOrd a2 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.True
+                             GHC.Types.EQ -> LamFunSyntax.$fOrdDefn__$c<1 @ a @ v $dOrd a3 b2
+                             GHC.Types.GT -> GHC.Types.False }
+                        LamFunSyntax.Rec_ ipv ipv1 ipv2 -> GHC.Types.True }
+                   LamFunSyntax.Rec_ $d~ a2 a3
+                   -> case b of wild1 {
+                        LamFunSyntax.Val_ ipv ipv1 -> GHC.Types.False
+                        LamFunSyntax.Rec_ $d~1 b1 b2
+                        -> case GHC.Classes.compare @ a $dOrd a2 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.True
+                             GHC.Types.EQ -> LamFunSyntax.$fOrdDefn__$c<1 @ a @ v $dOrd a3 b2
+                             GHC.Types.GT -> GHC.Types.False } } }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$c<1 ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Expr_ v a)
+                   (y :: LamFunSyntax.Expr_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$c<= ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Defn_ v a -> LamFunSyntax.Defn_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: LamFunSyntax.Defn_ v a)
+                   (b :: LamFunSyntax.Defn_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$c< @ a @ v $dOrd b a1 of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$c>= ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Defn_ v a -> LamFunSyntax.Defn_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: LamFunSyntax.Defn_ v a)
+                   (b :: LamFunSyntax.Defn_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$c< @ a @ v $dOrd a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$ccompare ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Expr_ v a
+    -> LamFunSyntax.Expr_ v a -> GHC.Types.Ordering
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)> -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$ccompare1 ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Defn_ v a
+    -> LamFunSyntax.Defn_ v a -> GHC.Types.Ordering
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: LamFunSyntax.Defn_ v a)
+                   (b :: LamFunSyntax.Defn_ v a) ->
+                 case a1 of wild {
+                   LamFunSyntax.Val_ a2 a3
+                   -> case b of wild1 {
+                        LamFunSyntax.Val_ b1 b2
+                        -> case GHC.Classes.compare @ a $dOrd a2 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.LT
+                             GHC.Types.EQ
+                             -> LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd a3 b2
+                             GHC.Types.GT -> GHC.Types.GT }
+                        LamFunSyntax.Rec_ ipv ipv1 ipv2 -> GHC.Types.LT }
+                   LamFunSyntax.Rec_ $d~ a2 a3
+                   -> case b of wild1 {
+                        LamFunSyntax.Val_ ipv ipv1 -> GHC.Types.GT
+                        LamFunSyntax.Rec_ $d~1 b1 b2
+                        -> case GHC.Classes.compare @ a $dOrd a2 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.LT
+                             GHC.Types.EQ
+                             -> LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd a3 b2
+                             GHC.Types.GT -> GHC.Types.GT } } }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$cmax ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Defn_ v a
+    -> LamFunSyntax.Defn_ v a -> LamFunSyntax.Defn_ v a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,U><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Defn_ v a)
+                   (y :: LamFunSyntax.Defn_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$c< @ a @ v $dOrd y x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$cmin ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Defn_ v a
+    -> LamFunSyntax.Defn_ v a -> LamFunSyntax.Defn_ v a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,U><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Defn_ v a)
+                   (y :: LamFunSyntax.Defn_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$c< @ a @ v $dOrd y x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdDefn__$cp1Ord ::
+    GHC.Classes.Ord a => GHC.Classes.Eq (LamFunSyntax.Defn_ v a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(C(C1(U)),A),A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ v :: LamFunSyntax.Version ($dOrd :: GHC.Classes.Ord a) ->
+                 LamFunSyntax.$fEqDefn_ @ a @ v (GHC.Classes.$p1Ord @ a $dOrd)) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdExpr_ ::
+    GHC.Classes.Ord a => GHC.Classes.Ord (LamFunSyntax.Expr_ v a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Classes.Ord a).
+                  @ (LamFunSyntax.Expr_ v a)
+                  (LamFunSyntax.$fOrdExpr__$cp1Ord @ a @ v v1)
+                  (LamFunSyntax.$fOrdDefn__$ccompare @ a @ v v1)
+                  (LamFunSyntax.$fOrdDefn__$c<1 @ a @ v v1)
+                  (LamFunSyntax.$fOrdExpr__$c<= @ a @ v v1)
+                  (LamFunSyntax.$fOrdExpr__$c> @ a @ v v1)
+                  (LamFunSyntax.$fOrdExpr__$c>= @ a @ v v1)
+                  (LamFunSyntax.$fOrdExpr__$cmax @ a @ v v1)
+                  (LamFunSyntax.$fOrdExpr__$cmin @ a @ v v1) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdExpr__$c<= ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Expr_ v a)
+                   (y :: LamFunSyntax.Expr_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdExpr__$c> ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Expr_ v a)
+                   (y :: LamFunSyntax.Expr_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdExpr__$c>= ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Expr_ v a)
+                   (y :: LamFunSyntax.Expr_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdExpr__$cmax ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Expr_ v a
+    -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Expr_ v a)
+                   (y :: LamFunSyntax.Expr_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd x y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdExpr__$cmin ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Expr_ v a
+    -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Expr_ v a)
+                   (y :: LamFunSyntax.Expr_ v a) ->
+                 case LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd x y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fOrdExpr__$cp1Ord ::
+    GHC.Classes.Ord a => GHC.Classes.Eq (LamFunSyntax.Expr_ v a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(C(C1(U)),A),A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ v :: LamFunSyntax.Version ($dOrd :: GHC.Classes.Ord a) ->
+                 LamFunSyntax.$fEqExpr_ @ a @ v (GHC.Classes.$p1Ord @ a $dOrd)) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fOrdProgram_ ::
+    GHC.Classes.Ord a => GHC.Classes.Ord (LamFunSyntax.Program_ v a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Classes.Ord a).
+                  @ (LamFunSyntax.Program_ v a)
+                  (LamFunSyntax.$fOrdProgram__$cp1Ord @ a @ v v1)
+                  (LamFunSyntax.$fOrdProgram__$ccompare @ a @ v v1)
+                  (LamFunSyntax.$fOrdProgram__$c< @ a @ v v1)
+                  (LamFunSyntax.$fOrdProgram__$c<= @ a @ v v1)
+                  (\ (a1 :: LamFunSyntax.Program_ v a)
+                     (b :: LamFunSyntax.Program_ v a) ->
+                   LamFunSyntax.$fOrdProgram__$c< @ a @ v v1 b a1)
+                  (LamFunSyntax.$fOrdProgram__$c>= @ a @ v v1)
+                  (LamFunSyntax.$fOrdProgram__$cmax @ a @ v v1)
+                  (LamFunSyntax.$fOrdProgram__$cmin @ a @ v v1) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fOrdProgram__$c< ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Program_ v a
+    -> LamFunSyntax.Program_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: LamFunSyntax.Program_ v a)
+                   (b :: LamFunSyntax.Program_ v a) ->
+                 case a1 of wild {
+                   LamFunSyntax.Calculate_ a2
+                   -> case b of wild1 {
+                        LamFunSyntax.Calculate_ b1
+                        -> LamFunSyntax.$fOrdDefn__$c<1 @ a @ v $dOrd a2 b1
+                        LamFunSyntax.Define_ ipv ipv1 -> GHC.Types.True }
+                   LamFunSyntax.Define_ $d~ a2
+                   -> case b of wild1 {
+                        LamFunSyntax.Calculate_ ipv -> GHC.Types.False
+                        LamFunSyntax.Define_ $d~1 b1
+                        -> LamFunSyntax.$fOrdDefn__$c< @ a @ v $dOrd a2 b1 } }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fOrdProgram__$c<= ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Program_ v a
+    -> LamFunSyntax.Program_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: LamFunSyntax.Program_ v a)
+                   (b :: LamFunSyntax.Program_ v a) ->
+                 case LamFunSyntax.$fOrdProgram__$c< @ a @ v $dOrd b a1 of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fOrdProgram__$c>= ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Program_ v a
+    -> LamFunSyntax.Program_ v a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: LamFunSyntax.Program_ v a)
+                   (b :: LamFunSyntax.Program_ v a) ->
+                 case LamFunSyntax.$fOrdProgram__$c< @ a @ v $dOrd a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fOrdProgram__$ccompare ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Program_ v a
+    -> LamFunSyntax.Program_ v a -> GHC.Types.Ordering
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: LamFunSyntax.Program_ v a)
+                   (b :: LamFunSyntax.Program_ v a) ->
+                 case a1 of wild {
+                   LamFunSyntax.Calculate_ a2
+                   -> case b of wild1 {
+                        LamFunSyntax.Calculate_ b1
+                        -> LamFunSyntax.$fOrdDefn__$ccompare @ a @ v $dOrd a2 b1
+                        LamFunSyntax.Define_ ipv ipv1 -> GHC.Types.LT }
+                   LamFunSyntax.Define_ $d~ a2
+                   -> case b of wild1 {
+                        LamFunSyntax.Calculate_ ipv -> GHC.Types.GT
+                        LamFunSyntax.Define_ $d~1 b1
+                        -> LamFunSyntax.$fOrdDefn__$ccompare1 @ a @ v $dOrd a2 b1 } }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fOrdProgram__$cmax ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Program_ v a
+    -> LamFunSyntax.Program_ v a -> LamFunSyntax.Program_ v a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,U><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Program_ v a)
+                   (y :: LamFunSyntax.Program_ v a) ->
+                 case LamFunSyntax.$fOrdProgram__$c< @ a @ v $dOrd y x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fOrdProgram__$cmin ::
+    GHC.Classes.Ord a =>
+    LamFunSyntax.Program_ v a
+    -> LamFunSyntax.Program_ v a -> LamFunSyntax.Program_ v a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),C(C1(U)),A,A,A,A,A,A)><S,U><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (x :: LamFunSyntax.Program_ v a)
+                   (y :: LamFunSyntax.Program_ v a) ->
+                 case LamFunSyntax.$fOrdProgram__$c< @ a @ v $dOrd y x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fOrdProgram__$cp1Ord ::
+    GHC.Classes.Ord a => GHC.Classes.Eq (LamFunSyntax.Program_ v a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(C(C1(U)),A),A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ v :: LamFunSyntax.Version ($dOrd :: GHC.Classes.Ord a) ->
+                 LamFunSyntax.$fEqProgram_
+                   @ a
+                   @ v
+                   (GHC.Classes.$p1Ord @ a $dOrd)) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fShowDefn_ ::
+    GHC.Show.Show a => GHC.Show.Show (LamFunSyntax.Defn_ v a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Show.Show a).
+                  @ (LamFunSyntax.Defn_ v a)
+                  (LamFunSyntax.$fShowDefn__$cshowsPrec @ a @ v v1)
+                  (LamFunSyntax.$fShowDefn__$cshow @ a @ v v1)
+                  (LamFunSyntax.$fShowDefn__$cshowList @ a @ v v1) -}
+edb0467494a2090c1bb8da9ef4694bc5
+  $fShowDefn_1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+36ec2c707cc4500906bd7bc1e26fc042
+  $fShowDefn_2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Rec_ "#) -}
+38c87f2522837d9d0e2df6d4a058ff18
+  $fShowDefn_3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Val_ "#) -}
+402b42a8ec5d6142f6bb8c9d23ab542c
+  $fShowDefn_4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fShowDefn__$cshow ::
+    GHC.Show.Show a => LamFunSyntax.Defn_ v a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: LamFunSyntax.Defn_ v a) ->
+                 LamFunSyntax.$fShowDefn__$cshowsPrec
+                   @ a
+                   @ v
+                   $dShow
+                   LamFunSyntax.$fShowDefn_1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fShowDefn__$cshowList ::
+    GHC.Show.Show a => [LamFunSyntax.Defn_ v a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [LamFunSyntax.Defn_ v a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (LamFunSyntax.Defn_ v a)
+                   (LamFunSyntax.$fShowDefn__$cshowsPrec
+                      @ a
+                      @ v
+                      $dShow
+                      LamFunSyntax.$fShowDefn_1)
+                   ls
+                   s) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fShowDefn__$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> LamFunSyntax.Defn_ v a -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S(S),1*U(U)><S,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: LamFunSyntax.Defn_ v a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 LamFunSyntax.$w$cshowsPrec @ a @ v w ww1 w2 }) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fShowDefn__$cshowsPrec1 ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> LamFunSyntax.Expr_ v a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><L,1*U(U)><S,1*U> -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fShowExpr_ ::
+    GHC.Show.Show a => GHC.Show.Show (LamFunSyntax.Expr_ v a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Show.Show a).
+                  @ (LamFunSyntax.Expr_ v a)
+                  (LamFunSyntax.$fShowDefn__$cshowsPrec1 @ a @ v v1)
+                  (LamFunSyntax.$fShowExpr__$cshow @ a @ v v1)
+                  (LamFunSyntax.$fShowExpr__$cshowList @ a @ v v1) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fShowExpr__$cshow ::
+    GHC.Show.Show a => LamFunSyntax.Expr_ v a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: LamFunSyntax.Expr_ v a) ->
+                 LamFunSyntax.$fShowDefn__$cshowsPrec1
+                   @ a
+                   @ v
+                   $dShow
+                   LamFunSyntax.$fShowDefn_1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $fShowExpr__$cshowList ::
+    GHC.Show.Show a => [LamFunSyntax.Expr_ v a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [LamFunSyntax.Expr_ v a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (LamFunSyntax.Expr_ v a)
+                   (LamFunSyntax.$fShowDefn__$cshowsPrec1
+                      @ a
+                      @ v
+                      $dShow
+                      LamFunSyntax.$fShowDefn_1)
+                   ls
+                   s) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fShowProgram_ ::
+    GHC.Show.Show a => GHC.Show.Show (LamFunSyntax.Program_ v a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a
+                      @ v :: LamFunSyntax.Version
+                      (v1 :: GHC.Show.Show a).
+                  @ (LamFunSyntax.Program_ v a)
+                  (LamFunSyntax.$fShowProgram__$cshowsPrec @ a @ v v1)
+                  (LamFunSyntax.$fShowProgram__$cshow @ a @ v v1)
+                  (LamFunSyntax.$fShowProgram__$cshowList @ a @ v v1) -}
+e9c53afb4b300ce337ec51b5e4cf00dc
+  $fShowProgram_1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunSyntax.$fShowProgram_2) -}
+20c12859dab2840f62b1e4058d8599f6
+  $fShowProgram_2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Define_ "#) -}
+30f26da4b90e67a3c81f42b40783eaeb
+  $fShowProgram_3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunSyntax.$fShowProgram_4) -}
+4a3c4b51fed786aee9eb9f4400d9352b
+  $fShowProgram_4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Calculate_ "#) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fShowProgram__$cshow ::
+    GHC.Show.Show a => LamFunSyntax.Program_ v a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: LamFunSyntax.Program_ v a) ->
+                 case x of wild {
+                   LamFunSyntax.Calculate_ b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        LamFunSyntax.$fShowProgram_3
+                        (LamFunSyntax.$fShowDefn__$cshowsPrec1
+                           @ a
+                           @ v
+                           $dShow
+                           LamFunSyntax.$fShowDefn_4
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   LamFunSyntax.Define_ $d~ b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        LamFunSyntax.$fShowProgram_1
+                        (LamFunSyntax.$w$cshowsPrec
+                           @ a
+                           @ v
+                           $dShow
+                           11#
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fShowProgram__$cshowList ::
+    GHC.Show.Show a => [LamFunSyntax.Program_ v a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [LamFunSyntax.Program_ v a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (LamFunSyntax.Program_ v a)
+                   (LamFunSyntax.$fShowProgram__$cshowsPrec
+                      @ a
+                      @ v
+                      $dShow
+                      LamFunSyntax.$fShowDefn_1)
+                   ls
+                   s) -}
+34eb35ebffca668e964ce8bfefca939f
+  $fShowProgram__$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> LamFunSyntax.Program_ v a -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S(S),1*U(U)><S,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: LamFunSyntax.Program_ v a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 LamFunSyntax.$w$cshowsPrec1 @ a @ v w ww1 w2 }) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fShowVersion :: GHC.Show.Show LamFunSyntax.Version
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunSyntax.Version
+                  LamFunSyntax.$fShowVersion_$cshowsPrec
+                  LamFunSyntax.$fShowVersion_$cshow
+                  LamFunSyntax.$fShowVersion_$cshowList -}
+c2c6106936df84ed45831a56006288ad
+  $fShowVersion1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunSyntax.$fShowVersion2) -}
+0b4fbbe2731dbb2b8af5d173a99d6806
+  $fShowVersion10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamCBV"#) -}
+128180dc27e74af43a60f2647dc62f57
+  $fShowVersion11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunSyntax.$fShowVersion12) -}
+0a72c275f2b3ffe419789c250b8bd6d0
+  $fShowVersion12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamCBN"#) -}
+d927d6aacab358e766da34f3852ec0fd
+  $fShowVersion2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamArray"#) -}
+8799cf1989e8ee8aaab075e13ff847b9
+  $fShowVersion3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunSyntax.$fShowVersion4) -}
+b77669319a47890186136bd7d695c7fc
+  $fShowVersion4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamMem"#) -}
+2230ae1ac5cc3e11aac38d1c146306e4
+  $fShowVersion5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunSyntax.$fShowVersion6) -}
+ae5fb80c63c9698bb91844069203d5db
+  $fShowVersion6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamRec"#) -}
+a9bcb428182630ca82218f5f0ba501aa
+  $fShowVersion7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunSyntax.$fShowVersion8) -}
+9da0bf143c5b62da66a88b59cc90ffb5
+  $fShowVersion8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamNat"#) -}
+08ace7a43c59c2183ed69077777d9f41
+  $fShowVersion9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LamFunSyntax.$fShowVersion10) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fShowVersion_$cshow :: LamFunSyntax.Version -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: LamFunSyntax.Version) ->
+                 case x of wild {
+                   LamFunSyntax.LamCBN -> LamFunSyntax.$fShowVersion11
+                   LamFunSyntax.LamCBV -> LamFunSyntax.$fShowVersion9
+                   LamFunSyntax.LamNat -> LamFunSyntax.$fShowVersion7
+                   LamFunSyntax.LamRec -> LamFunSyntax.$fShowVersion5
+                   LamFunSyntax.LamMem -> LamFunSyntax.$fShowVersion3
+                   LamFunSyntax.LamArray -> LamFunSyntax.$fShowVersion1 }) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fShowVersion_$cshowList ::
+    [LamFunSyntax.Version] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [LamFunSyntax.Version]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ LamFunSyntax.Version
+                   LamFunSyntax.$w$cshowsPrec2
+                   ls
+                   s) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fShowVersion_$cshowsPrec ::
+    GHC.Types.Int -> LamFunSyntax.Version -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: LamFunSyntax.Version)
+                   (w2 :: GHC.Base.String) ->
+                 LamFunSyntax.$w$cshowsPrec2 w1 w2) -}
+8783f6ec5a377c0270ba7e2c06d7671b
+  $fSingIVersionLamArray ::
+    Data.Singletons.Internal.SingI 'LamFunSyntax.LamArray
+  DFunId
+  {- Strictness: m6, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                LamFunSyntax.$WSLamArray
+                  `cast`
+                (Sym (Data.Singletons.Internal.N:SingI[0]) <LamFunSyntax.Version>_N <'LamFunSyntax.LamArray>_N) -}
+1508d083f96b53169a98705e73152241
+  $fSingIVersionLamCBN ::
+    Data.Singletons.Internal.SingI 'LamFunSyntax.LamCBN
+  DFunId
+  {- Strictness: m1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                LamFunSyntax.$WSLamCBN
+                  `cast`
+                (Sym (Data.Singletons.Internal.N:SingI[0]) <LamFunSyntax.Version>_N <'LamFunSyntax.LamCBN>_N) -}
+250e5105f82f4d83ef444f7ab8b5b3c2
+  $fSingIVersionLamCBV ::
+    Data.Singletons.Internal.SingI 'LamFunSyntax.LamCBV
+  DFunId
+  {- Strictness: m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                LamFunSyntax.$WSLamCBV
+                  `cast`
+                (Sym (Data.Singletons.Internal.N:SingI[0]) <LamFunSyntax.Version>_N <'LamFunSyntax.LamCBV>_N) -}
+b0e3117a42bb0f8996dc94762652a4e9
+  $fSingIVersionLamMem ::
+    Data.Singletons.Internal.SingI 'LamFunSyntax.LamMem
+  DFunId
+  {- Strictness: m5, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                LamFunSyntax.$WSLamMem
+                  `cast`
+                (Sym (Data.Singletons.Internal.N:SingI[0]) <LamFunSyntax.Version>_N <'LamFunSyntax.LamMem>_N) -}
+fd06ade2d213238205d12431f5ac5be9
+  $fSingIVersionLamNat ::
+    Data.Singletons.Internal.SingI 'LamFunSyntax.LamNat
+  DFunId
+  {- Strictness: m3, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                LamFunSyntax.$WSLamNat
+                  `cast`
+                (Sym (Data.Singletons.Internal.N:SingI[0]) <LamFunSyntax.Version>_N <'LamFunSyntax.LamNat>_N) -}
+46d02c4045a69414edc893996deb735f
+  $fSingIVersionLamRec ::
+    Data.Singletons.Internal.SingI 'LamFunSyntax.LamRec
+  DFunId
+  {- Strictness: m4, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                LamFunSyntax.$WSLamRec
+                  `cast`
+                (Sym (Data.Singletons.Internal.N:SingI[0]) <LamFunSyntax.Version>_N <'LamFunSyntax.LamRec>_N) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion ::
+    Data.Singletons.Internal.SingKind LamFunSyntax.Version
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LamFunSyntax.Version
+                  LamFunSyntax.$fSingKindVersion_$cfromSing
+                  LamFunSyntax.$fSingKindVersion_$ctoSing -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion1 ::
+    Data.Singletons.Internal.SomeSing LamFunSyntax.Version
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.Internal.SomeSing
+                   @ LamFunSyntax.Version
+                   @ 'LamFunSyntax.LamArray
+                   LamFunSyntax.$WSLamArray) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion2 ::
+    Data.Singletons.Internal.SomeSing LamFunSyntax.Version
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.Internal.SomeSing
+                   @ LamFunSyntax.Version
+                   @ 'LamFunSyntax.LamMem
+                   LamFunSyntax.$WSLamMem) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion3 ::
+    Data.Singletons.Internal.SomeSing LamFunSyntax.Version
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.Internal.SomeSing
+                   @ LamFunSyntax.Version
+                   @ 'LamFunSyntax.LamRec
+                   LamFunSyntax.$WSLamRec) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion4 ::
+    Data.Singletons.Internal.SomeSing LamFunSyntax.Version
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.Internal.SomeSing
+                   @ LamFunSyntax.Version
+                   @ 'LamFunSyntax.LamNat
+                   LamFunSyntax.$WSLamNat) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion5 ::
+    Data.Singletons.Internal.SomeSing LamFunSyntax.Version
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.Internal.SomeSing
+                   @ LamFunSyntax.Version
+                   @ 'LamFunSyntax.LamCBV
+                   LamFunSyntax.$WSLamCBV) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion6 ::
+    Data.Singletons.Internal.SomeSing LamFunSyntax.Version
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.Internal.SomeSing
+                   @ LamFunSyntax.Version
+                   @ 'LamFunSyntax.LamCBN
+                   LamFunSyntax.$WSLamCBN) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion_$cfromSing ::
+    Data.Singletons.Internal.Sing a
+    -> Data.Singletons.Internal.Demote LamFunSyntax.Version
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a :: LamFunSyntax.Version
+                   (ds :: Data.Singletons.Internal.Sing a) ->
+                 case ds `cast` (LamFunSyntax.D:R:SingVersion0[0] <a>_N) of wild {
+                   LamFunSyntax.SLamCBN co
+                   -> LamFunSyntax.LamCBN
+                        `cast`
+                      (Sub (Sym (LamFunSyntax.D:R:DemoteVersion[0])))
+                   LamFunSyntax.SLamCBV co
+                   -> LamFunSyntax.LamCBV
+                        `cast`
+                      (Sub (Sym (LamFunSyntax.D:R:DemoteVersion[0])))
+                   LamFunSyntax.SLamNat co
+                   -> LamFunSyntax.LamNat
+                        `cast`
+                      (Sub (Sym (LamFunSyntax.D:R:DemoteVersion[0])))
+                   LamFunSyntax.SLamRec co
+                   -> LamFunSyntax.LamRec
+                        `cast`
+                      (Sub (Sym (LamFunSyntax.D:R:DemoteVersion[0])))
+                   LamFunSyntax.SLamMem co
+                   -> LamFunSyntax.LamMem
+                        `cast`
+                      (Sub (Sym (LamFunSyntax.D:R:DemoteVersion[0])))
+                   LamFunSyntax.SLamArray co
+                   -> LamFunSyntax.LamArray
+                        `cast`
+                      (Sub (Sym (LamFunSyntax.D:R:DemoteVersion[0]))) }) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $fSingKindVersion_$ctoSing ::
+    Data.Singletons.Internal.Demote LamFunSyntax.Version
+    -> Data.Singletons.Internal.SomeSing LamFunSyntax.Version
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Singletons.Internal.Demote LamFunSyntax.Version) ->
+                 case ds `cast` (Sub (LamFunSyntax.D:R:DemoteVersion[0])) of wild {
+                   LamFunSyntax.LamCBN -> LamFunSyntax.$fSingKindVersion6
+                   LamFunSyntax.LamCBV -> LamFunSyntax.$fSingKindVersion5
+                   LamFunSyntax.LamNat -> LamFunSyntax.$fSingKindVersion4
+                   LamFunSyntax.LamRec -> LamFunSyntax.$fSingKindVersion3
+                   LamFunSyntax.LamMem -> LamFunSyntax.$fSingKindVersion2
+                   LamFunSyntax.LamArray -> LamFunSyntax.$fSingKindVersion1 }) -}
+db7952328f20b493d6dfeb5bfdc45fe1
+  $tc'App_ :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9463334644462729224##
+                   13200300401489838661##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'App_2
+                   2#
+                   LamFunSyntax.$tc'App_1) -}
+259e28bec10de0620b8191a5d2f5bfea
+  $tc'App_1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+836fea09aabc76de8fb93d5654a5da14
+  $tc'App_2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'App_3) -}
+e0683ed0d0d1be43508173e79ae91052
+  $tc'App_3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'App_"#) -}
+9ddb71d046a6a0d9add260b123524604
+  $tc'Calculate_ :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5587356551350254893##
+                   3226288124817328964##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'Calculate_2
+                   2#
+                   LamFunSyntax.$tc'Calculate_1) -}
+a9419e457a8b47112892fff7d3f3ab92
+  $tc'Calculate_1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e0a4dc6c2640c5120d024ef64c0c79ad
+  $tc'Calculate_2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'Calculate_3) -}
+c91c32a798bd1f02c071300e14583975
+  $tc'Calculate_3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Calculate_"#) -}
+9f9371829f786b2467555119dd348235
+  $tc'LamArray :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2081358906586695808##
+                   384948250399887275##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'LamArray2
+                   0#
+                   LamFunSyntax.$tc'LamArray1) -}
+cdcd263b0d2660609427c42777d97d15
+  $tc'LamArray1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+fa5b2e960ae92ceccbee0ae5d0e9cb97
+  $tc'LamArray2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'LamArray3) -}
+050ea5a5e0a496190260564096b0435b
+  $tc'LamArray3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LamArray"#) -}
+595ac845dbc010d0ad30d0243551de72
+  $tc'LamCBN :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7528978547554949857##
+                   1002821141238555903##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'LamCBN1
+                   0#
+                   LamFunSyntax.$tc'LamArray1) -}
+b1d0f8a1c786097fc703dc323d2dd478
+  $tc'LamCBN1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'LamCBN2) -}
+0bf1064d1f25ca6cf070fca6639923b2
+  $tc'LamCBN2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LamCBN"#) -}
+2d96eca08b70acf2ea90cd4381f5a400
+  $tc'LamCBV :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12869507759638421980##
+                   13844986801041674426##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'LamCBV1
+                   0#
+                   LamFunSyntax.$tc'LamArray1) -}
+27b0a0b31f3bb236261855ce012ad911
+  $tc'LamCBV1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'LamCBV2) -}
+7eec23732611a6a786090fb0642f396c
+  $tc'LamCBV2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LamCBV"#) -}
+308ff4819451e16793e11620410e33dc
+  $tc'LamMem :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6651323587543662534##
+                   2755487631734260383##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'LamMem1
+                   0#
+                   LamFunSyntax.$tc'LamArray1) -}
+0cb7bd09db1372f0a453ca4ba51183d2
+  $tc'LamMem1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'LamMem2) -}
+cd0580446219e3e6ccb368b5a4b19dc7
+  $tc'LamMem2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LamMem"#) -}
+6f9b235424a78e29b7dde430d97b1b03
+  $tc'LamNat :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1362079429437877265##
+                   5803700342399568808##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'LamNat1
+                   0#
+                   LamFunSyntax.$tc'LamArray1) -}
+8da1fe16732767cc5bb00221d1324af1
+  $tc'LamNat1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'LamNat2) -}
+a1ef423d6b58d17ff9bf094b2f2344c9
+  $tc'LamNat2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LamNat"#) -}
+1731d4d539d6ed16e0ddbcaf235d8f82
+  $tc'LamRec :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3456050295306967707##
+                   2934155753218670891##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'LamRec1
+                   0#
+                   LamFunSyntax.$tc'LamArray1) -}
+699b0c0b15271a5197a7cada6d8ad8f7
+  $tc'LamRec1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'LamRec2) -}
+28da9a71fc54fe8be53c1bd177735433
+  $tc'LamRec2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LamRec"#) -}
+9d874e15f332288082d43b48d59395f2
+  $tc'Lambda_ :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15797993947921249974##
+                   5772519491640448707##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'Lambda_2
+                   2#
+                   LamFunSyntax.$tc'Lambda_1) -}
+ff9fabf175bc903cdfd792ee035697fc
+  $tc'Lambda_1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fedc92c2cd1a3f66bb517280c15bff10
+  $tc'Lambda_2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'Lambda_3) -}
+ec52f3a4d5e66a6f31e14306fbe530af
+  $tc'Lambda_3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Lambda_"#) -}
+53e8f1c829c1492b7599bd290f55e563
+  $tc'SLamArray :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   911128505299394371##
+                   12983177466563103656##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'SLamArray2
+                   0#
+                   LamFunSyntax.$tc'SLamArray1) -}
+764021e2d8cdb420d767e968739a63fa
+  $tc'SLamArray1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+b04e0ff6887e9e96fa463eb209cd7d08
+  $tc'SLamArray2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'SLamArray3) -}
+a7a2c055991f7858064e534b462729c5
+  $tc'SLamArray3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SLamArray"#) -}
+0e0bc5866cd1afe228f7b17ff27ef30b
+  $tc'SLamCBN :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1046331772191638964##
+                   14419558040508004821##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'SLamCBN2
+                   0#
+                   LamFunSyntax.$tc'SLamCBN1) -}
+5b47e18036f072267b07066296ef1971
+  $tc'SLamCBN1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+c0407b4f149874059b5bf162a832afc5
+  $tc'SLamCBN2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'SLamCBN3) -}
+fa8b0c50c32a38de0f41253f1df2c3a0
+  $tc'SLamCBN3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SLamCBN"#) -}
+9746e94884b610968c41b263b6bc7d77
+  $tc'SLamCBV :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1269285865495003909##
+                   13367595030353218950##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'SLamCBV2
+                   0#
+                   LamFunSyntax.$tc'SLamCBV1) -}
+9f1344772d35b51853c8051b84b9d49f
+  $tc'SLamCBV1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+fe87c38c46106d6f445f06f374831d72
+  $tc'SLamCBV2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'SLamCBV3) -}
+0a132a0a768400be327b3402a1c760af
+  $tc'SLamCBV3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SLamCBV"#) -}
+048aa2b22678b37dd09839f66d2d5749
+  $tc'SLamMem :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   356641158017876772##
+                   13582198333692562126##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'SLamMem2
+                   0#
+                   LamFunSyntax.$tc'SLamMem1) -}
+730edf863b484992e61475accf689671
+  $tc'SLamMem1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+58428519a5c5c19bed606f4ed803569f
+  $tc'SLamMem2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'SLamMem3) -}
+a3a7138b0a36fbad0f20e7fe0155acf2
+  $tc'SLamMem3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SLamMem"#) -}
+4678abb2833f89a545b7a0f3b4fddb3a
+  $tc'SLamNat :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7277868863062464540##
+                   5707575129722327750##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'SLamNat2
+                   0#
+                   LamFunSyntax.$tc'SLamNat1) -}
+deac16e89a580778665a65d51860ab5d
+  $tc'SLamNat1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+89e25a1df3d30b66c37d9cb9e581c8aa
+  $tc'SLamNat2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'SLamNat3) -}
+4f271265259e15b8813ae537f752a90b
+  $tc'SLamNat3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SLamNat"#) -}
+33a064f5cc58983cb50d8c8e2ee33b9c
+  $tc'SLamRec :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8037375535889252613##
+                   7228865940052970836##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'SLamRec2
+                   0#
+                   LamFunSyntax.$tc'SLamRec1) -}
+b4aaa25e366d774311a1b193cc503df9
+  $tc'SLamRec1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+235eb215a18f316f9cc9d64b1a47386b
+  $tc'SLamRec2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'SLamRec3) -}
+d74a3235277c376f323627f117eca51b
+  $tc'SLamRec3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SLamRec"#) -}
+9dd30ee6a65d72dfa894ccaa6f2d92da
+  $tc'Val_ :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13701835260784376518##
+                   9397250613635988152##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'Val_2
+                   2#
+                   LamFunSyntax.$tc'Val_1) -}
+b3120123c3608b06ec93fd1bc517c3a7
+  $tc'Val_1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+99405021cbb366c06c36dac68c959815
+  $tc'Val_2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'Val_3) -}
+9bc5b7955a671efe2c8d0751869888e2
+  $tc'Val_3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Val_"#) -}
+3a31ba2ce57ba962bb8a3b1630639003
+  $tc'Variable_ :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2607456375914353914##
+                   12385404738083795063##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tc'Variable_2
+                   2#
+                   LamFunSyntax.$tc'Variable_1) -}
+8033a3a763c43b8ffb1eae17997136ad
+  $tc'Variable_1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3369d96fa6396d23dc6ecdccd4ae1eb6
+  $tc'Variable_2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tc'Variable_3) -}
+596f0f79dc6dce09687c4ee7dbfac3f8
+  $tc'Variable_3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Variable_"#) -}
+0fa6d7b183b886d18709c7af1fe4187d
+  $tcDefn_ :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10879521305801325336##
+                   2310391019022646162##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tcDefn_2
+                   0#
+                   LamFunSyntax.$tcDefn_1) -}
+d31a0da0d99baf763e6dd3e0055c0280
+  $tcDefn_1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1a852d98bd26acb86177b10cd095fdfe
+  $tcDefn_2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tcDefn_3) -}
+e824f0e28fb59a54b38454e29f8b77bb
+  $tcDefn_3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Defn_"#) -}
+283ea6a36cd995bea8e429acd58f45db
+  $tcExpr_ :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16617899802186544963##
+                   15041895579227076956##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tcExpr_1
+                   0#
+                   LamFunSyntax.$tcDefn_1) -}
+f0f62daa8b72558af0c386d0b8675cdc
+  $tcExpr_1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tcExpr_2) -}
+0667cd052418652e907cb52e5e982c43
+  $tcExpr_2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Expr_"#) -}
+2f9224a7b4f557ab2abb1efc68c6aed5
+  $tcProgram_ :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3246897434380916101##
+                   8262205824530908705##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tcProgram_1
+                   0#
+                   LamFunSyntax.$tcDefn_1) -}
+28673fc8f983ba8aaebc693100e64b19
+  $tcProgram_1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tcProgram_2) -}
+142d3100d5aa7253d214eafab5afbebf
+  $tcProgram_2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Program_"#) -}
+a73181bcee2817f01c5b04b530965b95
+  $tcVersion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16551723954039467805##
+                   7350457515374002934##
+                   LamFunSyntax.$trModule
+                   LamFunSyntax.$tcVersion1
+                   0#
+                   GHC.Types.krep$*) -}
+9570b7c8436d7abac6c00a0cc98fe188
+  $tcVersion1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$tcVersion2) -}
+e0f3d2755118c21c9dcb4bb93a82b90a
+  $tcVersion2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Version"#) -}
+c2a2a07923deeab20df101cb772d893f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LamFunSyntax.$trModule3
+                   LamFunSyntax.$trModule1) -}
+7963e8f2e3862322c383c41195bf26c2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$trModule2) -}
+d534ce9906a21026d0b1b194a87340cb
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LamFunSyntax"#) -}
+5c1c0a5e87fb298bb45f576a2a1bf850
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LamFunSyntax.$trModule4) -}
+940cdc789c84dbb1f28b4b0a4b55338d
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LamFun-3.14.1-9Wc0ZeQG44DQYsOh3c0On"#) -}
+5a088fa4aebd2efeabd99af587b83fb7
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int# -> LamFunSyntax.Defn_ v a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,U><S,1*U>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: LamFunSyntax.Defn_ v a) ->
+                 case w1 of wild {
+                   LamFunSyntax.Val_ b1 b2
+                   -> let {
+                        f6 :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a w LamFunSyntax.$fShowDefn_4 b1
+                      } in
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = LamFunSyntax.$fShowDefn__$cshowsPrec1
+                            @ a
+                            @ v
+                            w
+                            LamFunSyntax.$fShowDefn_4
+                            b2
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.CString.unpackAppendCString#
+                             LamFunSyntax.$fShowDefn_3
+                             (f6 (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g x)))
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                LamFunSyntax.$fShowDefn_3
+                                (f6
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.showSpace1
+                                      (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))))) }
+                   LamFunSyntax.Rec_ $d~ b1 b2
+                   -> let {
+                        f6 :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a w LamFunSyntax.$fShowDefn_4 b1
+                      } in
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = LamFunSyntax.$fShowDefn__$cshowsPrec1
+                            @ a
+                            @ v
+                            w
+                            LamFunSyntax.$fShowDefn_4
+                            b2
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.CString.unpackAppendCString#
+                             LamFunSyntax.$fShowDefn_2
+                             (f6 (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g x)))
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                LamFunSyntax.$fShowDefn_2
+                                (f6
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.showSpace1
+                                      (g (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShow(,)2
+                                            x))))) } }) -}
+34eb35ebffca668e964ce8bfefca939f
+  $w$cshowsPrec1 ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int# -> LamFunSyntax.Program_ v a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,U><S,1*U>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   @ v :: LamFunSyntax.Version
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: LamFunSyntax.Program_ v a) ->
+                 case w1 of wild {
+                   LamFunSyntax.Calculate_ b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = LamFunSyntax.$fShowDefn__$cshowsPrec1
+                            @ a
+                            @ v
+                            w
+                            LamFunSyntax.$fShowDefn_4
+                            b1
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char LamFunSyntax.$fShowProgram_3 (g x)
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                LamFunSyntax.$fShowProgram_3
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }
+                   LamFunSyntax.Define_ $d~ b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = LamFunSyntax.$w$cshowsPrec @ a @ v w 11# b1
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char LamFunSyntax.$fShowProgram_1 (g x)
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                LamFunSyntax.$fShowProgram_1
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) } }) -}
+2537d0b6b6006cae4eb99129b592af7f
+  $w$cshowsPrec2 ::
+    LamFunSyntax.Version -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: LamFunSyntax.Version)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   LamFunSyntax.LamCBN
+                   -> GHC.Base.++ @ GHC.Types.Char LamFunSyntax.$fShowVersion11 w1
+                   LamFunSyntax.LamCBV
+                   -> GHC.Base.++ @ GHC.Types.Char LamFunSyntax.$fShowVersion9 w1
+                   LamFunSyntax.LamNat
+                   -> GHC.Base.++ @ GHC.Types.Char LamFunSyntax.$fShowVersion7 w1
+                   LamFunSyntax.LamRec
+                   -> GHC.Base.++ @ GHC.Types.Char LamFunSyntax.$fShowVersion5 w1
+                   LamFunSyntax.LamMem
+                   -> GHC.Base.++ @ GHC.Types.Char LamFunSyntax.$fShowVersion3 w1
+                   LamFunSyntax.LamArray
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        LamFunSyntax.$fShowVersion1
+                        w1 }) -}
+53e2e37605c9dcba9a7d5ff83f9e962b
+  type family (<:) (a :: LamFunSyntax.Version)
+                   (b :: LamFunSyntax.Version)
+              :: GHC.Types.Bool
+    where
+        (<:) a a = 'GHC.Types.True
+        (<:) 'LamFunSyntax.LamCBN a = 'GHC.Types.True
+        (<:) 'LamFunSyntax.LamCBV a = 'GHC.Types.True
+        (<:) 'LamFunSyntax.LamNat 'LamFunSyntax.LamRec = 'GHC.Types.True
+        (<:) 'LamFunSyntax.LamNat 'LamFunSyntax.LamMem = 'GHC.Types.True
+        (<:) 'LamFunSyntax.LamNat 'LamFunSyntax.LamArray = 'GHC.Types.True
+        (<:) 'LamFunSyntax.LamRec 'LamFunSyntax.LamMem = 'GHC.Types.True
+        (<:) 'LamFunSyntax.LamRec 'LamFunSyntax.LamArray = 'GHC.Types.True
+        (<:) 'LamFunSyntax.LamMem 'LamFunSyntax.LamArray = 'GHC.Types.True
+        (<:) a b = 'GHC.Types.False
+      axiom LamFunSyntax.D:R:<:
+53e2e37605c9dcba9a7d5ff83f9e962b
+  axiom LamFunSyntax.D:R:<:::
+      LamFunSyntax.<: a a = 'GHC.Types.True
+      LamFunSyntax.<: 'LamFunSyntax.LamCBN a = 'GHC.Types.True
+      LamFunSyntax.<: 'LamFunSyntax.LamCBV a = 'GHC.Types.True
+      LamFunSyntax.<: 'LamFunSyntax.LamNat 'LamFunSyntax.LamRec
+        = 'GHC.Types.True
+      LamFunSyntax.<: 'LamFunSyntax.LamNat 'LamFunSyntax.LamMem
+        = 'GHC.Types.True
+      LamFunSyntax.<: 'LamFunSyntax.LamNat 'LamFunSyntax.LamArray
+        = 'GHC.Types.True
+      LamFunSyntax.<: 'LamFunSyntax.LamRec 'LamFunSyntax.LamMem
+        = 'GHC.Types.True
+      LamFunSyntax.<: 'LamFunSyntax.LamRec 'LamFunSyntax.LamArray
+        = 'GHC.Types.True
+      LamFunSyntax.<: 'LamFunSyntax.LamMem 'LamFunSyntax.LamArray
+        = 'GHC.Types.True
+      LamFunSyntax.<: a b = 'GHC.Types.False
+      (incompatible indices: [8, 7, 6, 5, 4, 3, 2, 1, 0])
+2537d0b6b6006cae4eb99129b592af7f
+  axiom LamFunSyntax.D:R:DemoteVersion::
+      Data.Singletons.Internal.Demote LamFunSyntax.Version
+        = LamFunSyntax.Version
+2537d0b6b6006cae4eb99129b592af7f
+  axiom LamFunSyntax.D:R:SingVersion0::
+      Data.Singletons.Internal.Sing = LamFunSyntax.R:SingVersion
+5a088fa4aebd2efeabd99af587b83fb7
+  type role Defn_ nominal representational
+  data Defn_ (a :: LamFunSyntax.Version) b where
+    Val_ :: b -> (LamFunSyntax.Expr_ a b) -> Defn_ a b
+    Rec_ :: (('LamFunSyntax.LamRec LamFunSyntax.<: a)
+             Data.Type.Equality.~ 'GHC.Types.True) =>
+            b -> (LamFunSyntax.Expr_ a b) -> Defn_ a b
+5a088fa4aebd2efeabd99af587b83fb7
+  type role Expr_ nominal representational
+  data Expr_ (a :: LamFunSyntax.Version) b where
+    Variable_ :: b -> Expr_ a b
+    Lambda_ :: b -> (LamFunSyntax.Expr_ a b) -> Expr_ a b
+    App_ :: (LamFunSyntax.Expr_ a b) -> (LamFunSyntax.Expr_ a b)
+            -> Expr_ a b
+    Number_ :: (('LamFunSyntax.LamNat LamFunSyntax.<: a)
+                Data.Type.Equality.~ 'GHC.Types.True) =>
+               GHC.Integer.Type.Integer -> Expr_ a b
+    Nil_ :: (('LamFunSyntax.LamNat LamFunSyntax.<: a)
+             Data.Type.Equality.~ 'GHC.Types.True) =>
+            Expr_ a b
+    Cons_ :: (('LamFunSyntax.LamNat LamFunSyntax.<: a)
+              Data.Type.Equality.~ 'GHC.Types.True) =>
+             (LamFunSyntax.Expr_ a b) -> (LamFunSyntax.Expr_ a b) -> Expr_ a b
+    Boolean_ :: (('LamFunSyntax.LamNat LamFunSyntax.<: a)
+                 Data.Type.Equality.~ 'GHC.Types.True) =>
+                GHC.Types.Bool -> Expr_ a b
+    Case_ :: (('LamFunSyntax.LamRec LamFunSyntax.<: a)
+              Data.Type.Equality.~ 'GHC.Types.True) =>
+             (LamFunSyntax.Expr_ a b)
+             -> [(GHC.Maybe.Maybe (LamFunSyntax.Expr_ a b),
+                  LamFunSyntax.Expr_ a b)]
+             -> Expr_ a b
+    Let_ :: (('LamFunSyntax.LamRec LamFunSyntax.<: a)
+             Data.Type.Equality.~ 'GHC.Types.True) =>
+            (LamFunSyntax.Defn_ a b) -> (LamFunSyntax.Expr_ a b) -> Expr_ a b
+    Assign_ :: (('LamFunSyntax.LamMem LamFunSyntax.<: a)
+                Data.Type.Equality.~ 'GHC.Types.True) =>
+               (LamFunSyntax.Expr_ a b) -> (LamFunSyntax.Expr_ a b) -> Expr_ a b
+    While_ :: (('LamFunSyntax.LamMem LamFunSyntax.<: a)
+               Data.Type.Equality.~ 'GHC.Types.True) =>
+              (LamFunSyntax.Expr_ a b) -> (LamFunSyntax.Expr_ a b) -> Expr_ a b
+    Contents_ :: (('LamFunSyntax.LamMem LamFunSyntax.<: a)
+                  Data.Type.Equality.~ 'GHC.Types.True) =>
+                 (LamFunSyntax.Expr_ a b) -> Expr_ a b
+    Sequence_ :: (('LamFunSyntax.LamMem LamFunSyntax.<: a)
+                  Data.Type.Equality.~ 'GHC.Types.True) =>
+                 (LamFunSyntax.Expr_ a b) -> (LamFunSyntax.Expr_ a b) -> Expr_ a b
+    StrLit_ :: (('LamFunSyntax.LamMem LamFunSyntax.<: a)
+                Data.Type.Equality.~ 'GHC.Types.True) =>
+               b -> Expr_ a b
+cbcf011ce210dd5b9d52444e7f3d5d09
+  type LamArraySym0 = 'LamFunSyntax.LamArray :: LamFunSyntax.Version
+9fa50d8a032a5fcf930664205bd90859
+  type LamCBNSym0 = 'LamFunSyntax.LamCBN :: LamFunSyntax.Version
+95497b4b9abfd802e8123e4fd487ca94
+  type LamCBVSym0 = 'LamFunSyntax.LamCBV :: LamFunSyntax.Version
+016fda5006fa02d1352e5e7525c6f7af
+  type LamMemSym0 = 'LamFunSyntax.LamMem :: LamFunSyntax.Version
+7cb4a3da048661d3b963c49625c405e2
+  type LamNatSym0 = 'LamFunSyntax.LamNat :: LamFunSyntax.Version
+08d1e783f75821449f5f9ecea8575381
+  type LamRecSym0 = 'LamFunSyntax.LamRec :: LamFunSyntax.Version
+34eb35ebffca668e964ce8bfefca939f
+  type role Program_ nominal representational
+  data Program_ (a :: LamFunSyntax.Version) b where
+    Calculate_ :: (LamFunSyntax.Expr_ a b) -> Program_ a b
+    Define_ :: (('LamFunSyntax.LamNat LamFunSyntax.<: a)
+                Data.Type.Equality.~ 'GHC.Types.True) =>
+               (LamFunSyntax.Defn_ a b) -> Program_ a b
+2537d0b6b6006cae4eb99129b592af7f
+  data instance Data.Singletons.Internal.Sing a where
+    SLamCBN :: Data.Singletons.Internal.Sing 'LamFunSyntax.LamCBN
+    SLamCBV :: Data.Singletons.Internal.Sing 'LamFunSyntax.LamCBV
+    SLamNat :: Data.Singletons.Internal.Sing 'LamFunSyntax.LamNat
+    SLamRec :: Data.Singletons.Internal.Sing 'LamFunSyntax.LamRec
+    SLamMem :: Data.Singletons.Internal.Sing 'LamFunSyntax.LamMem
+    SLamArray :: Data.Singletons.Internal.Sing 'LamFunSyntax.LamArray
+4e58a0f3ee54fb03c4ae6c7cdcee3fe6
+  type SVersion =
+    Data.Singletons.Internal.Sing :: LamFunSyntax.Version -> *
+2537d0b6b6006cae4eb99129b592af7f
+  data Version
+    = LamCBN | LamCBV | LamNat | LamRec | LamMem | LamArray
+fac931eccdd19f9398c1a85546c384e2
+  unsafeMkAssign_ ::
+    Data.Singletons.Internal.SingI v =>
+    LamFunSyntax.Expr_ v a
+    -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>m10,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (a1 :: LamFunSyntax.Expr_ v a)
+                   (b :: LamFunSyntax.Expr_ v a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT -> LamFunSyntax.unsafeMkAssign_1 @ a @ v
+                   LamFunSyntax.SLamMem co
+                   -> LamFunSyntax.Assign_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                <'LamFunSyntax.LamMem>_N) ; (<'LamFunSyntax.LamMem>_N
+                                                                                             LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1
+                        b
+                   LamFunSyntax.SLamArray co
+                   -> LamFunSyntax.Assign_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[8]) ; (<'LamFunSyntax.LamMem>_N
+                                                                                       LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1
+                        b }) -}
+439423e30e135af7be0ed886497bbdff
+  unsafeMkAssign_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+7a71e8d8baa4be9bfda4189b9144ccda
+  unsafeMkBoolean_ ::
+    Data.Singletons.Internal.SingI v =>
+    GHC.Types.Bool -> LamFunSyntax.Expr_ v a
+  {- Arity: 2, Strictness: <S,1*U><L,U>m7,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (eta :: GHC.Types.Bool) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT
+                   -> (LamFunSyntax.Boolean_
+                         @ 'LamFunSyntax.LamNat
+                         @ a
+                         (GHC.Types.Eq#
+                            @ GHC.Types.Bool
+                            @ GHC.Types.Bool
+                            @ 'GHC.Types.True
+                            @ 'GHC.Types.True
+                            @~ <'GHC.Types.True>_N)
+                           `cast`
+                         (Sym (Data.Type.Equality.N:~[0]
+                                   <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                 <'LamFunSyntax.LamNat>_N)) <'GHC.Types.True>_N)
+                         eta)
+                        `cast`
+                      (Nth:3
+                           (<GHC.Types.Bool>_R
+                            ->_R (LamFunSyntax.Expr_
+                                    (UnsafeCo nominal 'LamFunSyntax.LamNat v) <a>_R)_R))
+                   LamFunSyntax.SLamCBN co -> LamFunSyntax.unsafeMkBoolean_2 @ a @ v
+                   LamFunSyntax.SLamCBV co
+                   -> LamFunSyntax.unsafeMkBoolean_1 @ a @ v }) -}
+0bed956cd10eb6969469e4a786de1be0
+  unsafeMkBoolean_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+a8e77bd3afbf1bd97b4cc1ea16d6dccd
+  unsafeMkBoolean_2 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+d52f49103e1b2df134a97d19b5e16911
+  unsafeMkCase_ ::
+    Data.Singletons.Internal.SingI v =>
+    LamFunSyntax.Expr_ v a
+    -> [(GHC.Maybe.Maybe (LamFunSyntax.Expr_ v a),
+         LamFunSyntax.Expr_ v a)]
+    -> LamFunSyntax.Expr_ v a
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>m8,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (eta :: LamFunSyntax.Expr_ v a)
+                   (eta1 :: [(GHC.Maybe.Maybe (LamFunSyntax.Expr_ v a),
+                              LamFunSyntax.Expr_ v a)]) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT
+                   -> (LamFunSyntax.Case_
+                         @ 'LamFunSyntax.LamRec
+                         @ a
+                         (GHC.Types.Eq#
+                            @ GHC.Types.Bool
+                            @ GHC.Types.Bool
+                            @ 'GHC.Types.True
+                            @ 'GHC.Types.True
+                            @~ <'GHC.Types.True>_N)
+                           `cast`
+                         (Sym (Data.Type.Equality.N:~[0]
+                                   <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                 <'LamFunSyntax.LamRec>_N)) <'GHC.Types.True>_N)
+                         eta
+                           `cast`
+                         (Nth:2
+                              ((LamFunSyntax.Expr_
+                                  (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R
+                               ->_R ([((,)
+                                         (GHC.Maybe.Maybe
+                                            (LamFunSyntax.Expr_
+                                               (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R)_R
+                                         (LamFunSyntax.Expr_
+                                            (UnsafeCo nominal v 'LamFunSyntax.LamRec)
+                                            <a>_R)_R)_R])_R
+                               ->_R (LamFunSyntax.Expr_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R))
+                         eta1
+                           `cast`
+                         (Nth:2
+                              (Nth:3
+                                   ((LamFunSyntax.Expr_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R
+                                    ->_R ([((,)
+                                              (GHC.Maybe.Maybe
+                                                 (LamFunSyntax.Expr_
+                                                    (UnsafeCo nominal v 'LamFunSyntax.LamRec)
+                                                    <a>_R)_R)_R
+                                              (LamFunSyntax.Expr_
+                                                 (UnsafeCo nominal v 'LamFunSyntax.LamRec)
+                                                 <a>_R)_R)_R])_R
+                                    ->_R (LamFunSyntax.Expr_
+                                            (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R))))
+                        `cast`
+                      (Nth:3
+                           (Nth:3
+                                ((LamFunSyntax.Expr_
+                                    (UnsafeCo nominal 'LamFunSyntax.LamRec v) <a>_R)_R
+                                 ->_R ([((,)
+                                           (GHC.Maybe.Maybe
+                                              (LamFunSyntax.Expr_
+                                                 (UnsafeCo nominal 'LamFunSyntax.LamRec v)
+                                                 <a>_R)_R)_R
+                                           (LamFunSyntax.Expr_
+                                              (UnsafeCo nominal 'LamFunSyntax.LamRec v)
+                                              <a>_R)_R)_R])_R
+                                 ->_R (LamFunSyntax.Expr_
+                                         (UnsafeCo nominal 'LamFunSyntax.LamRec v) <a>_R)_R)))
+                   LamFunSyntax.SLamCBN co -> LamFunSyntax.unsafeMkCase_3 @ a @ v
+                   LamFunSyntax.SLamCBV co -> LamFunSyntax.unsafeMkCase_2 @ a @ v
+                   LamFunSyntax.SLamNat co
+                   -> LamFunSyntax.unsafeMkCase_1 @ a @ v }) -}
+e9ba9932daba0590b7b233adb8cc6fba
+  unsafeMkCase_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+7f05ad3172185588afb2281ae8ae6862
+  unsafeMkCase_2 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+6a371fad4bed014cf541080e73c96c3e
+  unsafeMkCase_3 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+cb3ca0eebf00894bde6e2449c2d6638e
+  unsafeMkCons_ ::
+    Data.Singletons.Internal.SingI v =>
+    LamFunSyntax.Expr_ v a
+    -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>m6,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (eta :: LamFunSyntax.Expr_ v a)
+                   (eta1 :: LamFunSyntax.Expr_ v a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT
+                   -> (LamFunSyntax.Cons_
+                         @ 'LamFunSyntax.LamNat
+                         @ a
+                         (GHC.Types.Eq#
+                            @ GHC.Types.Bool
+                            @ GHC.Types.Bool
+                            @ 'GHC.Types.True
+                            @ 'GHC.Types.True
+                            @~ <'GHC.Types.True>_N)
+                           `cast`
+                         (Sym (Data.Type.Equality.N:~[0]
+                                   <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                 <'LamFunSyntax.LamNat>_N)) <'GHC.Types.True>_N)
+                         eta
+                           `cast`
+                         (Nth:2
+                              ((LamFunSyntax.Expr_
+                                  (UnsafeCo nominal v 'LamFunSyntax.LamNat) <a>_R)_R
+                               ->_R (LamFunSyntax.Expr_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamNat) <a>_R)_R
+                               ->_R (LamFunSyntax.Expr_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamNat) <a>_R)_R))
+                         eta1
+                           `cast`
+                         (Nth:2
+                              (Nth:3
+                                   ((LamFunSyntax.Expr_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamNat) <a>_R)_R
+                                    ->_R (LamFunSyntax.Expr_
+                                            (UnsafeCo nominal v 'LamFunSyntax.LamNat) <a>_R)_R
+                                    ->_R (LamFunSyntax.Expr_
+                                            (UnsafeCo nominal v 'LamFunSyntax.LamNat) <a>_R)_R))))
+                        `cast`
+                      (Nth:3
+                           (Nth:3
+                                ((LamFunSyntax.Expr_
+                                    (UnsafeCo nominal 'LamFunSyntax.LamNat v) <a>_R)_R
+                                 ->_R (LamFunSyntax.Expr_
+                                         (UnsafeCo nominal 'LamFunSyntax.LamNat v) <a>_R)_R
+                                 ->_R (LamFunSyntax.Expr_
+                                         (UnsafeCo nominal 'LamFunSyntax.LamNat v) <a>_R)_R)))
+                   LamFunSyntax.SLamCBN co -> LamFunSyntax.unsafeMkCons_2 @ a @ v
+                   LamFunSyntax.SLamCBV co
+                   -> LamFunSyntax.unsafeMkCons_1 @ a @ v }) -}
+14478ac09fd655596d4a8b84d1bfddbd
+  unsafeMkCons_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+0140637ce7dc2437c56887f1843a5fd2
+  unsafeMkCons_2 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+8a8e3fadd566563ee98c7a97d2d49ddb
+  unsafeMkContents_ ::
+    Data.Singletons.Internal.SingI v =>
+    LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a
+  {- Arity: 2, Strictness: <S,1*U><L,U>m12,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (a1 :: LamFunSyntax.Expr_ v a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT -> LamFunSyntax.unsafeMkContents_1 @ a @ v
+                   LamFunSyntax.SLamMem co
+                   -> LamFunSyntax.Contents_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                <'LamFunSyntax.LamMem>_N) ; (<'LamFunSyntax.LamMem>_N
+                                                                                             LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1
+                   LamFunSyntax.SLamArray co
+                   -> LamFunSyntax.Contents_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[8]) ; (<'LamFunSyntax.LamMem>_N
+                                                                                       LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1 }) -}
+74df74d0ec98631a0832949708bf1534
+  unsafeMkContents_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+ddd0f42c9f24df145c7e419b3e234278
+  unsafeMkDefine_ ::
+    Data.Singletons.Internal.SingI v =>
+    LamFunSyntax.Defn_ v a -> LamFunSyntax.Program_ v a
+  {- Arity: 2, Strictness: <S,1*U><L,U>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (eta :: LamFunSyntax.Defn_ v a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT
+                   -> (LamFunSyntax.Define_
+                         @ 'LamFunSyntax.LamNat
+                         @ a
+                         (GHC.Types.Eq#
+                            @ GHC.Types.Bool
+                            @ GHC.Types.Bool
+                            @ 'GHC.Types.True
+                            @ 'GHC.Types.True
+                            @~ <'GHC.Types.True>_N)
+                           `cast`
+                         (Sym (Data.Type.Equality.N:~[0]
+                                   <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                 <'LamFunSyntax.LamNat>_N)) <'GHC.Types.True>_N)
+                         eta
+                           `cast`
+                         (Nth:2
+                              ((LamFunSyntax.Defn_
+                                  (UnsafeCo nominal v 'LamFunSyntax.LamNat) <a>_R)_R
+                               ->_R (LamFunSyntax.Program_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamNat) <a>_R)_R)))
+                        `cast`
+                      (Nth:3
+                           ((LamFunSyntax.Defn_
+                               (UnsafeCo nominal 'LamFunSyntax.LamNat v) <a>_R)_R
+                            ->_R (LamFunSyntax.Program_
+                                    (UnsafeCo nominal 'LamFunSyntax.LamNat v) <a>_R)_R))
+                   LamFunSyntax.SLamCBN co -> LamFunSyntax.unsafeMkDefine_2 @ a @ v
+                   LamFunSyntax.SLamCBV co
+                   -> LamFunSyntax.unsafeMkDefine_1 @ a @ v }) -}
+52d542da887715c0dcf19ff0edf80172
+  unsafeMkDefine_1 :: LamFunSyntax.Program_ v a
+  {- Strictness: x -}
+88095ae24ddd493cfe9c60e8d7aa8c65
+  unsafeMkDefine_2 :: LamFunSyntax.Program_ v a
+  {- Strictness: x -}
+2541034ac166754ce9f56333659dc315
+  unsafeMkLet_ ::
+    Data.Singletons.Internal.SingI v =>
+    LamFunSyntax.Defn_ v a
+    -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>m9,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (eta :: LamFunSyntax.Defn_ v a)
+                   (eta1 :: LamFunSyntax.Expr_ v a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT
+                   -> (LamFunSyntax.Let_
+                         @ 'LamFunSyntax.LamRec
+                         @ a
+                         (GHC.Types.Eq#
+                            @ GHC.Types.Bool
+                            @ GHC.Types.Bool
+                            @ 'GHC.Types.True
+                            @ 'GHC.Types.True
+                            @~ <'GHC.Types.True>_N)
+                           `cast`
+                         (Sym (Data.Type.Equality.N:~[0]
+                                   <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                 <'LamFunSyntax.LamRec>_N)) <'GHC.Types.True>_N)
+                         eta
+                           `cast`
+                         (Nth:2
+                              ((LamFunSyntax.Defn_
+                                  (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R
+                               ->_R (LamFunSyntax.Expr_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R
+                               ->_R (LamFunSyntax.Expr_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R))
+                         eta1
+                           `cast`
+                         (Nth:2
+                              (Nth:3
+                                   ((LamFunSyntax.Defn_
+                                       (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R
+                                    ->_R (LamFunSyntax.Expr_
+                                            (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R
+                                    ->_R (LamFunSyntax.Expr_
+                                            (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R))))
+                        `cast`
+                      (Nth:3
+                           (Nth:3
+                                ((LamFunSyntax.Defn_
+                                    (UnsafeCo nominal 'LamFunSyntax.LamRec v) <a>_R)_R
+                                 ->_R (LamFunSyntax.Expr_
+                                         (UnsafeCo nominal 'LamFunSyntax.LamRec v) <a>_R)_R
+                                 ->_R (LamFunSyntax.Expr_
+                                         (UnsafeCo nominal 'LamFunSyntax.LamRec v) <a>_R)_R)))
+                   LamFunSyntax.SLamCBN co -> LamFunSyntax.unsafeMkLet_3 @ a @ v
+                   LamFunSyntax.SLamCBV co -> LamFunSyntax.unsafeMkLet_2 @ a @ v
+                   LamFunSyntax.SLamNat co -> LamFunSyntax.unsafeMkLet_1 @ a @ v }) -}
+6f93c740dd1b048031540d77ec924394
+  unsafeMkLet_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+c90ecb4575c0d70cbbdd8c1bf73e29a9
+  unsafeMkLet_2 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+cf5439d23955e480ca607487ff844b5d
+  unsafeMkLet_3 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+f246629c048ff0b96c91c3129a79e2e4
+  unsafeMkNil_ ::
+    Data.Singletons.Internal.SingI v => LamFunSyntax.Expr_ v a
+  {- Arity: 1, Strictness: <S,1*U>m5,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT
+                   -> (LamFunSyntax.unsafeMkNil_3 @ a)
+                        `cast`
+                      (LamFunSyntax.Expr_
+                         (UnsafeCo nominal 'LamFunSyntax.LamNat v) <a>_R)_R
+                   LamFunSyntax.SLamCBN co -> LamFunSyntax.unsafeMkNil_2 @ a @ v
+                   LamFunSyntax.SLamCBV co -> LamFunSyntax.unsafeMkNil_1 @ a @ v }) -}
+c551fa66211e51dacb6bafed840d87c8
+  unsafeMkNil_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+b3e9784fc9e7b2f882ae7bb0aad829b7
+  unsafeMkNil_2 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+53471ee968595bdc58a2af18a869ecf5
+  unsafeMkNil_3 :: LamFunSyntax.Expr_ 'LamFunSyntax.LamNat a
+  {- HasNoCafRefs, Strictness: m5,
+     Unfolding: (\ @ a ->
+                 LamFunSyntax.Nil_
+                   @ 'LamFunSyntax.LamNat
+                   @ a
+                   LamFunSyntax.unsafeMkNil_4
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                           <'LamFunSyntax.LamNat>_N)) <'GHC.Types.True>_N)) -}
+9c063993a8003c7be80d09a7c458a4c8
+  unsafeMkNil_4 :: 'GHC.Types.True GHC.Types.~~ 'GHC.Types.True
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ GHC.Types.Bool
+                   @ GHC.Types.Bool
+                   @ 'GHC.Types.True
+                   @ 'GHC.Types.True
+                   @~ <'GHC.Types.True>_N) -}
+2adaccd91d84619aa92d3a5e0fc9d62b
+  unsafeMkNumber_ ::
+    Data.Singletons.Internal.SingI v =>
+    GHC.Integer.Type.Integer -> LamFunSyntax.Expr_ v a
+  {- Arity: 2, Strictness: <S,1*U><L,U>m4,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (eta :: GHC.Integer.Type.Integer) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT
+                   -> (LamFunSyntax.Number_
+                         @ 'LamFunSyntax.LamNat
+                         @ a
+                         (GHC.Types.Eq#
+                            @ GHC.Types.Bool
+                            @ GHC.Types.Bool
+                            @ 'GHC.Types.True
+                            @ 'GHC.Types.True
+                            @~ <'GHC.Types.True>_N)
+                           `cast`
+                         (Sym (Data.Type.Equality.N:~[0]
+                                   <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                 <'LamFunSyntax.LamNat>_N)) <'GHC.Types.True>_N)
+                         eta)
+                        `cast`
+                      (Nth:3
+                           (<GHC.Integer.Type.Integer>_R
+                            ->_R (LamFunSyntax.Expr_
+                                    (UnsafeCo nominal 'LamFunSyntax.LamNat v) <a>_R)_R))
+                   LamFunSyntax.SLamCBN co -> LamFunSyntax.unsafeMkNumber_2 @ a @ v
+                   LamFunSyntax.SLamCBV co
+                   -> LamFunSyntax.unsafeMkNumber_1 @ a @ v }) -}
+bc168de7f7c40b3c57527fdae781f084
+  unsafeMkNumber_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+6f81b4624877b64bf27b4b922d7fd47d
+  unsafeMkNumber_2 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+daf30311eb103d929ce6baf4d8292dd7
+  unsafeMkRec_ ::
+    Data.Singletons.Internal.SingI v =>
+    a -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Defn_ v a
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>m2,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (eta :: a)
+                   (eta1 :: LamFunSyntax.Expr_ v a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT
+                   -> (LamFunSyntax.Rec_
+                         @ 'LamFunSyntax.LamRec
+                         @ a
+                         (GHC.Types.Eq#
+                            @ GHC.Types.Bool
+                            @ GHC.Types.Bool
+                            @ 'GHC.Types.True
+                            @ 'GHC.Types.True
+                            @~ <'GHC.Types.True>_N)
+                           `cast`
+                         (Sym (Data.Type.Equality.N:~[0]
+                                   <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                 <'LamFunSyntax.LamRec>_N)) <'GHC.Types.True>_N)
+                         eta
+                         eta1
+                           `cast`
+                         (Nth:2
+                              (Nth:3
+                                   (<a>_R
+                                    ->_R (LamFunSyntax.Expr_
+                                            (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R
+                                    ->_R (LamFunSyntax.Defn_
+                                            (UnsafeCo nominal v 'LamFunSyntax.LamRec) <a>_R)_R))))
+                        `cast`
+                      (Nth:3
+                           (Nth:3
+                                (<a>_R
+                                 ->_R (LamFunSyntax.Expr_
+                                         (UnsafeCo nominal 'LamFunSyntax.LamRec v) <a>_R)_R
+                                 ->_R (LamFunSyntax.Defn_
+                                         (UnsafeCo nominal 'LamFunSyntax.LamRec v) <a>_R)_R)))
+                   LamFunSyntax.SLamCBN co -> LamFunSyntax.unsafeMkRec_3 @ a @ v
+                   LamFunSyntax.SLamCBV co -> LamFunSyntax.unsafeMkRec_2 @ a @ v
+                   LamFunSyntax.SLamNat co -> LamFunSyntax.unsafeMkRec_1 @ a @ v }) -}
+af28605c8b59c47a54479b7916ee232b
+  unsafeMkRec_1 :: LamFunSyntax.Defn_ v a
+  {- Strictness: x -}
+0df81533290f8a19ec9f6d958f84bdc5
+  unsafeMkRec_2 :: LamFunSyntax.Defn_ v a
+  {- Strictness: x -}
+c0b7988c8924010074d6155f2139bd43
+  unsafeMkRec_3 :: LamFunSyntax.Defn_ v a
+  {- Strictness: x -}
+94178cea65f0261b4da56732cfacc174
+  unsafeMkSequence_ ::
+    Data.Singletons.Internal.SingI v =>
+    LamFunSyntax.Expr_ v a
+    -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>m13,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (a1 :: LamFunSyntax.Expr_ v a)
+                   (b :: LamFunSyntax.Expr_ v a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT -> LamFunSyntax.unsafeMkSequence_1 @ a @ v
+                   LamFunSyntax.SLamMem co
+                   -> LamFunSyntax.Sequence_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                <'LamFunSyntax.LamMem>_N) ; (<'LamFunSyntax.LamMem>_N
+                                                                                             LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1
+                        b
+                   LamFunSyntax.SLamArray co
+                   -> LamFunSyntax.Sequence_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[8]) ; (<'LamFunSyntax.LamMem>_N
+                                                                                       LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1
+                        b }) -}
+0952072553fa6cc1e442590a4b448fea
+  unsafeMkSequence_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+deee436940c3fe094079a31d9bc29427
+  unsafeMkStrLit_ ::
+    Data.Singletons.Internal.SingI v => a -> LamFunSyntax.Expr_ v a
+  {- Arity: 2, Strictness: <S,1*U><L,U>m14,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (a1 :: a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT -> LamFunSyntax.unsafeMkStrLit_1 @ a @ v
+                   LamFunSyntax.SLamMem co
+                   -> LamFunSyntax.StrLit_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                <'LamFunSyntax.LamMem>_N) ; (<'LamFunSyntax.LamMem>_N
+                                                                                             LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1
+                   LamFunSyntax.SLamArray co
+                   -> LamFunSyntax.StrLit_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[8]) ; (<'LamFunSyntax.LamMem>_N
+                                                                                       LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1 }) -}
+fe9cfaf39d62e99c623e9076f210b753
+  unsafeMkStrLit_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+f0535d8733365a4c8abc6919293e3cbf
+  unsafeMkWhile_ ::
+    Data.Singletons.Internal.SingI v =>
+    LamFunSyntax.Expr_ v a
+    -> LamFunSyntax.Expr_ v a -> LamFunSyntax.Expr_ v a
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>m11,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ v :: LamFunSyntax.Version
+                   @ a
+                   ($dSingI :: Data.Singletons.Internal.SingI v)
+                   (a1 :: LamFunSyntax.Expr_ v a)
+                   (b :: LamFunSyntax.Expr_ v a) ->
+                 case $dSingI
+                        `cast`
+                      ((Data.Singletons.Internal.N:SingI[0] <LamFunSyntax.Version>_N ; LamFunSyntax.D:R:SingVersion0[0]) <v>_N) of wild {
+                   DEFAULT -> LamFunSyntax.unsafeMkWhile_1 @ a @ v
+                   LamFunSyntax.SLamMem co
+                   -> LamFunSyntax.While_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[0]
+                                                                <'LamFunSyntax.LamMem>_N) ; (<'LamFunSyntax.LamMem>_N
+                                                                                             LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1
+                        b
+                   LamFunSyntax.SLamArray co
+                   -> LamFunSyntax.While_
+                        @ v
+                        @ a
+                        (GHC.Types.Eq#
+                           @ GHC.Types.Bool
+                           @ GHC.Types.Bool
+                           @ 'GHC.Types.True
+                           @ 'GHC.Types.True
+                           @~ <'GHC.Types.True>_N)
+                          `cast`
+                        (Sym (Data.Type.Equality.N:~[0]
+                                  <GHC.Types.Bool>_N) (Sym (LamFunSyntax.D:R:<:[8]) ; (<'LamFunSyntax.LamMem>_N
+                                                                                       LamFunSyntax.<: Sym co)_N) <'GHC.Types.True>_N)
+                        a1
+                        b }) -}
+de5fd165ebaad7507da067ab9b08f588
+  unsafeMkWhile_1 :: LamFunSyntax.Expr_ v a
+  {- Strictness: x -}
+instance GHC.Classes.Eq [LamFunSyntax.Defn_]
+  = LamFunSyntax.$fEqDefn_
+instance GHC.Classes.Eq [LamFunSyntax.Expr_]
+  = LamFunSyntax.$fEqExpr_
+instance GHC.Classes.Eq [LamFunSyntax.Program_]
+  = LamFunSyntax.$fEqProgram_
+instance GHC.Classes.Eq [LamFunSyntax.Version]
+  = LamFunSyntax.$fEqVersion
+instance GHC.Base.Functor [LamFunSyntax.Defn_]
+  = LamFunSyntax.$fFunctorDefn_
+instance GHC.Base.Functor [LamFunSyntax.Expr_]
+  = LamFunSyntax.$fFunctorExpr_
+instance GHC.Base.Functor [LamFunSyntax.Program_]
+  = LamFunSyntax.$fFunctorProgram_
+instance GHC.Classes.Ord [LamFunSyntax.Defn_]
+  = LamFunSyntax.$fOrdDefn_
+instance GHC.Classes.Ord [LamFunSyntax.Expr_]
+  = LamFunSyntax.$fOrdExpr_
+instance GHC.Classes.Ord [LamFunSyntax.Program_]
+  = LamFunSyntax.$fOrdProgram_
+instance GHC.Show.Show [LamFunSyntax.Defn_]
+  = LamFunSyntax.$fShowDefn_
+instance GHC.Show.Show [LamFunSyntax.Expr_]
+  = LamFunSyntax.$fShowExpr_
+instance GHC.Show.Show [LamFunSyntax.Program_]
+  = LamFunSyntax.$fShowProgram_
+instance GHC.Show.Show [LamFunSyntax.Version]
+  = LamFunSyntax.$fShowVersion
+instance Data.Singletons.Internal.SingI [LamFunSyntax.Version,
+                                         LamFunSyntax.LamArray]
+  = LamFunSyntax.$fSingIVersionLamArray
+instance Data.Singletons.Internal.SingI [LamFunSyntax.Version,
+                                         LamFunSyntax.LamCBN]
+  = LamFunSyntax.$fSingIVersionLamCBN
+instance Data.Singletons.Internal.SingI [LamFunSyntax.Version,
+                                         LamFunSyntax.LamCBV]
+  = LamFunSyntax.$fSingIVersionLamCBV
+instance Data.Singletons.Internal.SingI [LamFunSyntax.Version,
+                                         LamFunSyntax.LamMem]
+  = LamFunSyntax.$fSingIVersionLamMem
+instance Data.Singletons.Internal.SingI [LamFunSyntax.Version,
+                                         LamFunSyntax.LamNat]
+  = LamFunSyntax.$fSingIVersionLamNat
+instance Data.Singletons.Internal.SingI [LamFunSyntax.Version,
+                                         LamFunSyntax.LamRec]
+  = LamFunSyntax.$fSingIVersionLamRec
+instance Data.Singletons.Internal.SingKind [LamFunSyntax.Version]
+  = LamFunSyntax.$fSingKindVersion
+family instance Data.Singletons.Internal.Demote [LamFunSyntax.Version]
+  = LamFunSyntax.D:R:DemoteVersion
+family instance Data.Singletons.Internal.Sing [LamFunSyntax.Version]
+  = LamFunSyntax.D:R:SingVersion0
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

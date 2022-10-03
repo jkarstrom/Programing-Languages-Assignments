@@ -1,0 +1,29 @@
+#!/bin/zsh
+    echo ""
+    echo ""
+    echo -e "\e[31m---start testlambdanat4---\e[0m"
+    ps -p $$
+## Build LambdaNat4
+    echo -e "\e[31mcd grammar\e[0m"
+cd grammar
+
+if [ ! -f TestLambdaNat ] ; then
+      echo -e "\e[31mbnfc -m --haskell LambdaNat4.cf\e[0m"
+    bnfc -m --haskell LambdaNat4.cf
+      echo -e "\e[31mmake\e[0m"
+    make 
+fi
+    echo -e "\e[31mcd ..\e[0m"
+cd .. 
+    echo -e "\e[31mcp grammar/*.hs src\e[0m"
+cp grammar/*.hs src ; 
+    echo -e "\e[31mstack build\e[0m"
+stack build 
+# Test LambdaNat4
+    echo -e "\e[31mstack exec LambdaNat-exe test/test.lc\e[0m"
+stack exec LambdaNat-exe test/test.lc
+echo -e "\e[31m---end of testlambdanat---\e[0m"
+echo ""
+echo ""
+
+

@@ -1,0 +1,78 @@
+//member
+let rec member = \elem. \list.
+  if elem = (hd list)
+    then (1)
+    else if tl list = #
+      then (0)
+      else member elem (tl list)
+in
+member 4 2:3:1:#
+//member 1 2:3:1:#
+;;
+
+//remove
+
+let rec remove = \elem. \list.
+  if elem = (hd list)
+    then tl list
+    else if tl list = #
+      then list
+      else (hd list) : (remove elem (tl list))
+in
+remove 2 1:2:3:1:2:3:#
+//output 1:3:1:2:3:#
+;;
+//sum
+let rec sum = \list.
+//Sum = hd list + (sum (tl list))
+if (hd list) = #
+  then 0
+  else (hd list) + (sum (tl list))
+in
+sum 1:2:3:4:#
+//sum 1:1:x:2:#
+//sum x:1:3:4:#
+//output 10
+;;
+//prod
+let rec prod = \list.
+//prod = hd list * (prod (tl list)
+if hd list = #
+  then 1
+  else (hd list) * (prod (tl list))
+in
+prod 1:2:3:4:#
+//output 24
+;;
+//plus_two, map
+let plus_two = \elem.
+elem + 2
+in
+let rec map = \func. \list.
+if hd list = #
+  then list
+  else (func (hd list)) : (map func (tl list))
+in
+map plus_two 1:2:3:4:#
+//output 3:4:5:6:#
+;;
+//insert, sort
+let rec insert = \elem. \list.
+if hd list = #
+    then elem : #
+    else if elem less_equal (hd list) = 1
+        then elem : list
+        else (hd list) : (insert elem (tl list))
+in
+//insert 2 3:0:1
+//Out 2:3:0:1
+//Insert works as well on it's own.
+let rec sort = \list.
+if hd list = #
+    then #
+    else insert (hd list) (sort (tl list))
+in
+sort 1:2:3:1:2:3:#
+//output 1:1:2:2:3:3:#
+//this will go through all then and else branches
+;;
